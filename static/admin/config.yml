@@ -9,7 +9,7 @@ public_folder: /img
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: 'content/blog'
+    folder: 'content/blog/{{slug}}'
     create: true
     slug: '{{slug}}'
     editor:
@@ -17,5 +17,8 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Summary', name: 'summary', widget: 'text' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Icon', name: 'icons', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
