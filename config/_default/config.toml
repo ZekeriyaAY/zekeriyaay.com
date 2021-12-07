@@ -1,0 +1,51 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+baseURL = "https://zekeriyaay.com/"
+languageCode = "en"
+defaultContentLanguage = "en"
+theme = "congo"
+
+title = "Zekeriya AY"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+googleAnalytics = "G-BE5REZ94JB"
+
+enableEmoji = true
+enableRobotsTXT = true
+
+summaryLength = 0
+
+[author]
+  name = "Zekeriya AY"
+  image = "img/author.jpeg"
+  bio = "Welcome to the personal website of a computer engineering undergraduate student interested in cybersecurity"
+  links = [
+    { email = "mailto:zekeriya@zekeriyaay.com" },
+  #   { link = "https://link-to-some-website.com/" },
+  #   { codepen = "https://codepen.io/username" },
+  #   { dev = "https://dev.to/username" },
+  #   { discord = "https://discord.gg/invitecode" },
+  #   { dribbble = "https://dribbble.com/username" },
+  #   { facebook = "https://facebook.com/username" },
+  #   { foursquare = "https://foursquare.com/username" },
+    { github = "https://github.com/ZekeriyaAY" },
+  #   { gitlab = "https://gitlab.com/username" },
+  #   { instagram = "https://instagram.com/username" },
+  #   { keybase = "https://keybase.io/username" },
+  #   { lastfm = "https://lastfm.com/user/username" },
+    { linkedin = "https://linkedin.com/in/ZekeriyaAY" },
+  #   { mastodon = "https://mastodon.instance/@username" },
+  #   { medium = "https://medium.com/username" },
+  #   { pinterest = "https://pinterest.com/username" },
+  #   { reddit = "https://reddit.com/user/username" },
+  #   { slack = "https://workspace.url/team/userid" },
+  #   { snapchat = "https://snapchat.com/add/username" },
+  #   { soundcloud = "https://soundcloud.com/username" },
+  #   { steam = "https://steamcommunity.com/profiles/userid" },
+  #   { tiktok = "https://tiktok.com/@username" },
+  #   { twitch = "https://twitch.tv/username" },
+    { twitter = "https://twitter.com/l3adscript" },
+    { youtube = "https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" },
+  ]
