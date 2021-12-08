@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<svg enable-background="new 0 0 32 32" height="32px" id="svg2" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+    <g id="background">
+        <rect fill="none" height="32" width="32" />
+    </g>
+    <g id="network_x5F_protocol">
+        <path fill="currentColor" d="M20,10c-2.208,0-4,1.792-4,4c0,0.74,0.215,1.424,0.565,2.019l-2.547,2.547C13.424,18.215,12.74,18,12,18   c-2.209,0-4,1.792-4,4s1.791,4,4,4s4-1.792,4-4c0-0.74-0.215-1.425-0.566-2.02l2.546-2.546C18.575,17.785,19.26,18,20,18   c2.208,0,4-1.792,4-4S22.208,10,20,10z" />
+        <path fill="currentColor" d="M22.414,0H4v32h24V5.584L22.414,0z M21.998,2.413L25.586,6h-3.588V2.413z M6,30V1.998h14v6.001h6V30H6z" />
+    </g>
+</svg>
