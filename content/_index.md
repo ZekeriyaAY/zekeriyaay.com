@@ -7,7 +7,7 @@ Siber güvenlikle ilgilenen\
 Bilgisayar Mühendisliği Lisans öğrencisinin\
 kişisel websitesine hoş geldiniz
 
-Hakkımda daha fazla [bilgi edinmek için &rarr;]({{< ref "about" >}}) 
+Hakkımda daha fazla [bilgi edinmek için&rarr;]({{< ref "about" >}}) 
 
 <!-- Welcome to the personal website of\
 a computer engineering undergraduate student\

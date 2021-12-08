@@ -18,11 +18,8 @@
     --pinterest: #BD081C;
 }
 
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
 
+/* SOCIAL MEDIA ICONS START */
 .email,
 .github,
 .linkedin,
@@ -103,3 +100,22 @@
 .sharing-pinterest:hover {
     background-color: var(--pinterest) !important;
 }
+/* SOCIAL MEDIA ICONS END */
+
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.w-56 {
+    width: 14rem;
+}
+  
+.\!mt-1 {
+    margin-top: 0.25rem !important;
+  }
