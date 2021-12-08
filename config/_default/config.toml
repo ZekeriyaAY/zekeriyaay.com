@@ -8,12 +8,13 @@ defaultContentLanguage = "tr"
 theme = "congo"
 
 title = "Zekeriya AY"
-copyright = "*The content on this site is licensed under a **[CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/)**. The **[source code for this site](https://github.com/ZekeriyaAY/zekeriyaay.com)** is licensed under a **[GPLv3](https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE)***."
+copyright = "*The content on this site is licensed under a **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>CC-BY-SA 4.0 License</a>**. The **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://github.com/ZekeriyaAY/zekeriyaay.com' target='_blank'>source code for this site</a>** is licensed under a **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE' target='_blank'>GPLv3</a>***."
 
 googleAnalytics = "G-BE5REZ94JB"
 
 enableEmoji = true
 enableRobotsTXT = true
+enableGitInfo = true
 
 summaryLength = 0
 
