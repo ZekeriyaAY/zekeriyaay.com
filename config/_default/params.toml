@@ -10,7 +10,7 @@ darkMode = "true"
 # darkToggle = false
 # logo = "img/logo.jpg"
 description = "Website of computer engineering undergraduate student interested in cybersecurity."
-# mainSections = ["section1", "section2"]
+mainSections = ["blog", "cheatsheets"]
 robots = "all"
 
 [homepage]

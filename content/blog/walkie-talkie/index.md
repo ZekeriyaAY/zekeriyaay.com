@@ -1,7 +1,6 @@
 ---
 title: "Walkie-Talkie with nRF24L01"
 date: 2021-07-14T21:07:01+03:00
-draft: false
 icons: "satellite"
 description: "Walkie-Talkie with nRF24L01, Arduino"
 slug: "walkie-talkie"
