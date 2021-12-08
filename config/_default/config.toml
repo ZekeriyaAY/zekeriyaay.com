@@ -17,6 +17,8 @@ enableRobotsTXT = true
 
 summaryLength = 0
 
+disableKinds = ['taxonomy', 'term']
+
 [permalinks]
   # blog = "/:section/:slug/"
   # notes = "/:section/:slug/"
