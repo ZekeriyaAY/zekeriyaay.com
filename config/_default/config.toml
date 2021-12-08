@@ -4,7 +4,7 @@
 
 baseURL = "https://zekeriyaay.com/"
 languageCode = "en"
-defaultContentLanguage = "en"
+defaultContentLanguage = "tr"
 theme = "congo"
 
 title = "Zekeriya AY"
