@@ -1,4 +1,4 @@
-<article class="pb-6">
+<article class="pb-6 mb-3">
     <a class="flex project" href="{{ with .Params.externalUrl }}{{ . }}{{ end }}" target="_blank">
         <div class="project-icon text-3xl text-neutral-300 dark:text-neutral-700 mr-3">
             <span class="relative inline-block align-text-bottom icon">
@@ -9,7 +9,7 @@
             <h3 class="flex text-xl font-semibold">
                 {{ .Title }}
 
-                {{/* Output under development label */}}
+                <!-- Output under development label -->
                 {{ if and .Params.under_development }}
                 <span class="pl-2">{{ partial "badge.html" (i18n "article.under_development" | emojify) }}</span>
                 {{ else if and .Params.archived }}
