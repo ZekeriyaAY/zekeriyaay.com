@@ -9,9 +9,9 @@ colorScheme = "congo"
 darkMode = "true"
 # darkToggle = false
 # logo = "img/logo.jpg"
-# description = "My awesome website"
+description = "Website of computer engineering undergraduate student interested in cybersecurity."
 # mainSections = ["section1", "section2"]
-# robots = ""
+robots = "all"
 
 [homepage]
   layout = "profile" # valid options: page, profile, custom
@@ -21,15 +21,15 @@ darkMode = "true"
   showDate = true
   dateFormat = "2 January 2006"
   showAuthor = true
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/username/repo/"
+  showEdit = true
+  editURL = "https://github.com/ZekeriyaAY/zekeriyaay.com/tree/main/content/"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
   showReadingTime = true
-  # sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
+  sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
 
 [list]
   showBreadcrumbs = false

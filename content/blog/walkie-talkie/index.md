@@ -4,15 +4,15 @@ date: 2021-07-14T21:07:01+03:00
 draft: false
 icons: "satellite"
 description: "Walkie-Talkie with nRF24L01, Arduino"
-slug: "walkie-talkie
+slug: "walkie-talkie"
 ---
 
 {{< lead >}}
-Bu projede walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı içerir.
+Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı içerir.
 {{< /lead >}}
 
 > Projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.\
-> [❤️Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
+> [❤️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
 
 
 {{< screenshot src="perti-on.png" alt="Telsizin Ön Yüzü">}}
@@ -30,7 +30,7 @@ Bu projede walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli 
     - Antensiz versiyonu açık alanda ort. 100m, kapalı alanda ise ort. 10-20m mesafede çalışıyormuş(Söylenene göre...)
     - Antenli versiyonu ise ort. 10 kat arttırıyor. (Mesafe testinin videosu [*🙏Yardım Aldığım Kaynaklar*](#yardım-aldığım-kaynaklar "🙏Yardım Aldığım Kaynaklar")'da mevcut)
     - VCC yi 3.3V'a bağlayın yoksa bozuluyor veya adaptör ile 5V da kullanın. Ben adaptörle 5V da kullandım.
-    - Adaptörsüz kullanıcaksanız modüle kondansatör lehimlemeniz gerekiyor. İnternette hangi pinlere bağlandığıyla ilgili videolar var. 
+    - Adaptörsüz kullanıcaksanız modüle kondansatör lehimlemeniz gerekiyor. [*🙏Yardım Aldığım Kaynaklar*](#yardım-aldığım-kaynaklar "🙏Yardım Aldığım Kaynaklar")'da hangi pinlere bağlandığıyla ilgili link var. 
     
 - 2 adet **[nRF24L01 Wireless Modül Adaptörü](https://www.direnc.net/8-pin-nrf24l01-wireless-modul-adaptoru)**
     - Bu adaptör 5V ile çalışmayı sağlıyor.
@@ -65,7 +65,7 @@ Bu projede walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli 
     - İlk pertinaks alma ve kullanma deneyimim olacağından dolayı riske atmayıp 2 adet almıştım ama 1 tanesi(12x18cm) yetti.
     
 - **[Havya](https://www.f1depo.com/urun/40w-kalem-havya-tse-onaylidir)**
-    - Eğer pertinaks üzerine sabitlemeyecekseniz sadece hoparlör kablolarını lehimlemek için kullandım.
+    - Eğer pertinaks üzerine lehimleme yapmayacaksanız sadece hoparlör kablolarını lehimlemek için kullandım.
     - Daha ince havya ucu ile lehim daha kolay yapılabilirdi.
     
 - **[Lehim Teli](https://www.f1depo.com/urun/pinax-tup-lehim-teli-1-2mm)**
@@ -73,7 +73,7 @@ Bu projede walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli 
     - Yakın pinleri lehimlerken bir yandan lehim teli bir yandan kablo bir yandan havya ucu biraz zorladı.
     
 - **Silikon Tabancası**
-    - Devrede hareketli parçaları sabitlemek ve devrelere teması engellemek için dışını balonlu naylonla(patlatılan poşetler) kaplamak için kullandım.
+    - Devrede hareketli parçaları sabitlemek ve devreye çıplak elle teması engellemek için dışını balonlu naylonla(patlatılan poşetler) kaplamak için kullandım.
     - Hoparlör sarkık durmaması için de kullandım.
     
 - **Kablo Soymak için Aletler**
@@ -247,11 +247,10 @@ Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasın
 
 - nRF24L01 modülü ile ilgili
     - Arduino Mega kullanıcaklar için bağlantılar bu linklerde bulunuyor.
-    - [hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi](https://hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/)
-    - [lastminuteengineers.com/nrf24l01-arduino-wireless-communication](https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/)
-- [nRF24L01 Antenli ve Antensiz Menzil Testi Videosu](https://www.youtube.com/watch?v=2tfa9i0bsX8&ab_channel=Merakl%C4%B1Maymun)
+    - [nRF24L01 çalışmasını çok güzel anlatıyor](https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/)
+- [nRF24L01 Antenli ve Antensiz menzil testi videosu](https://www.youtube.com/watch?v=2tfa9i0bsX8&ab_channel=Merakl%C4%B1Maymun)
 - [Walkie-Talkie yapan en detaylı kaynak olabilir ama eksikleri var(İngilizce)](https://www.instructables.com/id/Wristwatch-Walkie-Talkie/)
-- [Walkie-Talkie yapan Türkçe kaynak](https://ugrdmr.wordpress.com/2018/07/22/arduino-telsiz-walkie-talkie/)
+- [nRF24L01 adaptörsüz kullanıp kondansatör lehimlemeyi içeriyor](https://ugrdmr.wordpress.com/2018/07/22/arduino-telsiz-walkie-talkie/)
 
 ---
 
@@ -260,7 +259,7 @@ Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasın
 Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 
 - Pertinaks üzerine lehimlerken Arduino'yu direk lehimledim. Bunu yapmak yerine ***dişi-erkek pin header*** lehimleyip Arduino'yu bu headerlara takmak daha iyi olur. Böylece gerektiğinde Arduino'yu kolayca çıkartılıp yenisi takılabilir veya başka şeylerde kullanılabilir.
-- İlk uzun lehim deneyimim olduğundan dolayımı bilmiyorum ama *daha ince lehim teli*, ***daha ince havya ucu*** ve ***lehim pastası*** kullansam lehim işlemleri daha kolay olabilirdi.
+- İlk uzun lehim deneyimim olduğundan dolayımı bilmiyorum ama ***daha ince lehim teli***, ***daha ince havya ucu*** ve ***lehim pastası*** kullansam lehim işlemleri daha kolay olabilirdi.
 - Kabloları soymak için ***kablo soyma pensesi***  kullanmak daha kısa sürmesine ve daha düzenli olmasını sağlar. Pense ve yan keski kullanarak biraz zor oldu.
 - Telsiz çalışırken iki taraf da butona basılı tutup konuşmaya çalışınca iki taraf da duymadığı gibi bug'a girmesine neden oluyor. Böyle durumlarda Arduino üzerindeki reset butona basıp kodların tekrar çalıştırılmasını sağlayarak bug sorunu o anlık çözebiliyoruz. Bir taraf konuşurken diğer taraf da dinlemesini bilmeli yani 🙃
 

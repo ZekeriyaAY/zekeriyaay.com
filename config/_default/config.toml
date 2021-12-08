@@ -17,10 +17,16 @@ enableRobotsTXT = true
 
 summaryLength = 0
 
+[permalinks]
+  # blog = "/:section/:slug/"
+  # notes = "/:section/:slug/"
+  # projects = "/:slug/"
+  # about = "hakkinda"
+
 [author]
   name = "Zekeriya AY"
   image = "img/author.jpeg"
-  bio = "Welcome to the personal website of a computer engineering undergraduate student interested in cybersecurity"
+  bio = "a computer engineering undergraduate student interested in cybersecurity"
   links = [
     { email = "mailto:zekeriya@zekeriyaay.com" },
   #   { link = "https://link-to-some-website.com/" },
