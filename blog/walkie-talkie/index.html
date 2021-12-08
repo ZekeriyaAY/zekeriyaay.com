@@ -1,0 +1,440 @@
+<!doctype html><html lang=en class=dark><head>
+<meta charset=utf-8>
+<meta http-equiv=content-language content="en">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Walkie-Talkie with nRF24L01 &#183; Zekeriya AY</title>
+<meta name=title content="Walkie-Talkie with nRF24L01 &#183; Zekeriya AY">
+<meta name=description content="Walkie-Talkie with nRF24L01, Arduino">
+<meta name=robots content="all">
+<link rel=canonical href=https://zekeriyaay.com/blog/walkie-talkie/>
+<link type=text/css rel=stylesheet href=/css/schemes/custom.min.74fb1ef2d8e93b8c335e7ae55203cae0c32df22aa74c58df54902a69ab68b99e50d47d6ae16229118d4f4156e0c351cd00c307c12e8d32c136f228dadc6e294b.css integrity="sha512-dPse8tjpO4wzXnrlUgPK4MMt8iqnTFjfVJAqaatouZ5Q1H1q4WIpEY1PQVbgw1HNAMMHwS6NMsE28ija3G4pSw==">
+<link type=text/css rel=stylesheet href=/css/compiled/main.min.4076b9cf114dd23cca017f3365e2205a4c9a4b2c0ef4193ccd08883f76e554aa40f674a8f6e77a1b2895be0975ba8e019b0c59996c2eea32e4970ca4d5221653.css integrity="sha512-QHa5zxFN0jzKAX8zZeIgWkyaSywO9Bk8zQiIP3blVKpA9nSo9ud6GyiVvgl1uo4BmwxZmWwu6jLklwyk1SIWUw==">
+<link type=text/css rel=stylesheet href=/css/custom.min.4f94fd55f08f954c73f4eed93e66c91f20cb9060b8e5a2c42c239da7e0eedde95c7116bd7bf98c22089fda85c4e5c49c4f3252f1d393d46d85afdef5764723de.css integrity="sha512-T5T9VfCPlUxz9O7ZPmbJHyDLkGC45aLELCOdp+Du3elccRa9e/mMIgif2oXE5cScTzJS8dOT1G2Fr971dkcj3g==">
+<script>localStorage.removeItem("preferredAppearance")</script>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<meta property="og:title" content="Walkie-Talkie with nRF24L01">
+<meta property="og:description" content="Walkie-Talkie with nRF24L01, Arduino">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zekeriyaay.com/blog/walkie-talkie/"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2021-07-14T21:07:01+03:00">
+<meta property="article:modified_time" content="2021-07-14T21:07:01+03:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Walkie-Talkie with nRF24L01">
+<meta name=twitter:description content="Walkie-Talkie with nRF24L01, Arduino">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Blog","name":"Walkie-Talkie with nRF24L01","headline":"Walkie-Talkie with nRF24L01","description":"Walkie-Talkie with nRF24L01, Arduino","inLanguage":"en","author":{"@type":"Person","name":"Zekeriya AY"},"creator":{"@type":"Person","name":"Zekeriya AY"},"copyrightHolder":"Zekeriya AY","copyrightYear":"2021","dateCreated":"2021-07-14T21:07:01\u002b03:00","datePublished":"2021-07-14T21:07:01\u002b03:00","dateModified":"2021-07-14T21:07:01\u002b03:00","url":"https:\/\/zekeriyaay.com\/blog\/walkie-talkie\/","wordCount":"1150","keywords":[]}</script>
+<meta name=generator content="Hugo 0.89.4">
+<meta name=author content="Zekeriya AY">
+<link href=mailto:zekeriya@zekeriyaay.com rel=me>
+<link href=https://github.com/ZekeriyaAY rel=me>
+<link href=https://linkedin.com/in/ZekeriyaAY rel=me>
+<link href=https://twitter.com/l3adscript rel=me>
+<link href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" rel=me>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BE5REZ94JB"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-BE5REZ94JB',{anonymize_ip:!1})}</script>
+</head>
+<body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"><header class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-800 dark:text-neutral">
+<div>
+<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" rel=me href=/>Zekeriya AY</a>
+</div>
+<nav>
+<ul class="flex flex-col list-none sm:flex-row">
+<li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/blog/ title=Blog>Blog</a>
+</li>
+<li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/projects/ title=Projeler>Projeler</a>
+</li>
+<li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/hakkinda/ title=Hakkında>Hakkında</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=flex-grow>
+<article class=max-w-prose>
+<header>
+<ol class="text-sm text-neutral-400 dark:text-neutral-500">
+<li class="inline hidden">
+<a class="hover:underline hover:underline-neutral-300 dark:underline-neutral-600" href=/>Zekeriya AY</a><span class="px-1 text-primary-500">/</span>
+</li>
+<li class=inline>
+<a class="hover:underline hover:underline-neutral-300 dark:underline-neutral-600" href=/blog/>Blog</a><span class="px-1 text-primary-500">/</span>
+</li>
+<li class="inline hidden">
+<a class="hover:underline hover:underline-neutral-300 dark:underline-neutral-600" href=/blog/walkie-talkie/>Walkie-Talkie with nRF24L01</a><span class="px-1 text-primary-500">/</span>
+</li>
+</ol>
+<h1 class="mt-0 text-4xl font-extrabold text-neutral-800 dark:text-neutral">
+Walkie-Talkie with nRF24L01
+</h1>
+<div class="mt-8 mb-12 text-base text-neutral-400 dark:text-neutral-500">
+<div class="flex flex-row items-center">
+<time datetime="2021-07-14 21:07:01 +0300 +0300">14 July 2021</time><span class="px-2 text-primary-500">&#183;</span><span title="Okuma Süresi">6 dakika</span><span class="px-2 text-primary-500">&#183;</span>
+<span class=mb-[2px]>
+<a href=https://github.com/ZekeriyaAY/zekeriyaay.com/tree/main/content/blog/walkie-talkie/index.md class="text-lg hover:text-primary-500" rel="noopener noreferrer" target=_blank title="İçeriyi Düzenle">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5.0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1.0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7.0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174 402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7-43.2-43.2c-4.1-4.1-10.8-4.1-14.8.0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg>
+</span>
+</a>
+</span>
+</div>
+</div>
+</header>
+<section class="prose dark:prose-light">
+<p class="!mb-9 text-xl text-neutral-400 dark:text-neutral-500">
+Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı içerir.
+</p>
+<blockquote>
+<p>Projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.<br>
+<a href=https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ>❤️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri</a> (Video Henüz Yayınlanmadı)</p>
+</blockquote>
+<figure><img src=/blog/walkie-talkie/perti-on.png alt="Telsizin Ön Yüzü" width=100% height=auto style=max-width:960px;max-height:540px>
+</figure>
+<h2 id=kullanılan-malzemeler>🛠️Kullanılan Malzemeler <a class=heading-anchor href=#kullan%c4%b1lan-malzemeler aria-label=Anchor>#</a></h2>
+<ul>
+<li>
+<p>2 adet <strong><a href=https://www.direnc.net/arduino-nano-usb-chip-ch340-usb-kablo-dahil>Arduino Nano</a></strong></p>
+<ul>
+<li>Boyutundan ötürü <em><code>Nano</code></em> tercih ettim. Uno, Mega veya Nano kullanmak size kalmış.</li>
+<li>Mega kullanıcaksanız bağlantılarda birkaç değişiklik oluyor unutmayın! (Anlatımda bundan bahsedicem)</li>
+</ul>
+</li>
+<li>
+<p>2 adet <strong><a href=https://www.f1depo.com/Nrf24l01-Pa-Lna-24-ghz,PR-978.html>nRF24L01 PA LNA 2.4GHz Alıcı - Verici Modül</a></strong></p>
+<ul>
+<li>Antenli versiyonunu kullandım.</li>
+<li>İki versiyonun da bağlantıları aynı.</li>
+<li>Antensiz versiyonu açık alanda ort. 100m, kapalı alanda ise ort. 10-20m mesafede çalışıyormuş(Söylenene göre&mldr;)</li>
+<li>Antenli versiyonu ise ort. 10 kat arttırıyor. (Mesafe testinin videosu <a href=#yard%C4%B1m-ald%C4%B1%C4%9F%C4%B1m-kaynaklar title="🙏Yardım Aldığım Kaynaklar"><em>🙏Yardım Aldığım Kaynaklar</em></a>&lsquo;da mevcut)</li>
+<li>VCC yi 3.3V&rsquo;a bağlayın yoksa bozuluyor veya adaptör ile 5V da kullanın. Ben adaptörle 5V da kullandım.</li>
+<li>Adaptörsüz kullanıcaksanız modüle kondansatör lehimlemeniz gerekiyor. <a href=#yard%C4%B1m-ald%C4%B1%C4%9F%C4%B1m-kaynaklar title="🙏Yardım Aldığım Kaynaklar"><em>🙏Yardım Aldığım Kaynaklar</em></a>&lsquo;da hangi pinlere bağlandığıyla ilgili link var.</li>
+</ul>
+</li>
+<li>
+<p>2 adet <strong><a href=https://www.direnc.net/8-pin-nrf24l01-wireless-modul-adaptoru>nRF24L01 Wireless Modül Adaptörü</a></strong></p>
+<ul>
+<li>Bu adaptör 5V ile çalışmayı sağlıyor.</li>
+<li>Antenli yada antensiz olsun ikisinde de kullanmanızı öneririm.</li>
+<li>Paraziti de azaltıyormuş(!)</li>
+</ul>
+</li>
+<li>
+<p>2 adet <strong><a href=https://www.f1depo.com/urun/gy-max4466-elektret-mikrofon-amplifikatoru-max4466>MAX4466 Elektret Mikrofon</a></strong></p>
+<ul>
+<li>5V veya 3.3V&rsquo;da kullanabilirsiniz ama 3.3V&rsquo;da daha temiz ses elde ettim.</li>
+</ul>
+</li>
+<li>
+<p>2 adet <strong><a href=https://www.direnc.net/8r-05w-83db-36x5mm-hoparlor>8R 0.5W 83DB 36x5mm Hoparlör</a></strong></p>
+<ul>
+<li>Ses seviyesi olarak yeterliydi.</li>
+<li>Arduino&rsquo;nun besleyebileceği boyutta her hoparlörün de çalışacağını düşünüyorum.</li>
+</ul>
+</li>
+<li>
+<p>2 adet <strong><a href=https://www.direnc.net/6x6-8-5mm-tach-buton-4-bacak>Buton</a></strong></p>
+<ul>
+<li>Benim kullandığım butonun tuş kısmı biraz uzun ve çapı küçük.</li>
+<li>Daha geniş boyutlarda buton daha rahat kullanımı olabilir.</li>
+<li>2 bacaklı herhangi buton da çalışacakdır.</li>
+</ul>
+</li>
+<li>
+<p>2 adet <strong><a href=https://www.direnc.net/10k-14w-direnc>10K Direnç</a></strong> (<em>Kahve-Siyah-Turuncu-Altın</em>)</p>
+</li>
+<li>
+<p><strong>Jumper Kablo</strong> (<em><a href=https://www.direnc.net/40-adet-disi-erkek-jumper-20cm>Dişi-Erkek</a>, <a href=https://www.f1depo.com/40-pin-Erkek-Erkek-200mm-20cm-Jumper-Kablo,PR-695.html>Erkek-Erkek</a></em>)</p>
+</li>
+<li>
+<p>2 adet <strong>Breadboard</strong></p>
+<ul>
+<li>Devreyi kurup test etmek için kullandım.</li>
+<li>Çeşit olsun diye farklı boyutlarda aldım. Orta boy, devre için yeterli alanı sağlıyor.</li>
+<li><a href=https://www.direnc.net/tekli-breadboard>Büyük Boy Breadboard</a></li>
+<li><a href=https://www.direnc.net/breadboard-mini-yapiskanli>Orta Boy Breadboard</a></li>
+</ul>
+</li>
+<li>
+<p><strong><a href=https://www.f1depo.com/Delikli-Plaket-12x18-cm-Pertinaks,PR-2256.html>Pertinaks</a></strong></p>
+<ul>
+<li>Breadboard üzerindeki testlerden sonra devreyi lehim ile sabit halde kullanmak için aldım.</li>
+<li>Jumper kablolar ortada cirit atmamış oluyor.</li>
+<li>İlk pertinaks alma ve kullanma deneyimim olacağından dolayı riske atmayıp 2 adet almıştım ama 1 tanesi(12x18cm) yetti.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href=https://www.f1depo.com/urun/40w-kalem-havya-tse-onaylidir>Havya</a></strong></p>
+<ul>
+<li>Eğer pertinaks üzerine lehimleme yapmayacaksanız sadece hoparlör kablolarını lehimlemek için kullandım.</li>
+<li>Daha ince havya ucu ile lehim daha kolay yapılabilirdi.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href=https://www.f1depo.com/urun/pinax-tup-lehim-teli-1-2mm>Lehim Teli</a></strong></p>
+<ul>
+<li>1.2mm kalınlığında tel kullandım ama daha ince (0.75mm vb.) tel ile lehim işlemi daha kolay olabilir.</li>
+<li>Yakın pinleri lehimlerken bir yandan lehim teli bir yandan kablo bir yandan havya ucu biraz zorladı.</li>
+</ul>
+</li>
+<li>
+<p><strong>Silikon Tabancası</strong></p>
+<ul>
+<li>Devrede hareketli parçaları sabitlemek ve devreye çıplak elle teması engellemek için dışını balonlu naylonla(patlatılan poşetler) kaplamak için kullandım.</li>
+<li>Hoparlör sarkık durmaması için de kullandım.</li>
+</ul>
+</li>
+<li>
+<p><strong>Kablo Soymak için Aletler</strong></p>
+<ul>
+<li>Kablo soyma pensesi yerine yan keski ve pense kullandım ama soyma pensesi olsa çok daha kolay olurdu.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id=kütüphanelerin-ve-kodların-indirilmesi>📥Kütüphanelerin ve Kodların İndirilmesi <a class=heading-anchor href=#k%c3%bct%c3%bcphanelerin-ve-kodlar%c4%b1n-indirilmesi aria-label=Anchor>#</a></h2>
+<p><em><strong>RF24</strong></em>, <em><strong>RF24Audio</strong></em> kütüphanelerini ve telsiz için gereken kodları aşağıdaki bağlantılardan indirin.</p>
+<p><strong>RF24:</strong> <a href=https://github.com/nRF24/RF24>github.com/nRF24/RF24</a><br>
+<strong>RF24Audio:</strong> <a href=https://github.com/nRF24/RF24Audio>github.com/nRF24/RF24Audio</a><br>
+<strong>Gerekli Kodlar:</strong> <a href=https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie>github.com/ZekeriyaAY/Arduino-Walkie-Talkie</a></p>
+<h2 id=kütüphanelerin-ideye-eklenmesi>📤Kütüphanelerin IDE&rsquo;ye Eklenmesi <a class=heading-anchor href=#k%c3%bct%c3%bcphanelerin-ideye-eklenmesi aria-label=Anchor>#</a></h2>
+<p>İndirilen <code>.zip</code> dosyalarını aşağıdaki yol ile ekleyin.</p>
+<blockquote>
+<p>⚠️ <em>Sadece <strong>RF24</strong> ve <strong>RF24Audio</strong> dosyaları kütüphane dosyalarıdır.</em></p>
+</blockquote>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-arduino data-lang=arduino>    <span class=n>Arduino</span> <span class=n>IDE</span> <span class=o>&gt;</span> <span class=n>Taslak</span> <span class=o>&gt;</span> <span class=n>library</span> <span class=n>ekle</span> <span class=o>&gt;</span> <span class=p>.</span><span class=n>ZIP</span> <span class=n>Kitaplığı</span> <span class=n>Ekle</span><span class=p>...</span>
+</code></pre></div><h2 id=kodların-arduinoya-yüklenmesi>📤Kodların Arduino&rsquo;ya Yüklenmesi <a class=heading-anchor href=#kodlar%c4%b1n-arduinoya-y%c3%bcklenmesi aria-label=Anchor>#</a></h2>
+<p>Bu aşamaya şuan ihtiyaç yok ancak devre bağlantılarını yaptıktan sonra kodları burada anlatıldığı gibi yüklemeniz için eklendi.</p>
+<ol>
+<li>İndirilen <code>Arduino-Walkie-Talkie-main.zip</code> dosyasının içindeki yüklemek istediğiniz <code>.ino</code> uzantılı Arduino kodunu IDE ile açın.</li>
+<li>Arduino&rsquo;yu bilgisayara takın.</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-arduino data-lang=arduino>    <span class=n>Araçlar</span> <span class=o>&gt;</span> <span class=n>Kart</span> <span class=c1>//Kullandığınız Arduino türünü seçin
+</span><span class=c1></span>    <span class=n>Araçlar</span> <span class=o>&gt;</span> <span class=n>Port</span> <span class=c1>//Kartın takılı olduğu portu seçin
+</span></code></pre></div><blockquote>
+<p>Portlarda kartınız gözükmüyorsa -> <a href=https://maker.robotistan.com/arduino-uno-suruculeri-nasil-yuklenir-ch340-cipli-klon/>CH340 çipli klon arduino sürücüleri nasıl yüklenir?</a></p>
+</blockquote>
+<p> Doğru kartı ve portu seçtiğinizden eminseniz iki Arduino&rsquo;ya da kodları yükleyebilirsiniz.</p>
+<blockquote>
+<p>Yükleme sırasında sorun çıktı ise;</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-arduino data-lang=arduino>  <span class=n>Araçlar</span> <span class=o>&gt;</span> <span class=n>Islemci</span>  <span class=c1>//Diğer seçeneklere bi&#39; bak
+</span><span class=c1></span>  <span class=n>ATmega328P</span><span class=p>(</span><span class=n>Old</span> <span class=n>Bootloader</span><span class=p>)</span> <span class=n>seçtiğimde</span> <span class=n>sorun</span> <span class=n>geçmişti</span><span class=p>.</span>
+</code></pre></div></blockquote>
+<hr>
+<h2 id=devre-kurulumu-ve-test-edilmesi>🗺️Devre Kurulumu ve Test Edilmesi <a class=heading-anchor href=#devre-kurulumu-ve-test-edilmesi aria-label=Anchor>#</a></h2>
+<p class="!mb-9 text-xl text-neutral-400 dark:text-neutral-500">
+Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
+</p>
+<h3 id=nrf24l01-bağlantısı-ve-testi>📡nRF24L01 Bağlantısı ve Testi <a class=heading-anchor href=#nrf24l01-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
+<p>nRF24L01 modülü ve kullanacağımız adaptörün pin dizilimini aşağıdaki resimlerden ulaşabilirsiniz.
+<img src=nRF24L01-adaptor.png alt="nRF24L01 Modül Adaptörü (Resim 1)">
+<img src=nRF24L01-adaptor-pinout.png alt="nRF24L01 Modülün Pin Çıkışları (Resim 2)"></p>
+<p>Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik <code>VCC</code>&lsquo;yi <code>3.3V</code> yerine <code>5V</code>&lsquo;a bağlamanız.</p>
+<ul>
+<li>Boş olan pin, kullanılmayan <code>IRQ</code> pini.</li>
+</ul>
+<p><img src=nRF24L01-sema.png alt="Modülün Adaptörsüz Bağlantısı (Resim 3)"></p>
+<blockquote>
+<p>Aşağıdaki pin dizilimleri <em>Nano/Uno</em> içindir. <em>Mega</em> için farklı pinler kullanılıyor. <a href=#yard%C4%B1m-ald%C4%B1%C4%9F%C4%B1m-kaynaklar>🙏<strong>Yardım Aldığım Kaynaklar</strong></a>&lsquo;da o bağlantıları bulabilirsiniz.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>nRF24L01</strong></th>
+<th style=text-align:center><strong>Arduino</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>GND</td>
+<td style=text-align:center>GND</td>
+</tr>
+<tr>
+<td style=text-align:center>VCC</td>
+<td style=text-align:center>3.3 / 5V</td>
+</tr>
+<tr>
+<td style=text-align:center>CE</td>
+<td style=text-align:center>D7</td>
+</tr>
+<tr>
+<td style=text-align:center>CSN</td>
+<td style=text-align:center>D8</td>
+</tr>
+<tr>
+<td style=text-align:center>SCK</td>
+<td style=text-align:center>D13</td>
+</tr>
+<tr>
+<td style=text-align:center>MOSI</td>
+<td style=text-align:center>D11</td>
+</tr>
+<tr>
+<td style=text-align:center>MISO</td>
+<td style=text-align:center>D12</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>receiver.ino</code> kodunu bir Arduino&rsquo;ya, <code>transmitter.ino</code> kodunu diğer Arduino&rsquo;ya yükleyin.</p>
+</blockquote>
+<p>İki kodu da farklı Arduinolara yükledikten sonra alıcı kodunu yüklediğiniz Arduino&rsquo;nun &ldquo;<strong>Seri Port Ekranı</strong>&rdquo; nda &ldquo;<strong>Hello Ardu</strong>&rdquo; yazısını görüyorsanız bağlantılar doğrudur demektir.</p>
+<h3 id=hoparlör-bağlantısı-ve-testi>🔊Hoparlör Bağlantısı ve Testi <a class=heading-anchor href=#hoparl%c3%b6r-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
+<p><img src=speaker-sema.png alt="Hoparlör Bağlantı Şeması (Resim 4)"></p>
+<p>Hoparlör üzerinde kırmızı kablo(+) <code>D10</code> pinine, siyah kablo(-) <code>GND</code> pinine bağladım.</p>
+<p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>speaker.ino</code> kodunu Arduino&rsquo;ya yükleyip hoparlör bağlantılarını melodi sesleriyle test edebilirsiniz.</p>
+<h3 id=buton-bağlantısı-ve-testi>🔘Buton Bağlantısı ve Testi <a class=heading-anchor href=#buton-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
+<p><img src=button-sema.png alt="Buton Bağlantı Şeması (Resim 5)"></p>
+<p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>button.ino</code> kodunu Arduino&rsquo;ya yükleyin.</p>
+<p>Kodu yükledikten sonra &ldquo;<strong>Seri Port Ekranı</strong>&rdquo; nda butona bastığınızda sayaç sayıları artıyorsa sıradaki ve son bağlantıya geçebilirsiniz.</p>
+<h3 id=mikrofon-bağlantısı-ve-testi>🎤Mikrofon Bağlantısı ve Testi <a class=heading-anchor href=#mikrofon-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
+<p><img src=mic-sema.png alt="Mikrofon Bağlantı Şeması (Resim 6)"></p>
+<blockquote>
+<p>5V&rsquo;a da bağlayabilirsiniz. Ancak 3.3V da daha temiz ses elde ettiğim için 3.3V kullandım.</p>
+</blockquote>
+<p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>microphone.ino</code> kodunu Arduino&rsquo;ya yükleyin.</p>
+<p>Kodu çalıştırdıktan sonra &ldquo;<strong>Seri Port Ekranı</strong>&rdquo; nda mikrofona konuştuğunuz zaman Volt değerlerinin değiştiğini göreceksiniz. Eğer değişim olmuyorsa bağlantıları kontrol edin.</p>
+<h3 id=tüm-bağlantı-şeması>🗺️Tüm Bağlantı Şeması <a class=heading-anchor href=#t%c3%bcm-ba%c4%9flant%c4%b1-%c5%9femas%c4%b1 aria-label=Anchor>#</a></h3>
+<p><img src=tum-sema.png alt="Tüm Bağlantı Şeması (Resim 7)"></p>
+<p>Resim 7&rsquo;de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.</p>
+<blockquote>
+<p>Eğer adaptör kullanıcaksanız adaptörün <code>VCC</code>&lsquo;yi <code>3.3V</code> yerine <code>5V</code>&lsquo;a bağlayın.</p>
+</blockquote>
+<hr>
+<h2 id=ana-kodun-arduinoya-yüklenmesi>📤Ana Kodun Arduino&rsquo;ya Yüklenmesi <a class=heading-anchor href=#ana-kodun-arduinoya-y%c3%bcklenmesi aria-label=Anchor>#</a></h2>
+<p>İndirilen <code>Arduino-Walkie-Talkie-main.zip</code> dosyasının içindeki <code>main.ino</code> kodu iki Arduino&rsquo;ya <a href=#kodlar%C4%B1n-arduinoya-y%C3%BCklenmesi title="📤Kodların Arduino'ya Yüklenmesi">📤Kodların Arduino&rsquo;ya Yüklenmesi</a>nde anlatıldığı gibi yükleyin.</p>
+<p>Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.</p>
+<hr>
+<h2 id=lehim-ile-sabit-devre-kurulumu>📦Lehim ile Sabit Devre Kurulumu <a class=heading-anchor href=#lehim-ile-sabit-devre-kurulumu aria-label=Anchor>#</a></h2>
+<p class="!mb-9 text-xl text-neutral-400 dark:text-neutral-500">
+Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sırada lehim ile pertinaks üzerine sabit devreyi kurma aşamasına geldik.
+</p>
+<blockquote>
+<p>Bu aşama zorunlu değildir. İsterseniz breadboard üzerinde kullanabilirsiniz ancak pertinaks üzerinde kablo karmaşası olmadan daha kullanışlı olduğu için bu aşamayı yaptım.
+Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha da azaldı. Sanırım jumper kablolar daha az, daha kısa olduğu için parazit azaldı.</p>
+</blockquote>
+<p><img src=perti-on.png alt="Devrenin Önden Görünümü (Resim 8)">
+<img src=perti-arka-antensiz.png alt="Devrenin Arkadan Antensiz Görünümü (Resim 9)">
+<img src=perti-arka-antenli.png alt="Devrenin Arkadan Antenli Görünümü (Resim 10)"></p>
+<p class="!mb-9 text-xl text-neutral-400 dark:text-neutral-500">
+Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.
+</p>
+<p><img src=perti-yan.jpeg alt="Devrenin Yandan Görünümü (Resim 11)"></p>
+<p class="!mb-9 text-xl text-neutral-400 dark:text-neutral-500">
+Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasına ve önüne patlatılan poşetlerden kesip sıcak silikonla yapıştırdım. Böylece devrelere temas etmemiş oluyoruz.
+</p>
+<p><img src=son-arka-tek.png alt="Devrenin Arkadan Paketli Görünümü (Resim 12)">
+<img src=son-on.jpeg alt="Telsizlerin Önden Görünümü (Resim 13)">
+<img src=son-arka.jpeg alt="Telsizlerin Arkadan Görünümü Görünümü (Resim 14)"></p>
+<hr>
+<h2 id=yardım-aldığım-kaynaklar>🙏Yardım Aldığım Kaynaklar <a class=heading-anchor href=#yard%c4%b1m-ald%c4%b1%c4%9f%c4%b1m-kaynaklar aria-label=Anchor>#</a></h2>
+<ul>
+<li>nRF24L01 modülü ile ilgili
+<ul>
+<li>Arduino Mega kullanıcaklar için bağlantılar bu linklerde bulunuyor.</li>
+<li><a href=https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/>nRF24L01 çalışmasını çok güzel anlatıyor</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=2tfa9i0bsX8&ab_channel=Merakl%C4%B1Maymun">nRF24L01 Antenli ve Antensiz menzil testi videosu</a></li>
+<li><a href=https://www.instructables.com/id/Wristwatch-Walkie-Talkie/>Walkie-Talkie yapan en detaylı kaynak olabilir ama eksikleri var(İngilizce)</a></li>
+<li><a href=https://ugrdmr.wordpress.com/2018/07/22/arduino-telsiz-walkie-talkie/>nRF24L01 adaptörsüz kullanıp kondansatör lehimlemeyi içeriyor</a></li>
+</ul>
+<hr>
+<h2 id=sonuç-nasıl-oldu>🖋️Sonuç Nasıl Oldu? <a class=heading-anchor href=#sonu%c3%a7-nas%c4%b1l-oldu aria-label=Anchor>#</a></h2>
+<p>Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.</p>
+<ul>
+<li>Pertinaks üzerine lehimlerken Arduino&rsquo;yu direk lehimledim. Bunu yapmak yerine <em><strong>dişi-erkek pin header</strong></em> lehimleyip Arduino&rsquo;yu bu headerlara takmak daha iyi olur. Böylece gerektiğinde Arduino&rsquo;yu kolayca çıkartılıp yenisi takılabilir veya başka şeylerde kullanılabilir.</li>
+<li>İlk uzun lehim deneyimim olduğundan dolayımı bilmiyorum ama <em><strong>daha ince lehim teli</strong></em>, <em><strong>daha ince havya ucu</strong></em> ve <em><strong>lehim pastası</strong></em> kullansam lehim işlemleri daha kolay olabilirdi.</li>
+<li>Kabloları soymak için <em><strong>kablo soyma pensesi</strong></em> kullanmak daha kısa sürmesine ve daha düzenli olmasını sağlar. Pense ve yan keski kullanarak biraz zor oldu.</li>
+<li>Telsiz çalışırken iki taraf da butona basılı tutup konuşmaya çalışınca iki taraf da duymadığı gibi bug&rsquo;a girmesine neden oluyor. Böyle durumlarda Arduino üzerindeki reset butona basıp kodların tekrar çalıştırılmasını sağlayarak bug sorunu o anlık çözebiliyoruz. Bir taraf konuşurken diğer taraf da dinlemesini bilmeli yani 🙃</li>
+</ul>
+<hr>
+<h3 id=bu-repoya-yıldız-youtube-videoma-yorumunu-bırakıp-eksiklerimi-söyleyerek-bana-destek-olabilirsin>Bu Repoya ⭐Yıldız, Youtube Videoma 💬Yorumunu Bırakıp, Eksiklerimi Söyleyerek Bana Destek Olabilirsin <a class=heading-anchor href=#bu-repoya-y%c4%b1ld%c4%b1z-youtube-videoma-yorumunu-b%c4%b1rak%c4%b1p-eksiklerimi-s%c3%b6yleyerek-bana-destek-olabilirsin aria-label=Anchor>#</a></h3>
+<blockquote>
+<p>Telsizin testlerini ve yapım aşamasını aşağıdaki videodan izleyebilirsiniz.<br>
+<a href=https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ>❤️<strong>Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri</strong></a> (Video Henüz Yayınlanmadı)</p>
+</blockquote>
+<blockquote>
+<p><a href=https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie><strong><em>Yıldız Bırakmak için</em> Walkie Talkie GitHub Reposu</strong></a></p>
+</blockquote>
+<p><img src=github-repo-star.gif alt="Github Repo Star"></p>
+</section>
+<footer class=pt-8>
+<div class=flex>
+<img class="w-24 h-24 !mt-0 !mb-0 mr-4 rounded-full" src=/img/author.jpeg>
+<div class=place-self-center>
+<div class="text-[0.6rem] leading-3 text-neutral-400 dark:text-neutral-500 uppercase">
+Yazar
+</div>
+<div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+Zekeriya AY
+</div>
+<div class="text-sm text-neutral-700 dark:text-neutral-400">a computer engineering undergraduate student interested in cybersecurity</div>
+<div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+<a class="email px-1 hover:text-primary-700 dark:hover:text-primary-400" href=mailto:zekeriya@zekeriyaay.com target=_blank alt=Email rel="me noopener noreferrer">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" class="svg-inline--fa fa-at fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154.0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458.0-184-82.542-184-184S154.542 72 256 72c100.139.0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518.0 00-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58.0-137.831 62.234-137.831 151.46.0 65.303 36.785 105.87 96 105.87 26.984.0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249.0-36.07-15.623-36.07-40.771.0-44.993 30.779-72.729 58.63-72.729 22.292.0 35.601 15.241 35.601 40.77.0 45.061-33.875 72.73-58.161 72.73z"/></svg>
+</span>
+</a>
+<a class="github px-1 hover:text-primary-700 dark:hover:text-primary-400" href=https://github.com/ZekeriyaAY target=_blank alt=Github rel="me noopener noreferrer">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentcolor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span>
+</a>
+<a class="linkedin px-1 hover:text-primary-700 dark:hover:text-primary-400" href=https://linkedin.com/in/ZekeriyaAY target=_blank alt=Linkedin rel="me noopener noreferrer">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentcolor" d="M416 32H31.9C14.3 32 0 46.5.0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6.0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3.0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2.0 38.5 17.3 38.5 38.5.0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6.0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2.0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span>
+</a>
+<a class="twitter px-1 hover:text-primary-700 dark:hover:text-primary-400" href=https://twitter.com/l3adscript target=_blank alt=Twitter rel="me noopener noreferrer">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645.0 138.72-105.583 298.558-298.558 298.558-59.452.0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055.0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421.0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391.0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04.0-57.828 46.782-104.934 104.934-104.934 30.213.0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</span>
+</a>
+<a class="youtube px-1 hover:text-primary-700 dark:hover:text-primary-400" href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" target=_blank alt=Youtube rel="me noopener noreferrer">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78.0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+</span>
+</a>
+</div>
+</div>
+</div>
+<section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+<a class="sharing-facebook bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1" href="https://www.facebook.com/sharer/sharer.php?u=https://zekeriyaay.com/blog/walkie-talkie/&quote=Walkie-Talkie%20with%20nRF24L01" title="Share on Facebook">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14.0 55.52 4.84 55.52 4.84v61h-31.28c-30.8.0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</span>
+</a>
+<a class="sharing-twitter bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1" href="https://twitter.com/intent/tweet/?url=https://zekeriyaay.com/blog/walkie-talkie/&text=Walkie-Talkie%20with%20nRF24L01" title="Tweet on Twitter">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645.0 138.72-105.583 298.558-298.558 298.558-59.452.0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055.0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421.0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391.0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04.0-57.828 46.782-104.934 104.934-104.934 30.213.0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</span>
+</a>
+<a class="sharing-pinterest bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zekeriyaay.com/blog/walkie-talkie/&description=Walkie-Talkie%20with%20nRF24L01" title="Pin on Pinterest">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="svg-inline--fa fa-pinterest fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentcolor" d="M496 256c0 137-111 248-248 248-25.6.0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8.0 128.7-68.8 128.7-154.3.0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1.0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6.0-54.7 41.4-107.6 112-107.6 60.9.0 103.6 41.5 103.6 100.9.0 67.1-33.9 113.6-78 113.6-24.3.0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6.0-19-10.2-34.9-31.4-34.9-24.9.0-44.9 25.7-44.9 60.2.0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9.0 361.1.0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+</span>
+</a>
+<a class="sharing-reddit bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1" href="https://reddit.com/submit/?url=https://zekeriyaay.com/blog/walkie-talkie/&resubmit=true&title=Walkie-Talkie%20with%20nRF24L01" title="Submit to Reddit">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="reddit" class="svg-inline--fa fa-reddit fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M201.5 305.5c-13.8.0-24.9-11.1-24.9-24.6.0-13.8 11.1-24.9 24.9-24.9 13.6.0 24.6 11.1 24.6 24.9.0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4.0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8.0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7.0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9.0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5.0 52.6 59.2 95.2 132 95.2 73.1.0 132.3-42.6 132.3-95.2.0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6.0-2.2-2.2-6.1-2.2-8.3.0-2.5 2.5-2.5 6.4.0 8.6 22.8 22.8 87.3 22.8 110.2.0 2.5-2.2 2.5-6.1.0-8.6-2.2-2.2-6.1-2.2-8.3.0zm7.7-75c-13.6.0-24.6 11.1-24.6 24.9.0 13.6 11.1 24.6 24.6 24.6 13.8.0 24.9-11.1 24.9-24.6.0-13.8-11-24.9-24.9-24.9z"/></svg>
+</span>
+</a>
+<a class="sharing-linkedin bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1" href="https://www.linkedin.com/shareArticle?mini=true&url=https://zekeriyaay.com/blog/walkie-talkie/&title=Walkie-Talkie%20with%20nRF24L01" title="Share on LinkedIn">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentcolor" d="M416 32H31.9C14.3 32 0 46.5.0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6.0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3.0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2.0 38.5 17.3 38.5 38.5.0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6.0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2.0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span>
+</a>
+<a class="sharing-email bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1" href="mailto:?body=https://zekeriyaay.com/blog/walkie-talkie/&subject=Walkie-Talkie%20with%20nRF24L01" title="Send via email">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" class="svg-inline--fa fa-at fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154.0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458.0-184-82.542-184-184S154.542 72 256 72c100.139.0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518.0 00-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58.0-137.831 62.234-137.831 151.46.0 65.303 36.785 105.87 96 105.87 26.984.0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249.0-36.07-15.623-36.07-40.771.0-44.993 30.779-72.729 58.63-72.729 22.292.0 35.601 15.241 35.601 40.77.0 45.061-33.875 72.73-58.161 72.73z"/></svg>
+</span>
+</a>
+</section>
+</footer>
+</article>
+</main><footer class=py-10>
+<div class="flex justify-between">
+<div>
+<p class="text-sm text-neutral-400 dark:text-neutral-500">
+<em>The content on this site is licensed under a <strong><a href=https://creativecommons.org/licenses/by-sa/4.0/>CC-BY-SA 4.0 License</a></strong>. The <strong><a href=https://github.com/ZekeriyaAY/zekeriyaay.com>source code for this site</a></strong> is licensed under a <strong><a href=https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE>GPLv3</a></strong></em>.
+</p>
+<p class="text-xs text-neutral-300 dark:text-neutral-600">
+Powered by <a class="hover:underline hover:underline-primary-300 hover:text-primary-400" href=https://gohugo.io/ target=_blank rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:underline-primary-300 hover:text-primary-400" href=https://git.io/hugo-congo target=_blank rel="noopener noreferrer">Congo</a>
+</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
