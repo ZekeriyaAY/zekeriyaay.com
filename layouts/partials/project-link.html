@@ -1,0 +1,22 @@
+<article class="pb-6 mb-3">
+    <a class="flex project" href="{{ with .Params.externalUrl }}{{ . }}{{ end }}" target="_blank">
+        <div class="project-icon text-3xl text-neutral-300 dark:text-neutral-700 mr-3">
+            <span class="relative inline-block align-text-bottom icon">
+                {{ partial "icon.html" .Params.icon }}
+            </span>
+        </div>
+        <div>
+            <h3 class="flex text-xl font-semibold">
+                {{ .Title }}
+
+                <!-- Output under development label -->
+                {{ if and .Params.under_development }}
+                <span class="pl-2">{{ partial "badge.html" (i18n "article.under_development" | emojify) }}</span>
+                {{ else if and .Params.archived }}
+                <span class="pl-2">{{ partial "badge.html" (i18n "article.archived" | emojify) }}</span>
+                {{ end }}
+            </h3>
+            <p class="text-sm text-neutral-400 dark:text-neutral-500">{{ .Description }}</p>
+        </div>
+    </a>
+</article>

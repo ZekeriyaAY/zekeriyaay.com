@@ -1,0 +1,22 @@
+article:
+  edit_title: "İçeriyi Düzenle"
+  reading_time:
+    one: "{{ .Count }} dakika"
+    other: "{{ .Count }} dakika"
+  reading_time_title: "Okuma Süresi"
+  under_development: "Geliştiriliyor"
+  archived: "Arşivlendi"
+
+author:
+  byline_title: "Yazar"
+
+error:
+  404_title: "Galiba Yanlış Yerdesin :confused:"
+  404_error: "404 Not Found"
+  404_description: "Eğer bi sorun olduğunu düşünüyorsan bana ulaşarak bildirir misin? 🤨"
+
+footer:
+  powered_by: "Powered by {{ .Hugo }} &amp; {{ .Congo }}"
+
+shortcode:
+  recent_articles: "Son Eklenenler"
