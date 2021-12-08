@@ -8,7 +8,7 @@ defaultContentLanguage = "tr"
 theme = "congo"
 
 title = "Zekeriya AY"
-# copyright = "Copy, _right?_ :thinking_face:"
+copyright = "*The content on this site is licensed under a **[CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/)**. The **[source code for this site](https://github.com/ZekeriyaAY/zekeriyaay.com)** is licensed under a **[GPLv3](https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE)***."
 
 googleAnalytics = "G-BE5REZ94JB"
 
