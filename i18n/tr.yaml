@@ -1,5 +1,5 @@
 article:
-  edit_title: "İçeriyi Düzenle"
+  edit_title: "İçeriği Düzenle"
   reading_time:
     one: "{{ .Count }} dakika"
     other: "{{ .Count }} dakika"
