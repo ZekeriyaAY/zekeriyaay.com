@@ -16,9 +16,14 @@
   weight = 10
 
 [[main]]
+  name = "Projeler"
+  pageRef = "projects"
+  weight = 20
+
+[[main]]
   name = "Hakkında"
   pageRef = "about"
-  weight = 20
+  weight = 30
 
 # [[main]]
 #   name = "Tags"
