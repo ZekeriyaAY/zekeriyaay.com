@@ -17,7 +17,7 @@
 
 [[main]]
   name = "Hakkında"
-  pageRef = "hakkinda"
+  pageRef = "about"
   weight = 20
 
 # [[main]]
