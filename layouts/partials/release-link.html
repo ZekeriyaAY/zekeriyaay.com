@@ -1,0 +1,16 @@
+<article class="pb-6 mb-3">
+<a class="flex project" href="{{ with .Params.slug }}{{ . }}{{ end }}">
+    <div class="project-icon text-3xl text-neutral-300 dark:text-neutral-700 mr-3">
+        <span class="relative inline-block align-text-bottom icon">
+            {{ partial "icon.html" .Params.icon }}
+        </span>
+    </div>
+    <div>
+        <h3 class="flex text-xl font-semibold">
+            {{ .Title }}
+            <span class="pl-2">{{ partial "badge.html" ( .Date.Format .Site.Params.article.dateFormat | emojify ) }}</span>
+        </h3>
+        <p class="text-sm text-neutral-400 dark:text-neutral-500">{{ .Summary }}</p>
+    </div>
+</a>
+</article>

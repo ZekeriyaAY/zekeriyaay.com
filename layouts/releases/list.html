@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "section-header.html" . }}
+<section class="mt-8">
+    {{ range .Pages.GroupByParam "date" }}
+    <h2 class="hidden">{{ .Key }}</h2>
+    {{ range .Pages }}
+    {{ partial "release-link.html" . }}
+    {{ end }}
+    {{ end }}
+</section>
+{{ end }}
