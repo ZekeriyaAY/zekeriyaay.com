@@ -1,0 +1,105 @@
+.project:hover>.project-icon {
+    color: var(--color-primary-500);
+}
+
+:root {
+    --white: #FFFFFF;
+
+    /* Social Media */
+    --twitter: #1DA1F2;
+    --youtube: #FF0000;
+    --email: #C8202B;
+    --github: #FFFFFF;
+    --linkedin: #0A66C2;
+    --instagram: #E4405F;
+    --medium: #FFFFFF;
+    --facebook: #1877f2;
+    --reddit: #FF4500;
+    --pinterest: #BD081C;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+.email,
+.github,
+.linkedin,
+.youtube,
+.twitter,
+.instagram,
+.medium {
+    color: var(--color-neutral-500) !important;
+}
+
+.email:hover,
+.github:hover,
+.linkedin:hover,
+.youtube:hover,
+.twitter:hover,
+.instagram:hover,
+.medium:hover {
+    background-color: transparent !important;
+}
+
+.email:hover {
+    color: var(--email) !important;
+}
+
+.github:hover {
+    color: var(--github) !important;
+}
+
+.linkedin:hover {
+    color: var(--linkedin) !important;
+}
+
+.youtube:hover {
+    color: var(--youtube) !important;
+}
+
+.twitter:hover {
+    color: var(--twitter) !important;
+}
+
+.instagram:hover {
+    color: var(--instagram) !important;
+}
+
+.medium:hover {
+    color: var(--medium) !important;
+}
+
+.sharing-facebook:hover,
+.sharing-twitter:hover,
+.sharing-reddit:hover,
+.sharing-email:hover,
+.sharing-linkedin:hover,
+.sharing-pinterest:hover {
+    color: var(--white) !important;
+}
+
+.sharing-facebook:hover {
+    background-color: var(--facebook) !important;
+}
+
+.sharing-twitter:hover {
+    background-color: var(--twitter) !important;
+}
+
+.sharing-reddit:hover {
+    background-color: var(--reddit) !important;
+}
+
+.sharing-email:hover {
+    background-color: var(--email) !important;
+}
+
+.sharing-linkedin:hover {
+    background-color: var(--linkedin) !important;
+}
+
+.sharing-pinterest:hover {
+    background-color: var(--pinterest) !important;
+}
