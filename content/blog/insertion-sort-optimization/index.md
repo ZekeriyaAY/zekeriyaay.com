@@ -1,6 +1,7 @@
 ---
 title: "Insertion Sort Optimization"
 date: 2021-12-08T19:24:21+03:00
+draft: true
 icon: "dev"
 description: "Insertion sort complexity O(n^2) to O(nlogn) optimization"
 summary: "Insertion sort algoritmasının karmaşıklığını O(n^2)'den O(nlogn)'e nasıl optimize edilir?"
