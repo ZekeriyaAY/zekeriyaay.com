@@ -55,6 +55,6 @@ disableKinds = ['taxonomy', 'term']
   #   { steam = "https://steamcommunity.com/profiles/userid" },
   #   { tiktok = "https://tiktok.com/@username" },
   #   { twitch = "https://twitch.tv/username" },
-    { twitter = "https://twitter.com/l3adscript" },
+    { twitter = "https://twitter.com/4y23k" },
     { youtube = "https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" },
   ]

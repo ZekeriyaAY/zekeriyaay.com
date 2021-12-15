@@ -21,3 +21,4 @@ Bana aşağıdaki linklerden her zaman ulaşabilirsiniz
 {{< /alert >}}
 
 {{< links >}}
+
