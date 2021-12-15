@@ -21,9 +21,14 @@
   weight = 20
 
 [[main]]
+  name = "Videolar"
+  pageRef = "videos"
+  weight = 30
+
+[[main]]
   name = "Hakkında"
   pageRef = "about"
-  weight = 30
+  weight = 40
 
 # [[main]]
 #   name = "Tags"
@@ -36,6 +41,6 @@
 # the copyright notice. Configure as per the main menu above.
 
 [[footer]]
-  name = "Release Notes"
+  name = "Sürüm Notları"
   pageRef = "releases"
   weight = 10

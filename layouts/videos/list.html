@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ partial "section-header.html" . }}
+<section class="mt-8">
+    {{ range .Pages.GroupByParam "date" }}
+    <h2 class="hidden">{{ .Key }}</h2>
+    {{ range .Pages }}
+    {{ partial "video-link.html" . }}
+    {{ end }}
+    {{ end }}
+    <div class="prose dark:prose-light mt-6">
+        Daha fazlası için
+	<a href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" target="_blank">Youtube&rarr;</a>
+    </div>
+</section>
+{{ end }}
