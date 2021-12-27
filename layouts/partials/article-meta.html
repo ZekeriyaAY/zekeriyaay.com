@@ -16,6 +16,10 @@
     {{ $meta.Add "partials" (slice (partial "meta/date.html" .)) }}
   {{ end }}
 
+  {{ if and (.Params.showWordCount | default (.Site.Params.article.showWordCount | default false)) (ne .WordCount 0) }}
+    {{ $meta.Add "partials" (slice (partial "meta/word-count.html" .)) }}
+  {{ end }}
+
   {{ if and (.Params.showReadingTime | default (.Site.Params.article.showReadingTime | default true)) (ne .ReadingTime 0) }}
     {{ $meta.Add "partials" (slice (partial "meta/reading-time.html" .)) }}
   {{ end }}
@@ -37,25 +41,17 @@
     {{ end }}
   </div>
 
-<!--
-  {{ if and (eq $scope "single") (.Params.showDate | default (.Site.Params.article.showDate | default true)) }}
-    <span class="underline underline-primary-500 underline-offset-small">Yayınlanma Tarihi</span>
-    <span class="pr-3 text-primary-500">:</span>
-    {{ partial "meta/date.html" . }}
-  {{ end }}
-  <br>
--->
-
-  {{ if and (not (eq $scope "single")) (.Params.Lastmod | default (.Site.Params.lastmod | default false)) }}
+  <!-- List Last Mod -->
+  {{ if and (not (eq $scope "single")) (.Params.showLastModDate | default (.Site.Params.article.showLastModDate | default false)) }}
     <span class="hover:underline hover:underline-primary-500 hover:underline-offset-small underline underline-offset-small">Son Güncelleme
-	<span class="pr-3 text-primary-500">:</span></span>
-    {{ partial "meta/lastmod.html" . }}
-  {{ end }}
-  
-  {{ if and (eq $scope "single") (.Params.Lastmod | default (.Site.Params.lastmod | default false)) }}
-    <span class="underline underline-primary-500 underline-offset-small">Son Güncelleme
-	<span class="pr-3 text-primary-500">:</span></span>
+	  <span class="pr-3 text-primary-500">:</span></span>
     {{ partial "meta/lastmod.html" . }}
   {{ end }}
 
+  <!-- Post/Article/Single Pages Last Mod -->
+  {{ if and (eq $scope "single") (.Params.showLastModDate | default (.Site.Params.article.showLastModDate | default false)) }}
+    <span class="underline underline-primary-500 underline-offset-small">Son Güncelleme
+  	<span class="pr-3 text-primary-500">:</span></span>
+    {{ partial "meta/lastmod.html" . }}
+  {{ end }}
 {{ end }}

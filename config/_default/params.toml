@@ -19,7 +19,9 @@ robots = "all"
 
 [article]
   showDate = true
+  showDateUpdated = false
   dateFormat = "2 January 2006"
+  showLastModDate = true
   lastModDateFormat = "2 Jan 2006"
   showAuthor = true
   showBreadcrumbs = true
@@ -30,6 +32,7 @@ robots = "all"
   showHeadingAnchors = true
   showPagination = true
   showReadingTime = true
+  showWordCount = true
   sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
 
 [list]

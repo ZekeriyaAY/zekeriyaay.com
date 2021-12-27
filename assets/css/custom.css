@@ -124,15 +124,6 @@
   text-decoration: underline;
 }
 
-.underline-neutral-300 {
-  -webkit-text-decoration-color: var(--color-neutral-300);
-          text-decoration-color: var(--color-neutral-300);
-}
-.underline-primary-300 {
-  -webkit-text-decoration-color: var(--color-primary-300);
-          text-decoration-color: var(--color-primary-300);
-}
-
 .underline-primary-500 {
   -webkit-text-decoration-color: var(--color-primary-500);
           text-decoration-color: var(--color-primary-500);
@@ -140,8 +131,4 @@
 
 .underline-offset-small {
   text-underline-offset: 2px;
-}
-
-.underline-thickness-bold {
-  text-decoration-thickness: 2px;
 }
