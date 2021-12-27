@@ -41,15 +41,6 @@
     {{ end }}
   </div>
 
-<!--
-  {{ if and (eq $scope "single") (.Params.showDate | default (.Site.Params.article.showDate | default true)) }}
-    <span class="underline underline-primary-500 underline-offset-small">Yayınlanma Tarihi</span>
-    <span class="pr-3 text-primary-500">:</span>
-    {{ partial "meta/date.html" . }}
-  {{ end }}
-  <br>
--->
-
   <!-- List Last Mod -->
   {{ if and (not (eq $scope "single")) (.Params.showLastModDate | default (.Site.Params.article.showLastModDate | default false)) }}
     <span class="hover:underline hover:underline-primary-500 hover:underline-offset-small underline underline-offset-small">Son Güncelleme
