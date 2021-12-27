@@ -19,7 +19,9 @@ robots = "all"
 
 [article]
   showDate = true
+  showDateUpdated = false
   dateFormat = "2 January 2006"
+  showLastModDate = true
   lastModDateFormat = "2 Jan 2006"
   showAuthor = true
   showBreadcrumbs = true

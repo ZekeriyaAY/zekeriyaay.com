@@ -50,15 +50,17 @@
   <br>
 -->
 
-  {{ if and (not (eq $scope "single")) (.Params.Lastmod | default (.Site.Params.lastmod | default false)) }}
+  <!-- List Last Mod -->
+  {{ if and (not (eq $scope "single")) (.Params.showLastModDate | default (.Site.Params.article.showLastModDate | default false)) }}
     <span class="hover:underline hover:underline-primary-500 hover:underline-offset-small underline underline-offset-small">Son Güncelleme
-	<span class="pr-3 text-primary-500">:</span></span>
+	  <span class="pr-3 text-primary-500">:</span></span>
     {{ partial "meta/lastmod.html" . }}
   {{ end }}
-  
-  {{ if and (eq $scope "single") (.Params.Lastmod | default (.Site.Params.lastmod | default false)) }}
+
+  <!-- Post/Article/Single Pages Last Mod -->
+  {{ if and (eq $scope "single") (.Params.showLastModDate | default (.Site.Params.article.showLastModDate | default false)) }}
     <span class="underline underline-primary-500 underline-offset-small">Son Güncelleme
-	<span class="pr-3 text-primary-500">:</span></span>
+  	<span class="pr-3 text-primary-500">:</span></span>
     {{ partial "meta/lastmod.html" . }}
   {{ end }}
 {{ end }}
