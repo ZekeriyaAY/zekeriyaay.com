@@ -4,13 +4,13 @@
 
 baseURL = "https://zekeriyaay.com/"
 languageCode = "en"
-defaultContentLanguage = "tr"
+defaultContentLanguage = "en"
 theme = "congo"
 
 title = "Zekeriya AY"
 copyright = "*The content on this site is licensed under a **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>CC-BY-SA 4.0 License</a>**. The **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://github.com/ZekeriyaAY/zekeriyaay.com' target='_blank'>source code for this site</a>** is licensed under a **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE' target='_blank'>GPLv3</a>***."
 
-googleAnalytics = "G-BE5REZ94JB"
+googleAnalytics = "G-7LLJDJ25PQ"
 
 enableEmoji = true
 enableRobotsTXT = true
