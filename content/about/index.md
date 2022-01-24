@@ -1,24 +1,28 @@
 ---
-title: "Hakkında"
-description: "About me"
-slug: "hakkinda"
+title: "About"
+description: "Who is Zekeriya AY?"
 type: "about"
 layout: "single"
 ---
 
-## *Selam* :wave: ben *Zekeriya*
+## *Hi* :wave: I'm *Zekeriya*
+
+A computer engineering undergraduate student at Bursa Uludag University.
+In the first year of university, I dealt with image processing thanks to [İTÜRO](http://www.ituro.org/tr/kategori/trafik/).       
+I develop [projects]({{< ref "projects" >}}) to gain experience in software, coding. 
 
 {{< figure src="zek.jpg" class="rounded w-56 overflow-hidden float-left mr-3 !mb-0 !mt-1" >}}
 
+In December 2020, I decided to deal with cybersecurity.
+I am trying to have basic knowledge of many subjects, but I work more defensive security because I am interested in.
+By using the *GNU/Linux* operating system in daily life, I am improving my knowledge day by day.
+By following new information and technologies closely, I try not to stay behind the agenda and even to give direction to that agenda. I gain new knowledge and experience about servers. 
 
-Üniversitenin ilk yılında [İTÜRO](http://www.ituro.org/tr/kategori/trafik/) yarışması vesilesiyle görüntü işleme gibi konularla uğraşmış, yazılım konusunda da tecrübe kazanmak için kendi çapında farklı konularda [projelerle]({{< ref "projects" >}}) ilgilenen ve siber güvenliğe ilgimin artmasıyla bu alanda kendimi geliştirmeye çalışan Bursa Uludağ Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. 
-
-Siber güvenlikte defansif security alanı ilgimi daha çok çektiğinden dolayı şuanda bu konular üzerinde çalışıyorum.
-
+In the future, I aim to work in *SOC*, *security analyst* units on *defensive security*.
 
 {{< alert >}}
-Bana aşağıdaki linklerden her zaman ulaşabilirsiniz
+<!-- Bana aşağıdaki linklerden her zaman ulaşabilirsiniz -->
+You can always reach me from the links below...
 {{< /alert >}}
 
 {{< links >}}
-

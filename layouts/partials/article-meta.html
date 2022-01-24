@@ -43,14 +43,14 @@
 
   <!-- List Last Mod -->
   {{ if and (not (eq $scope "single")) (.Params.showLastModDate | default (.Site.Params.article.showLastModDate | default false)) }}
-    <span class="hover:underline hover:underline-primary-500 hover:underline-offset-small underline underline-offset-small">Son Güncelleme
+  <span class="hover:underline hover:underline-primary-500 hover:underline-offset-small underline underline-offset-small">{{ i18n "article.last_mod" | emojify }}
 	  <span class="pr-3 text-primary-500">:</span></span>
     {{ partial "meta/lastmod.html" . }}
   {{ end }}
 
   <!-- Post/Article/Single Pages Last Mod -->
   {{ if and (eq $scope "single") (.Params.showLastModDate | default (.Site.Params.article.showLastModDate | default false)) }}
-    <span class="underline underline-primary-500 underline-offset-small">Son Güncelleme
+  <span class="underline underline-primary-500 underline-offset-small">{{ i18n "article.last_mod" | emojify }}
   	<span class="pr-3 text-primary-500">:</span></span>
     {{ partial "meta/lastmod.html" . }}
   {{ end }}

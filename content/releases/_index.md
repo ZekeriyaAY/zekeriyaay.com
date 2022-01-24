@@ -1,8 +1,8 @@
 ---
-title: "Sürüm Notları"
-description: "Release Notes"
+title: "Release Notes"
+description: "Release notes for this site"
 ---
 
 {{< lead >}}
-Site Güncellemeleri
+Release notes for this site
 {{< /lead >}}
