@@ -1,9 +1,10 @@
 ---
-title: "SANAL MAKİNE YOK EDİCİ | WSL 2"
+title: "VIRTUAL MACHINE KILLER? | WSL 2"
 date: 2021-08-10T02:05:10+03:00
 icon: "linux"
 description: "What is the Windows Subsystem for Linux?"
-summary: "Windows üzerinde Linux işletim sistemi kullanmak için neden WSL 2 kullanmalısınız? WSL 2'yi nasıl kuracaksınız?"
-group: "Rehber"
+summary: "Why should you use WSL2 for Linux on Windows? How will you install WSL2?"
+group: "Tutorial"
 externalurl: "https://youtu.be/rMk3uahvdh0"
+showLastModDate: false
 ---

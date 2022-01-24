@@ -1,9 +1,9 @@
 ---
-title: "Walkie-Talkie with nRF24L01"
+title: "Walkie-Talkie with nRF24L01, Arduino Nano"
 date: 2021-07-14T21:07:01+03:00
 icons: "satellite"
 description: "Walkie-Talkie with nRF24L01, Arduino"
-summary: "Arduino kullanarak nasıl kablosuz konuşabiliriz? 🤔"
+summary: "How can we talk wirelessly using Arduino Nano? 🤔"
 slug: "walkie-talkie"
 ---
 
