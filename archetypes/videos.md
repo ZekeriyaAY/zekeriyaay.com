@@ -1,10 +1,9 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-icon: "dev"
+icon: "link"
 description: ""
 summary: ""
-group: "Code"
+group: "Group"
 externalurl: ""
-showLastModDate: false
 ---
