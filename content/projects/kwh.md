@@ -6,5 +6,5 @@ description: "Brute-force wifi cracking tool without wordlist"
 summary: "Brute-force wifi cracking tool without wordlist"
 group: "Hacking"
 externalUrl: "https://github.com/ZekeriyaAY/kwh"
-under_development: true
+badge: "Under Development"
 ---

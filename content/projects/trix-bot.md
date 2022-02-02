@@ -6,5 +6,5 @@ description: "Discord bot"
 summary: "Discord bot"
 group: "Bot"
 externalUrl: "https://github.com/ZekeriyaAY/TrixBot"
-archived: true
+badge: "Archived"
 ---
