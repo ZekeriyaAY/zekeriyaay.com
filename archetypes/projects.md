@@ -1,11 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-icon: "dev"
+icon: "link"
 description: ""
 summary: ""
-group: "Code"
-externalurl: ""
-under_development: true
-archived: false
+group: "Group"
+externalUrl: ""
+badge: "Under Development or Archived"
 ---
