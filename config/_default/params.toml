@@ -19,10 +19,10 @@ robots = "all"
 
 [article]
   showDate = true
-  showDateUpdated = false
+  showDateUpdated = false   # Last Update ?
   dateFormat = "2 January 2006"
-  showLastModDate = true
-  lastModDateFormat = "2 Jan 2006"
+  showLastModDate = true    # Last Update ?
+  lastModDateFormat = "2 Jan 2006"    # Last Update ?
   showAuthor = true
   showBreadcrumbs = true
   showDraftLabel = true
