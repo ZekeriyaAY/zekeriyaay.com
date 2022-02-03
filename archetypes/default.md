@@ -1,9 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-icon: "dev"
+icon: "link"
 description: ""
 summary: ""
 slug: "{{ .File.BaseFileName }}"
 ---
-
