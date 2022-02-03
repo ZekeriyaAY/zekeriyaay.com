@@ -1,24 +1,24 @@
-<article class="pb-6 mb-3">
-    <a class="flex project" href="{{ with .Params.externalUrl }}{{ . }}{{ end }}" target="_blank">
+<article class="item-center mb-4">
+    <a class="flex project" href="{{ with .Params.externalUrl }}{{ . }}{{ end }}" target="_blank" rel="external">
         <div class="project-icon text-3xl text-neutral-300 dark:text-neutral-700 mr-3">
             <span class="relative inline-block align-text-bottom icon">
                 {{ partial "icon.html" .Params.icon }}
             </span>
         </div>
         <div>
-            <h3 class="flex text-xl font-semibold">
-                {{ .Title }}
+            <h3 class="text-neutral-800 dark:text-neutral flex text-xl font-semibold">
+                {{ $.Title | emojify }}
             </h3>
 
-	    <div class="text-sm text-neutral-400 dark:text-neutral-500">
-	        {{ partial "article-meta.html" . }}
-	    </div>
+            <div class="text-sm text-neutral-400 dark:text-neutral-500">
+                {{ partial "article-meta.html" . }}
+            </div>
 
-	    {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
-	    <div class="py-1 prose dark:prose-light">
-	        {{ .Summary | emojify }}
-	    </div>
-	    {{ end }}
+            {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+            <div class="text-sm py-1 prose dark:prose-light">
+                {{ .Summary | emojify }}
+            </div>
+            {{ end }}
         </div>
     </a>
 </article>

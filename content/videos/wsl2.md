@@ -6,5 +6,4 @@ description: "What is the Windows Subsystem for Linux?"
 summary: "Why should you use WSL2 for Linux on Windows? How will you install WSL2?"
 group: "Tutorial"
 externalurl: "https://youtu.be/rMk3uahvdh0"
-showLastModDate: false
 ---

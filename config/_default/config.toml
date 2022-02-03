@@ -12,19 +12,12 @@ copyright = "*The content on this site is licensed under a **<a class='hover:und
 
 googleAnalytics = "G-7LLJDJ25PQ"
 
-enableEmoji = true
 enableRobotsTXT = true
 enableGitInfo = true
 
 summaryLength = 0
 
 disableKinds = ['taxonomy', 'term']
-
-[permalinks]
-  # blog = "/:section/:slug/"
-  # notes = "/:section/:slug/"
-  # projects = "/:slug/"
-  # about = "hakkinda"
 
 [author]
   name = "Zekeriya AY"
@@ -33,40 +26,11 @@ disableKinds = ['taxonomy', 'term']
   links = [
     { email = "mailto:zekeriya@zekeriyaay.com" },    
   #   { link = "https://link-to-some-website.com/" },
-  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
-  #   { apple = "https://www.apple.com" },
-  #   { blogger = "https://username.blogspot.com/" },
-  #   { codepen = "https://codepen.io/username" },
-  #   { dev = "https://dev.to/username" },
   #   { discord = "https://discord.gg/invitecode" },
-  #   { dribbble = "https://dribbble.com/username" },
-  #   { facebook = "https://facebook.com/username" },
-  #   { flickr = "https://www.flickr.com/photos/username/" },
-  #   { foursquare = "https://foursquare.com/username" },
     { github = "https://github.com/ZekeriyaAY" },
-  #   { gitlab = "https://gitlab.com/username" },
-  #   { google = "https://www.google.com/" },
   #   { instagram = "https://instagram.com/username" },
-  #   { keybase = "https://keybase.io/username" },
-  #   { kickstarter = "https://www.kickstarter.com/profile/username" },
-  #   { lastfm = "https://lastfm.com/user/username" },
     { linkedin = "https://linkedin.com/in/ZekeriyaAY" },
-  #   { mastodon = "https://mastodon.instance/@username" },
   #   { medium = "https://medium.com/username" },
-  #   { microsoft = "https://www.microsoft.com/" },
-  #   { patreon = "https://www.patreon.com/username" },
-  #   { pinterest = "https://pinterest.com/username" },
-  #   { reddit = "https://reddit.com/user/username" },
-  #   { slack = "https://workspace.url/team/userid" },
-  #   { snapchat = "https://snapchat.com/add/username" },
-  #   { soundcloud = "https://soundcloud.com/username" },
-  #   { stackoverflow = "https://stackoverflow.com/users/6digit/username" },
-  #   { steam = "https://steamcommunity.com/profiles/userid" },
-  #   { telegram = "https://t.me/username" },
-  #   { tiktok = "https://tiktok.com/@username" },
-  #   { tumblr = "https://username.tumblr.com" },
-  #   { twitch = "https://twitch.tv/username" },
     { twitter = "https://twitter.com/zekeriyaaycom" },
-  #   { whatsapp = "https://wa.me/phone-number" },
     { youtube = "https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" },
   ]

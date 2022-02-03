@@ -15,7 +15,7 @@ I develop [projects]({{< ref "projects" >}}) to gain experience in software, cod
 
 In December 2020, I decided to deal with cybersecurity.
 I am trying to have basic knowledge of many subjects, but I work more defensive security because I am interested in.
-By using the *GNU/Linux* operating system in daily life, I am improving my knowledge day by day.
+By using the *[GNU/Linux](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy)* operating system in daily life, I am improving my knowledge day by day.
 By following new information and technologies closely, I try not to stay behind the agenda and even to give direction to that agenda. I gain new knowledge and experience about servers. 
 
 In the future, I aim to work in *SOC*, *security analyst* units on *defensive security*.

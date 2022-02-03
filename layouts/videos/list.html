@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "section-header.html" . }}
 <section class="mt-8">
-    {{ range .Pages.GroupByParam "date" }}
+    {{ range (.Paginate (.Pages.GroupByParam "date")).PageGroups }}
     <h2 class="hidden">{{ .Key }}</h2>
     {{ range .Pages }}
     {{ partial "video-link.html" . }}
@@ -9,7 +9,7 @@
     {{ end }}
     <div class="prose dark:prose-light mt-6">
         See other videos I have uploaded to 
-	<a href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" target="_blank">Youtube&rarr;</a>
+	    <a href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" target="_blank" rel="external">Youtube&rarr;</a>
     </div>
 </section>
 {{ end }}

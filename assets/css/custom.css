@@ -118,7 +118,11 @@
   
 .\!mt-1 {
     margin-top: 0.25rem !important;
-  }
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
 
 .underline {
   text-decoration: underline;
