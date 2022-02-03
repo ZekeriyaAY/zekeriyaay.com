@@ -9,8 +9,8 @@
 <meta name=robots content="all">
 <link rel=canonical href=https://zekeriyaay.com/blog/walkie-talkie/>
 <link type=text/css rel=stylesheet href=/css/schemes/custom.min.74fb1ef2d8e93b8c335e7ae55203cae0c32df22aa74c58df54902a69ab68b99e50d47d6ae16229118d4f4156e0c351cd00c307c12e8d32c136f228dadc6e294b.css integrity="sha512-dPse8tjpO4wzXnrlUgPK4MMt8iqnTFjfVJAqaatouZ5Q1H1q4WIpEY1PQVbgw1HNAMMHwS6NMsE28ija3G4pSw==">
-<link type=text/css rel=stylesheet href=/css/compiled/main.min.01d58e0d9475b75b8cd6cd9a8c051cbe2d0d8f63bffccf6fde0698ccb9ac5ff029ad5982b7c4f1dd96e5185153195d722ef2afb7854972d8e20419535d6fd9d3.css integrity="sha512-AdWODZR1t1uM1s2ajAUcvi0Nj2O//M9v3gaYzLmsX/AprVmCt8Tx3ZblGFFTGV1yLvKvt4VJctjiBBlTXW/Z0w==">
-<link type=text/css rel=stylesheet href=/css/custom.min.c923d90190552982fb1ace6b13474d727bf77cdb512e05643559c40e67cb51798a7f7b8aec2741bc2ef52fddc3680ee3c8bf0fbdf7ed376f878b4efe1aa53681.css integrity="sha512-ySPZAZBVKYL7Gs5rE0dNcnv3fNtRLgVkNVnEDmfLUXmKf3uK7CdBvC71L93DaA7jyL8PvfftN2+Hi07+GqU2gQ==">
+<link type=text/css rel=stylesheet href=/css/compiled/main.min.51037225bb3c65887773b052da1e38f105db8f3d9aa6a34ba3c5c40c88fb309724f8cc5ed2871adc7e55dacab9b36c60ce7aa7a61dff2cc638f8b435c898d5a8.css integrity="sha512-UQNyJbs8ZYh3c7BS2h448QXbjz2apqNLo8XEDIj7MJck+Mxe0oca3H5V2sq5s2xgznqnph3/LMY4+LQ1yJjVqA==">
+<link type=text/css rel=stylesheet href=/css/custom.min.31a76aeaf13322e34473b9a0006ace24cde270f47e74ae74dc9a8c77a6cdec975ac60262ac0b0103c84ae78acf9355ce8a666363c321c1829fa3a34fb26c1ee7.css integrity="sha512-Madq6vEzIuNEc7mgAGrOJM3icPR+dK503JqMd6bN7JdaxgJirAsBA8hK54rPk1XOimZjY8MhwYKfo6NPsmwe5w==">
 <script>localStorage.removeItem("preferredAppearance")</script>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
@@ -26,7 +26,7 @@
 <meta name=twitter:title content="Walkie-Talkie with nRF24L01, Arduino Nano">
 <meta name=twitter:description content="Walkie-Talkie with nRF24L01, Arduino">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Blog","name":"Walkie-Talkie with nRF24L01, Arduino Nano","headline":"Walkie-Talkie with nRF24L01, Arduino Nano","description":"Walkie-Talkie with nRF24L01, Arduino","inLanguage":"en","author":{"@type":"Person","name":"Zekeriya AY"},"creator":{"@type":"Person","name":"Zekeriya AY"},"copyrightHolder":"Zekeriya AY","copyrightYear":"2021","dateCreated":"2021-07-14T21:07:01\u002b03:00","datePublished":"2021-07-14T21:07:01\u002b03:00","dateModified":"2022-01-24T16:18:43\u002b03:00","url":"https:\/\/zekeriyaay.com\/blog\/walkie-talkie\/","wordCount":"1150"}</script>
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <meta name=author content="Zekeriya AY">
 <link href=mailto:zekeriya@zekeriyaay.com rel=me>
 <link href=https://github.com/ZekeriyaAY rel=me>
@@ -75,9 +75,8 @@
 Walkie-Talkie with nRF24L01, Arduino Nano
 </h1>
 <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
-<div class="flex flex-row items-center">
-<time datetime="2021-07-14 21:07:01 +0300 +0300">14 July 2021</time>
-<span class="px-2 text-primary-500">&#183;</span><span>1150 words</span><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">6 mins</span><span class="px-2 text-primary-500">&#183;</span>
+<div class="flex flex-row flex-wrap items-center">
+<time datetime="2021-07-14 21:07:01 +0300 +0300">14 July 2021</time><span class="px-2 text-primary-500">&#183;</span><span>1150 words</span><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">6 mins</span><span class="px-2 text-primary-500">&#183;</span>
 <span class=mb-[2px]>
 <a href=https://github.com/ZekeriyaAY/zekeriyaay.com/tree/main/content/blog/walkie-talkie/index.md class="text-lg hover:text-primary-500" rel="noopener noreferrer" target=_blank title="Edit content">
 <span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5.0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1.0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7.0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174 402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7-43.2-43.2c-4.1-4.1-10.8-4.1-14.8.0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg>
@@ -85,9 +84,6 @@ Walkie-Talkie with nRF24L01, Arduino Nano
 </a>
 </span>
 </div>
-<span class="underline underline-primary-500 underline-offset-small">Last Update
-<span class="pr-3 text-primary-500">:</span></span>
-<time datetime="2022-01-24 16:18:43 +0300 +0300">24 Jan 2022</time>
 </div>
 </header>
 <section class="prose dark:prose-light">
