@@ -5,4 +5,5 @@ icon: "link"
 description: ""
 summary: ""
 slug: "{{ .File.BaseFileName }}"
+tags: []
 ---

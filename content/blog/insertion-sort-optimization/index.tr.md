@@ -1,11 +1,13 @@
 ---
-title: "Insertion Sort Optimization"
+title: "Insertion Sort Optimizasyonu"
 date: 2021-12-08T19:24:21+03:00
-draft: true
-icon: "dev"
-description: "Insertion sort complexity O(n^2) to O(nlogn) optimization"
+icon: "link"
+description: "Insertion sort karmaşıklığını O(n^2)'den O(nlogn)'e optimizasyonu"
 summary: "Insertion sort algoritmasının karmaşıklığını O(n^2)'den O(nlogn)'e nasıl optimize edilir?"
-slug: "insertion-sort-optimization"
+slug: "insertion-sort-optimizasyonu"
+tags: ["Sıralama Algoritması", "Big-O"]
+
+draft: true
 ---
 
 Insertion sort algoritmasının çalışmasını okey taşlarını sıralamaya benzetebiliriz.
@@ -18,8 +20,8 @@ Karışık dizilen taşları en baştan başlayarak her taşı önceki taşlara 
 
 Mantığına girmeden, karşılaştırma yapmak için klasik insertion sort algoritmasına ve karmaşıklıklarına değinerek başlayalım.
 
-{{< figure src="classic-insertion-c.svg" >}}
-{{< figure src="classic-insertion-out-c.svg" >}}
+<!-- < figure src="classic-insertion-c.svg" >}}
+< figure src="classic-insertion-out-c.svg" >}} -->
 
 
 | **Zaman Karmaşası** |                           |

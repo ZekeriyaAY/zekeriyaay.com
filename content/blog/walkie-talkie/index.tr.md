@@ -1,21 +1,23 @@
 ---
-title: "Walkie-Talkie with nRF24L01, Arduino Nano"
+title: "Arduino Nano ve nRF24L01 ile Walkie-Talkie Yapımı"
 date: 2021-07-14T21:07:01+03:00
-icons: "satellite"
-description: "Walkie-Talkie with nRF24L01, Arduino"
-summary: "How can we talk wirelessly using Arduino Nano? 🤔"
+icon: "link"
+description: "Arduino, nRF24L01 ile Walkie-Talkie"
+summary: "Arduino Nano ile nasıl kablosuz konuşabiliriz? 🤔"
 slug: "walkie-talkie"
+tags: ["Arduino"]
 ---
 
-{{< lead >}}
 Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı içerir.
-{{< /lead >}}
 
 > Projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.\
 > [❤️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
 
-
-{{< screenshot src="perti-on.png" alt="Telsizin Ön Yüzü">}}
+{{< figure
+    src="perti-on.png"
+    alt="Telsizin Ön Yüzü"
+    caption="*Resim 0 &middot; Telsizin Ön Yüzü*"
+    >}}
 
 
 ## 🛠️Kullanılan Malzemeler
@@ -128,21 +130,32 @@ Bu aşamaya şuan ihtiyaç yok ancak devre bağlantılarını yaptıktan sonra k
 ---
 
 ## 🗺️Devre Kurulumu ve Test Edilmesi
-{{< lead >}}
 Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
-{{< /lead >}}
 
 ### 📡nRF24L01 Bağlantısı ve Testi
 nRF24L01 modülü ve kullanacağımız adaptörün pin dizilimini aşağıdaki resimlerden ulaşabilirsiniz.
-![nRF24L01 Modül Adaptörü (Resim 1)](nRF24L01-adaptor.png)
-![nRF24L01 Modülün Pin Çıkışları (Resim 2)](nRF24L01-adaptor-pinout.png)
+
+{{< figure
+    src="nRF24L01-adaptor.png"
+    alt="nRF24L01 Modül Adaptörü"
+    caption="*Resim 1 &middot; nRF24L01 Modül Adaptörü*"
+    >}}
+{{< figure
+    src="nRF24L01-adaptor-pinout.png"
+    alt="nRF24L01 Modülün Pin Çıkışları"
+    caption="*Resim 2 &middot; nRF24L01 Modülün Pin Çıkışları*"
+    >}}
+
  
 Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik `VCC`'yi `3.3V` yerine `5V`'a bağlamanız.
 
 * Boş olan pin, kullanılmayan `IRQ` pini.
 
-
-![Modülün Adaptörsüz Bağlantısı (Resim 3)](nRF24L01-sema.png)
+{{< figure
+    src="nRF24L01-sema.png"
+    alt="Modülün Adaptörsüz Bağlantısı"
+    caption="*Resim 3 &middot; Modülün Adaptörsüz Bağlantısı*"
+    >}}
 
 
 > Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🙏**Yardım Aldığım Kaynaklar**](#yardım-aldığım-kaynaklar)'da o bağlantıları bulabilirsiniz.
@@ -166,7 +179,12 @@ Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kull
 
 ### 🔊Hoparlör Bağlantısı ve Testi
 
-![Hoparlör Bağlantı Şeması (Resim 4)](speaker-sema.png)
+{{< figure
+    src="speaker-sema.png"
+    alt="Hoparlör Bağlantı Şeması"
+    caption="*Resim 4 &middot; Hoparlör Bağlantı Şeması*"
+    >}}
+
 
 Hoparlör üzerinde kırmızı kablo(+) ``D10`` pinine, siyah kablo(-) ``GND`` pinine bağladım.
 
@@ -176,7 +194,12 @@ Hoparlör üzerinde kırmızı kablo(+) ``D10`` pinine, siyah kablo(-) ``GND`` p
 
 ### 🔘Buton Bağlantısı ve Testi
 
-![Buton Bağlantı Şeması (Resim 5)](button-sema.png)
+{{< figure
+    src="button-sema.png"
+    alt="Buton Bağlantı Şeması"
+    caption="*Resim 5 &middot; Buton Bağlantı Şeması*"
+    >}}
+
 
 `Arduino-Walkie-Talkie-main.zip` dosyasındaki `button.ino` kodunu Arduino'ya yükleyin.
 
@@ -186,7 +209,12 @@ Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda saya
 
 ### 🎤Mikrofon Bağlantısı ve Testi
 
-![Mikrofon Bağlantı Şeması (Resim 6)](mic-sema.png)
+{{< figure
+    src="mic-sema.png"
+    alt="Mikrofon Bağlantı Şeması"
+    caption="*Resim 6 &middot; Mikrofon Bağlantı Şeması*"
+    >}}
+
 
 > 5V'a da bağlayabilirsiniz. Ancak 3.3V da daha temiz ses elde ettiğim için 3.3V kullandım.
 
@@ -198,7 +226,12 @@ Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğu
 
 ### 🗺️Tüm Bağlantı Şeması
 
-![Tüm Bağlantı Şeması (Resim 7)](tum-sema.png)
+{{< figure
+    src="tum-sema.png"
+    alt="Tüm Bağlantı Şeması"
+    caption="*Resim 7 &middot; Tüm Bağlantı Şeması*"
+    >}}
+
 
 Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.
 > Eğer adaptör kullanıcaksanız adaptörün `VCC`'yi `3.3V` yerine `5V`'a bağlayın.
@@ -215,31 +248,57 @@ Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.
 
 ## 📦Lehim ile Sabit Devre Kurulumu
 
-{{< lead >}}
 Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sırada lehim ile pertinaks üzerine sabit devreyi kurma aşamasına geldik.
-{{< /lead >}}
 
 > Bu aşama zorunlu değildir. İsterseniz breadboard üzerinde kullanabilirsiniz ancak pertinaks üzerinde kablo karmaşası olmadan daha kullanışlı olduğu için bu aşamayı yaptım.
 > Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha da azaldı. Sanırım jumper kablolar daha az, daha kısa olduğu için parazit azaldı.
 
+{{< figure
+    src="perti-on.png"
+    alt="Devrenin Önden Görünümü"
+    caption="*Resim 8 &middot; Devrenin Önden Görünümü*"
+    >}}
 
-![Devrenin Önden Görünümü (Resim 8)](perti-on.png)
-![Devrenin Arkadan Antensiz Görünümü (Resim 9)](perti-arka-antensiz.png)
-![Devrenin Arkadan Antenli Görünümü (Resim 10)](perti-arka-antenli.png)
+{{< figure
+    src="perti-arka-antensiz.png"
+    alt="Devrenin Arkadan Antensiz Görünümü"
+    caption="*Resim 9 &middot; Devrenin Arkadan Antensiz Görünümü*"
+    >}}
 
-{{< lead >}}
+{{< figure
+    src="perti-arka-antenli.png"
+    alt="Devrenin Arkadan Antenli Görünümü"
+    caption="*Resim 10 &middot; Devrenin Arkadan Antenli Görünümü*"
+    >}}
+
+
 Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.
-{{< /lead >}}
 
-![Devrenin Yandan Görünümü (Resim 11)](perti-yan.jpeg)
+{{< figure
+    src="perti-yan.jpeg"
+    alt="Devrenin Yandan Görünümü"
+    caption="*Resim 11 &middot; Devrenin Yandan Görünümü*"
+    >}}
 
-{{< lead >}}
 Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasına ve önüne patlatılan poşetlerden kesip sıcak silikonla yapıştırdım. Böylece devrelere temas etmemiş oluyoruz. 
-{{< /lead >}}
 
-![Devrenin Arkadan Paketli Görünümü (Resim 12)](son-arka-tek.png)
-![Telsizlerin Önden Görünümü (Resim 13)](son-on.jpeg)
-![Telsizlerin Arkadan Görünümü Görünümü (Resim 14)](son-arka.jpeg)
+{{< figure
+    src="son-arka-tek.png"
+    alt="Devrenin Arkadan Paketli Görünümü"
+    caption="*Resim 12 &middot; Devrenin Arkadan Paketli Görünümü*"
+    >}}
+
+{{< figure
+    src="son-on.jpeg"
+    alt="Telsizlerin Önden Görünümü"
+    caption="*Resim 13 &middot; Telsizlerin Önden Görünümü*"
+    >}}
+
+{{< figure
+    src="son-arka.jpeg"
+    alt="Telsizlerin Arkadan Görünümü Görünümü"
+    caption="*Resim 14 &middot; Telsizlerin Arkadan Görünümü Görünümü*"
+    >}}
 
 ---
 
@@ -263,13 +322,15 @@ Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 - Kabloları soymak için ***kablo soyma pensesi***  kullanmak daha kısa sürmesine ve daha düzenli olmasını sağlar. Pense ve yan keski kullanarak biraz zor oldu.
 - Telsiz çalışırken iki taraf da butona basılı tutup konuşmaya çalışınca iki taraf da duymadığı gibi bug'a girmesine neden oluyor. Böyle durumlarda Arduino üzerindeki reset butona basıp kodların tekrar çalıştırılmasını sağlayarak bug sorunu o anlık çözebiliyoruz. Bir taraf konuşurken diğer taraf da dinlemesini bilmeli yani 🙃
 
-
 ---
-### Bu Repoya ⭐Yıldız, Youtube Videoma 💬Yorumunu Bırakıp, Eksiklerimi Söyleyerek Bana Destek Olabilirsin
+
+{{< lead >}}
+Bu repoya ⭐, Youtube videoma 💬 bırakıp, eksiklerimi söyleyerek bana destek olabilirsin...
+{{< /lead >}}
+
 > Telsizin testlerini ve yapım aşamasını aşağıdaki videodan izleyebilirsiniz.\
 [❤️**Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri**](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
 
-> [***Yıldız Bırakmak için* Walkie Talkie GitHub Reposu**](https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie)
+> [*Yıldız Bırakmak için* Walkie Talkie GitHub Reposu](https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie)
 
-
-![Github Repo Star](github-repo-star.gif)
+<img src="github-repo-star.gif"/>
