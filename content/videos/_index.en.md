@@ -11,6 +11,5 @@ cascade:
 ---
 
 {{< lead >}}
-<!-- Yayınladığım bazı Youtube videolarım -->
 Youtube videos I uploaded 
 {{< /lead >}}
