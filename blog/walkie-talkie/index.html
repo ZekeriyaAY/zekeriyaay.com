@@ -1,31 +1,30 @@
-<!doctype html><html lang=en class=dark><head>
+<!doctype html><html lang=en dir=ltr class=scroll-smooth data-default-appearance=dark data-auto-appearance=true><head>
 <meta charset=utf-8>
 <meta http-equiv=content-language content="en">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <title>Walkie-Talkie with nRF24L01, Arduino Nano &#183; Zekeriya AY</title>
 <meta name=title content="Walkie-Talkie with nRF24L01, Arduino Nano &#183; Zekeriya AY">
-<meta name=description content="Walkie-Talkie with nRF24L01, Arduino">
+<meta name=description content="Website of a computer engineering undergraduate student interested in cybersecurity, blue team.">
 <meta name=robots content="all">
 <link rel=canonical href=https://zekeriyaay.com/blog/walkie-talkie/>
-<link type=text/css rel=stylesheet href=/css/schemes/custom.min.74fb1ef2d8e93b8c335e7ae55203cae0c32df22aa74c58df54902a69ab68b99e50d47d6ae16229118d4f4156e0c351cd00c307c12e8d32c136f228dadc6e294b.css integrity="sha512-dPse8tjpO4wzXnrlUgPK4MMt8iqnTFjfVJAqaatouZ5Q1H1q4WIpEY1PQVbgw1HNAMMHwS6NMsE28ija3G4pSw==">
-<link type=text/css rel=stylesheet href=/css/compiled/main.min.51037225bb3c65887773b052da1e38f105db8f3d9aa6a34ba3c5c40c88fb309724f8cc5ed2871adc7e55dacab9b36c60ce7aa7a61dff2cc638f8b435c898d5a8.css integrity="sha512-UQNyJbs8ZYh3c7BS2h448QXbjz2apqNLo8XEDIj7MJck+Mxe0oca3H5V2sq5s2xgznqnph3/LMY4+LQ1yJjVqA==">
-<link type=text/css rel=stylesheet href=/css/custom.min.31a76aeaf13322e34473b9a0006ace24cde270f47e74ae74dc9a8c77a6cdec975ac60262ac0b0103c84ae78acf9355ce8a666363c321c1829fa3a34fb26c1ee7.css integrity="sha512-Madq6vEzIuNEc7mgAGrOJM3icPR+dK503JqMd6bN7JdaxgJirAsBA8hK54rPk1XOimZjY8MhwYKfo6NPsmwe5w==">
-<script>localStorage.removeItem("preferredAppearance")</script>
+<link type=text/css rel=stylesheet href=/css/main.bundle.min.94bd2d7d643893687ab446572682bdc898cbf3c2d4e10dc5002d984eef0c105e93ec8aeb9543d6816d9807dd76868dc4a8a4f4715e0cb463f39a820219914d0a.css integrity="sha512-lL0tfWQ4k2h6tEZXJoK9yJjL88LU4Q3FAC2YTu8MEF6T7IrrlUPWgW2YB912ho3EqKT0cV4MtGPzmoICGZFNCg==">
+<script defer type=text/javascript id=script-bundle src=/js/main.bundle.min.ac8bae0637d2c85a05cf0fb654b22607333000c82c6c5222850c59bef9243e6ea1233806da173e50066dc88f4da82b08a9a64e27104c31d56d4d02a05a7efbae.js integrity="sha512-rIuuBjfSyFoFzw+2VLImBzMwAMgsbFIihQxZvvkkPm6hIzgG2hc+UAZtyI9NqCsIqaZOJxBMMdVtTQKgWn77rg==" data-copy=Copy data-copied=Copied></script>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
 <link rel=manifest href=/site.webmanifest>
+<meta name=google-site-verification content="h7gOILJJqj64agda5ngOubw8aBuvlSTETcEhziwZmIk">
 <meta property="og:title" content="Walkie-Talkie with nRF24L01, Arduino Nano">
 <meta property="og:description" content="Walkie-Talkie with nRF24L01, Arduino">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zekeriyaay.com/blog/walkie-talkie/"><meta property="article:section" content="blog">
 <meta property="article:published_time" content="2021-07-14T21:07:01+03:00">
-<meta property="article:modified_time" content="2022-01-24T16:18:43+03:00">
+<meta property="article:modified_time" content="2021-07-14T21:07:01+03:00"><meta property="og:site_name" content="Zekeriya AY">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Walkie-Talkie with nRF24L01, Arduino Nano">
 <meta name=twitter:description content="Walkie-Talkie with nRF24L01, Arduino">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"Blog","name":"Walkie-Talkie with nRF24L01, Arduino Nano","headline":"Walkie-Talkie with nRF24L01, Arduino Nano","description":"Walkie-Talkie with nRF24L01, Arduino","inLanguage":"en","author":{"@type":"Person","name":"Zekeriya AY"},"creator":{"@type":"Person","name":"Zekeriya AY"},"copyrightHolder":"Zekeriya AY","copyrightYear":"2021","dateCreated":"2021-07-14T21:07:01\u002b03:00","datePublished":"2021-07-14T21:07:01\u002b03:00","dateModified":"2022-01-24T16:18:43\u002b03:00","url":"https:\/\/zekeriyaay.com\/blog\/walkie-talkie\/","wordCount":"1150"}</script>
+<script type=application/ld+json>[{"@context":"https://schema.org","@type":"Article","articleSection":"Blog","name":"Walkie-Talkie with nRF24L01, Arduino Nano","headline":"Walkie-Talkie with nRF24L01, Arduino Nano","description":"Walkie-Talkie with nRF24L01, Arduino","abstract":"How can we talk wirelessly using Arduino Nano? 🤔","inLanguage":"en","url":"https:\/\/zekeriyaay.com\/blog\/walkie-talkie\/","author":{"@type":"Person","name":"Zekeriya AY"},"copyrightYear":"2021","dateCreated":"2021-07-14T21:07:01\u002b03:00","datePublished":"2021-07-14T21:07:01\u002b03:00","dateModified":"2021-07-14T21:07:01\u002b03:00","keywords":["Arduino"],"mainEntityOfPage":"true","wordCount":"1277"}]</script>
 <meta name=generator content="Hugo 0.92.1">
 <meta name=author content="Zekeriya AY">
 <link href=mailto:zekeriya@zekeriyaay.com rel=me>
@@ -36,39 +35,52 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LLJDJ25PQ"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-7LLJDJ25PQ',{anonymize_ip:!1})}</script>
 </head>
-<body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"><header class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral">
+<body class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl">
+<div id=the-top class="absolute flex self-center">
+<a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 dark:bg-neutral-600 focus:translate-y-0" href=#main-content><span class="font-bold ltr:pr-2 rtl:pl-2 text-primary-600 dark:text-primary-400">&darr;</span>Skip to main content</a>
+</div><header class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral">
 <div>
-<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" rel=me href=/>Zekeriya AY</a>
+<a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" rel=me href=/>Zekeriya AY</a>
+<nav class=inline>
+<a href=/blog/walkie-talkie/>🇪🇺</a>
+<a href=/tr/blog/walkie-talkie/>🇹🇷</a>
+</nav>
 </div>
 <nav>
 <ul class="flex flex-col list-none sm:flex-row">
-<li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/blog/ title=Blog>Blog</a>
+<li class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+<a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=/blog/ title=Blog>Blog</a>
 </li>
-<li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/projects/ title=Projects>Projects</a>
+<li class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+<a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=/projects/ title=Projects>Projects</a>
 </li>
-<li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/videos/ title=Videos>Videos</a>
+<li class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+<a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=/videos/ title=Videos>Videos</a>
 </li>
-<li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/about/ title=About>About</a>
+<li class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+<a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=/about/ title="Hi :wave: I'm Zekeriya">About</a>
+</li>
+<li class="ltr:text-right rtl:text-left ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+<button id=search-button class="text-base hover:text-primary-600 dark:hover:text-primary-400" title="Search (/)">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+</button>
 </li>
 </ul>
 </nav>
 </header>
-<main class=flex-grow>
-<article class=max-w-prose>
-<header>
+<main id=main-content class=relative>
+<article>
+<header class=max-w-prose>
 <ol class="text-sm text-neutral-500 dark:text-neutral-400">
 <li class="inline hidden">
-<a class="hover:underline hover:underline-neutral-300 dark:underline-neutral-600" href=/>Zekeriya AY</a><span class="px-1 text-primary-500">/</span>
+<a class="hover:underline hover:decoration-neutral-300 dark:underline-neutral-600" href=/>Zekeriya AY</a><span class="px-1 text-primary-500">/</span>
 </li>
 <li class=inline>
-<a class="hover:underline hover:underline-neutral-300 dark:underline-neutral-600" href=/blog/>Blog</a><span class="px-1 text-primary-500">/</span>
+<a class="hover:underline hover:decoration-neutral-300 dark:underline-neutral-600" href=/blog/>Blog</a><span class="px-1 text-primary-500">/</span>
 </li>
 <li class="inline hidden">
-<a class="hover:underline hover:underline-neutral-300 dark:underline-neutral-600" href=/blog/walkie-talkie/>Walkie-Talkie with nRF24L01, Arduino Nano</a><span class="px-1 text-primary-500">/</span>
+<a class="hover:underline hover:decoration-neutral-300 dark:underline-neutral-600" href=/blog/walkie-talkie/>Walkie-Talkie with nRF24L01, Arduino Nano</a><span class="px-1 text-primary-500">/</span>
 </li>
 </ol>
 <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
@@ -76,27 +88,75 @@ Walkie-Talkie with nRF24L01, Arduino Nano
 </h1>
 <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
 <div class="flex flex-row flex-wrap items-center">
-<time datetime="2021-07-14 21:07:01 +0300 +0300">14 July 2021</time><span class="px-2 text-primary-500">&#183;</span><span>1150 words</span><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">6 mins</span><span class="px-2 text-primary-500">&#183;</span>
+<time datetime="2021-07-14 21:07:01 +0300 +0300">14 July 2021</time><span class="px-2 text-primary-500">&#183;</span><time datetime="2021-07-14 21:07:01 +0300 +0300">Updated: 14 July 2021</time><span class="px-2 text-primary-500">&#183;</span><span>1277 words</span><span class="px-2 text-primary-500">&#183;</span><span title="Reading time">6 mins</span><span class="px-2 text-primary-500">&#183;</span>
 <span class=mb-[2px]>
-<a href=https://github.com/ZekeriyaAY/zekeriyaay.com/tree/main/content/blog/walkie-talkie/index.md class="text-lg hover:text-primary-500" rel="noopener noreferrer" target=_blank title="Edit content">
+<a href=https://github.com/ZekeriyaAY/zekeriyaay.com/tree/main/content/blog/walkie-talkie/index.en.md class="text-lg hover:text-primary-500" rel="noopener noreferrer" target=_blank title="Edit content">
 <span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="edit" class="svg-inline--fa fa-edit fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5.0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1.0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7.0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174 402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7-43.2-43.2c-4.1-4.1-10.8-4.1-14.8.0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg>
 </span>
 </a>
 </span>
 </div>
+<div class="my-1 text-xs text-neutral-500 dark:text-neutral-400">
+<a href=/tags/arduino/ class="px-1 py-[1px] border rounded-md border-neutral-200 dark:border-neutral-600 hover:border-primary-300 hover:text-primary-700 dark:hover:border-primary-600 dark:hover:text-primary-400">Arduino</a>
+</div>
 </div>
 </header>
-<section class="prose dark:prose-light">
-<div class="!mb-9 text-xl text-neutral-500 dark:text-neutral-400">
-Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı içerir.
+<section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
+<div class="order-first px-0 lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8 lg:order-last">
+<div class="ltr:pl-5 rtl:pr-5 toc lg:sticky lg:top-10">
+<details open class="mt-0 overflow-hidden rounded-lg rtl:pr-5 ltr:pl-5 ltr:-ml-5 rtl:-mr-5 lg:mt-3">
+<summary class="block py-1 text-lg font-semibold cursor-pointer rtl:pr-5 ltr:pl-5 ltr:-ml-5 rtl:-mr-5 text-neutral-800 dark:text-neutral-100 lg:hidden bg-neutral-100 dark:bg-neutral-700">
+Table of Contents
+</summary>
+<div class="py-2 border-dotted ltr:border-l rtl:border-r rtl:pr-5 ltr:pl-5 ltr:-ml-5 rtl:-mr-5 border-neutral-300 dark:border-neutral-600">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#kullanılan-malzemeler>🛠️Kullanılan Malzemeler</a></li>
+<li><a href=#kütüphanelerin-ve-kodların-indirilmesi>📥Kütüphanelerin ve Kodların İndirilmesi</a></li>
+<li><a href=#kütüphanelerin-ideye-eklenmesi>📤Kütüphanelerin IDE&rsquo;ye Eklenmesi</a></li>
+<li><a href=#kodların-arduinoya-yüklenmesi>📤Kodların Arduino&rsquo;ya Yüklenmesi</a></li>
+<li><a href=#devre-kurulumu-ve-test-edilmesi>🗺️Devre Kurulumu ve Test Edilmesi</a>
+<ul>
+<li><a href=#nrf24l01-bağlantısı-ve-testi>📡nRF24L01 Bağlantısı ve Testi</a></li>
+<li><a href=#hoparlör-bağlantısı-ve-testi>🔊Hoparlör Bağlantısı ve Testi</a></li>
+<li><a href=#buton-bağlantısı-ve-testi>🔘Buton Bağlantısı ve Testi</a></li>
+<li><a href=#mikrofon-bağlantısı-ve-testi>🎤Mikrofon Bağlantısı ve Testi</a></li>
+<li><a href=#tüm-bağlantı-şeması>🗺️Tüm Bağlantı Şeması</a></li>
+</ul>
+</li>
+<li><a href=#ana-kodun-arduinoya-yüklenmesi>📤Ana Kodun Arduino&rsquo;ya Yüklenmesi</a></li>
+<li><a href=#lehim-ile-sabit-devre-kurulumu>📦Lehim ile Sabit Devre Kurulumu</a></li>
+<li><a href=#yardım-aldığım-kaynaklar>🙏Yardım Aldığım Kaynaklar</a></li>
+<li><a href=#sonuç-nasıl-oldu>🖋️Sonuç Nasıl Oldu?</a></li>
+</ul>
+</nav>
 </div>
+</details>
+</div>
+</div>
+<div class="min-w-0 min-h-0 max-w-prose">
+<div class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900">
+<span class="ltr:pr-3 rtl:pl-3 text-primary-400">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" class="svg-inline--fa fa-exclamation-triangle fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937.0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154.0l239.94 416.028zM288 354c-25.405.0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346 7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373.0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884.0-12.356 5.78-11.981 12.654z"/></svg>
+</span>
+</span>
+<span class=dark:text-neutral-300><p><strong>Warning!</strong> This post not yet translate to English!</p>
+<p>If you want to help with the translation, you can <em>submit a <strong>pull request</strong></em> from the <em><strong>edit button</strong> to the right of the date</em> 🥰</p>
+</span>
+</div>
+<p>Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı içerir.</p>
 <blockquote>
 <p>Projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.<br>
 <a href=https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ>❤️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri</a> (Video Henüz Yayınlanmadı)</p>
 </blockquote>
-<figure><img src=/blog/walkie-talkie/perti-on.png alt="Telsizin Ön Yüzü" width=100% height=auto style=max-width:960px;max-height:540px>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_660x0_resize_box_3.png alt="Telsizin Ön Yüzü">
+<figcaption><em>Resim 0 · Telsizin Ön Yüzü</em></figcaption>
 </figure>
-<h2 id=kullanılan-malzemeler>🛠️Kullanılan Malzemeler <a class=heading-anchor href=#kullan%c4%b1lan-malzemeler aria-label=Anchor>#</a></h2>
+<h2 id=kullanılan-malzemeler class="relative group">🛠️Kullanılan Malzemeler <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#kullan%c4%b1lan-malzemeler aria-label=Anchor>#</a></span></h2>
 <ul>
 <li>
 <p>2 adet <strong><a href=https://www.direnc.net/arduino-nano-usb-chip-ch340-usb-kablo-dahil>Arduino Nano</a></strong></p>
@@ -197,18 +257,18 @@ Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli ma
 </li>
 </ul>
 <hr>
-<h2 id=kütüphanelerin-ve-kodların-indirilmesi>📥Kütüphanelerin ve Kodların İndirilmesi <a class=heading-anchor href=#k%c3%bct%c3%bcphanelerin-ve-kodlar%c4%b1n-indirilmesi aria-label=Anchor>#</a></h2>
+<h2 id=kütüphanelerin-ve-kodların-indirilmesi class="relative group">📥Kütüphanelerin ve Kodların İndirilmesi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#k%c3%bct%c3%bcphanelerin-ve-kodlar%c4%b1n-indirilmesi aria-label=Anchor>#</a></span></h2>
 <p><em><strong>RF24</strong></em>, <em><strong>RF24Audio</strong></em> kütüphanelerini ve telsiz için gereken kodları aşağıdaki bağlantılardan indirin.</p>
 <p><strong>RF24:</strong> <a href=https://github.com/nRF24/RF24>github.com/nRF24/RF24</a><br>
 <strong>RF24Audio:</strong> <a href=https://github.com/nRF24/RF24Audio>github.com/nRF24/RF24Audio</a><br>
 <strong>Gerekli Kodlar:</strong> <a href=https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie>github.com/ZekeriyaAY/Arduino-Walkie-Talkie</a></p>
-<h2 id=kütüphanelerin-ideye-eklenmesi>📤Kütüphanelerin IDE&rsquo;ye Eklenmesi <a class=heading-anchor href=#k%c3%bct%c3%bcphanelerin-ideye-eklenmesi aria-label=Anchor>#</a></h2>
+<h2 id=kütüphanelerin-ideye-eklenmesi class="relative group">📤Kütüphanelerin IDE&rsquo;ye Eklenmesi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#k%c3%bct%c3%bcphanelerin-ideye-eklenmesi aria-label=Anchor>#</a></span></h2>
 <p>İndirilen <code>.zip</code> dosyalarını aşağıdaki yol ile ekleyin.</p>
 <blockquote>
 <p>⚠️ <em>Sadece <strong>RF24</strong> ve <strong>RF24Audio</strong> dosyaları kütüphane dosyalarıdır.</em></p>
 </blockquote>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-arduino data-lang=arduino>    <span class=n>Arduino</span> <span class=n>IDE</span> <span class=o>&gt;</span> <span class=n>Taslak</span> <span class=o>&gt;</span> <span class=n>library</span> <span class=n>ekle</span> <span class=o>&gt;</span> <span class=p>.</span><span class=n>ZIP</span> <span class=n>Kitaplığı</span> <span class=n>Ekle</span><span class=p>...</span>
-</code></pre></div><h2 id=kodların-arduinoya-yüklenmesi>📤Kodların Arduino&rsquo;ya Yüklenmesi <a class=heading-anchor href=#kodlar%c4%b1n-arduinoya-y%c3%bcklenmesi aria-label=Anchor>#</a></h2>
+</code></pre></div><h2 id=kodların-arduinoya-yüklenmesi class="relative group">📤Kodların Arduino&rsquo;ya Yüklenmesi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#kodlar%c4%b1n-arduinoya-y%c3%bcklenmesi aria-label=Anchor>#</a></span></h2>
 <p>Bu aşamaya şuan ihtiyaç yok ancak devre bağlantılarını yaptıktan sonra kodları burada anlatıldığı gibi yüklemeniz için eklendi.</p>
 <ol>
 <li>İndirilen <code>Arduino-Walkie-Talkie-main.zip</code> dosyasının içindeki yüklemek istediğiniz <code>.ino</code> uzantılı Arduino kodunu IDE ile açın.</li>
@@ -226,19 +286,37 @@ Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli ma
 </span><span class=c1></span>  <span class=n>ATmega328P</span><span class=p>(</span><span class=n>Old</span> <span class=n>Bootloader</span><span class=p>)</span> <span class=n>seçtiğimde</span> <span class=n>sorun</span> <span class=n>geçmişti</span><span class=p>.</span>
 </code></pre></div></blockquote>
 <hr>
-<h2 id=devre-kurulumu-ve-test-edilmesi>🗺️Devre Kurulumu ve Test Edilmesi <a class=heading-anchor href=#devre-kurulumu-ve-test-edilmesi aria-label=Anchor>#</a></h2>
-<div class="!mb-9 text-xl text-neutral-500 dark:text-neutral-400">
-Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
-</div>
-<h3 id=nrf24l01-bağlantısı-ve-testi>📡nRF24L01 Bağlantısı ve Testi <a class=heading-anchor href=#nrf24l01-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
-<p>nRF24L01 modülü ve kullanacağımız adaptörün pin dizilimini aşağıdaki resimlerden ulaşabilirsiniz.
-<img src=nRF24L01-adaptor.png alt="nRF24L01 Modül Adaptörü (Resim 1)">
-<img src=nRF24L01-adaptor-pinout.png alt="nRF24L01 Modülün Pin Çıkışları (Resim 2)"></p>
+<h2 id=devre-kurulumu-ve-test-edilmesi class="relative group">🗺️Devre Kurulumu ve Test Edilmesi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#devre-kurulumu-ve-test-edilmesi aria-label=Anchor>#</a></span></h2>
+<p>Sıra aldığımız malzemeleri birleştirip test etmeye geldi.</p>
+<h3 id=nrf24l01-bağlantısı-ve-testi class="relative group">📡nRF24L01 Bağlantısı ve Testi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#nrf24l01-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></span></h3>
+<p>nRF24L01 modülü ve kullanacağımız adaptörün pin dizilimini aşağıdaki resimlerden ulaşabilirsiniz.</p>
+<p>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/nRF24L01-adaptor_huf4112732d11e20e6c5dfcf9f2a833078_230673_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/nRF24L01-adaptor_huf4112732d11e20e6c5dfcf9f2a833078_230673_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/nRF24L01-adaptor_huf4112732d11e20e6c5dfcf9f2a833078_230673_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/nRF24L01-adaptor_huf4112732d11e20e6c5dfcf9f2a833078_230673_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/nRF24L01-adaptor_huf4112732d11e20e6c5dfcf9f2a833078_230673_660x0_resize_box_3.png alt="nRF24L01 Modül Adaptörü">
+<figcaption><em>Resim 1 · nRF24L01 Modül Adaptörü</em></figcaption>
+</figure>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/nRF24L01-adaptor-pinout_hu9c1f93d80690280b64d2540c09df12b2_55171_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/nRF24L01-adaptor-pinout_hu9c1f93d80690280b64d2540c09df12b2_55171_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/nRF24L01-adaptor-pinout_hu9c1f93d80690280b64d2540c09df12b2_55171_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/nRF24L01-adaptor-pinout_hu9c1f93d80690280b64d2540c09df12b2_55171_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/nRF24L01-adaptor-pinout_hu9c1f93d80690280b64d2540c09df12b2_55171_660x0_resize_box_3.png alt="nRF24L01 Modülün Pin Çıkışları">
+<figcaption><em>Resim 2 · nRF24L01 Modülün Pin Çıkışları</em></figcaption>
+</figure>
+</p>
 <p>Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik <code>VCC</code>&lsquo;yi <code>3.3V</code> yerine <code>5V</code>&lsquo;a bağlamanız.</p>
 <ul>
 <li>Boş olan pin, kullanılmayan <code>IRQ</code> pini.</li>
 </ul>
-<p><img src=nRF24L01-sema.png alt="Modülün Adaptörsüz Bağlantısı (Resim 3)"></p>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/nRF24L01-sema_hua91091df7acda3a56908b84c26546147_69369_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/nRF24L01-sema_hua91091df7acda3a56908b84c26546147_69369_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/nRF24L01-sema_hua91091df7acda3a56908b84c26546147_69369_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/nRF24L01-sema_hua91091df7acda3a56908b84c26546147_69369_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/nRF24L01-sema_hua91091df7acda3a56908b84c26546147_69369_660x0_resize_box_3.png alt="Modülün Adaptörsüz Bağlantısı">
+<figcaption><em>Resim 3 · Modülün Adaptörsüz Bağlantısı</em></figcaption>
+</figure>
 <blockquote>
 <p>Aşağıdaki pin dizilimleri <em>Nano/Uno</em> içindir. <em>Mega</em> için farklı pinler kullanılıyor. <a href=#yard%C4%B1m-ald%C4%B1%C4%9F%C4%B1m-kaynaklar>🙏<strong>Yardım Aldığım Kaynaklar</strong></a>&lsquo;da o bağlantıları bulabilirsiniz.</p>
 </blockquote>
@@ -284,55 +362,115 @@ Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
 <p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>receiver.ino</code> kodunu bir Arduino&rsquo;ya, <code>transmitter.ino</code> kodunu diğer Arduino&rsquo;ya yükleyin.</p>
 </blockquote>
 <p>İki kodu da farklı Arduinolara yükledikten sonra alıcı kodunu yüklediğiniz Arduino&rsquo;nun &ldquo;<strong>Seri Port Ekranı</strong>&rdquo; nda &ldquo;<strong>Hello Ardu</strong>&rdquo; yazısını görüyorsanız bağlantılar doğrudur demektir.</p>
-<h3 id=hoparlör-bağlantısı-ve-testi>🔊Hoparlör Bağlantısı ve Testi <a class=heading-anchor href=#hoparl%c3%b6r-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
-<p><img src=speaker-sema.png alt="Hoparlör Bağlantı Şeması (Resim 4)"></p>
+<h3 id=hoparlör-bağlantısı-ve-testi class="relative group">🔊Hoparlör Bağlantısı ve Testi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#hoparl%c3%b6r-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></span></h3>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/speaker-sema_huc7a17afd6d1cf963433e51999b3c1131_187390_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/speaker-sema_huc7a17afd6d1cf963433e51999b3c1131_187390_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/speaker-sema_huc7a17afd6d1cf963433e51999b3c1131_187390_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/speaker-sema_huc7a17afd6d1cf963433e51999b3c1131_187390_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/speaker-sema_huc7a17afd6d1cf963433e51999b3c1131_187390_660x0_resize_box_3.png alt="Hoparlör Bağlantı Şeması">
+<figcaption><em>Resim 4 · Hoparlör Bağlantı Şeması</em></figcaption>
+</figure>
 <p>Hoparlör üzerinde kırmızı kablo(+) <code>D10</code> pinine, siyah kablo(-) <code>GND</code> pinine bağladım.</p>
 <p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>speaker.ino</code> kodunu Arduino&rsquo;ya yükleyip hoparlör bağlantılarını melodi sesleriyle test edebilirsiniz.</p>
-<h3 id=buton-bağlantısı-ve-testi>🔘Buton Bağlantısı ve Testi <a class=heading-anchor href=#buton-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
-<p><img src=button-sema.png alt="Buton Bağlantı Şeması (Resim 5)"></p>
+<h3 id=buton-bağlantısı-ve-testi class="relative group">🔘Buton Bağlantısı ve Testi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#buton-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></span></h3>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/button-sema_hu7c0cea4e4cb76f6d0e2bb9eb2ec7bcf1_177597_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/button-sema_hu7c0cea4e4cb76f6d0e2bb9eb2ec7bcf1_177597_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/button-sema_hu7c0cea4e4cb76f6d0e2bb9eb2ec7bcf1_177597_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/button-sema_hu7c0cea4e4cb76f6d0e2bb9eb2ec7bcf1_177597_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/button-sema_hu7c0cea4e4cb76f6d0e2bb9eb2ec7bcf1_177597_660x0_resize_box_3.png alt="Buton Bağlantı Şeması">
+<figcaption><em>Resim 5 · Buton Bağlantı Şeması</em></figcaption>
+</figure>
 <p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>button.ino</code> kodunu Arduino&rsquo;ya yükleyin.</p>
 <p>Kodu yükledikten sonra &ldquo;<strong>Seri Port Ekranı</strong>&rdquo; nda butona bastığınızda sayaç sayıları artıyorsa sıradaki ve son bağlantıya geçebilirsiniz.</p>
-<h3 id=mikrofon-bağlantısı-ve-testi>🎤Mikrofon Bağlantısı ve Testi <a class=heading-anchor href=#mikrofon-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></h3>
-<p><img src=mic-sema.png alt="Mikrofon Bağlantı Şeması (Resim 6)"></p>
+<h3 id=mikrofon-bağlantısı-ve-testi class="relative group">🎤Mikrofon Bağlantısı ve Testi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#mikrofon-ba%c4%9flant%c4%b1s%c4%b1-ve-testi aria-label=Anchor>#</a></span></h3>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/mic-sema_hue1e1ce9cf447b018e873e1fa01deee33_69133_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/mic-sema_hue1e1ce9cf447b018e873e1fa01deee33_69133_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/mic-sema_hue1e1ce9cf447b018e873e1fa01deee33_69133_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/mic-sema_hue1e1ce9cf447b018e873e1fa01deee33_69133_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/mic-sema_hue1e1ce9cf447b018e873e1fa01deee33_69133_660x0_resize_box_3.png alt="Mikrofon Bağlantı Şeması">
+<figcaption><em>Resim 6 · Mikrofon Bağlantı Şeması</em></figcaption>
+</figure>
 <blockquote>
 <p>5V&rsquo;a da bağlayabilirsiniz. Ancak 3.3V da daha temiz ses elde ettiğim için 3.3V kullandım.</p>
 </blockquote>
 <p><code>Arduino-Walkie-Talkie-main.zip</code> dosyasındaki <code>microphone.ino</code> kodunu Arduino&rsquo;ya yükleyin.</p>
 <p>Kodu çalıştırdıktan sonra &ldquo;<strong>Seri Port Ekranı</strong>&rdquo; nda mikrofona konuştuğunuz zaman Volt değerlerinin değiştiğini göreceksiniz. Eğer değişim olmuyorsa bağlantıları kontrol edin.</p>
-<h3 id=tüm-bağlantı-şeması>🗺️Tüm Bağlantı Şeması <a class=heading-anchor href=#t%c3%bcm-ba%c4%9flant%c4%b1-%c5%9femas%c4%b1 aria-label=Anchor>#</a></h3>
-<p><img src=tum-sema.png alt="Tüm Bağlantı Şeması (Resim 7)"></p>
+<h3 id=tüm-bağlantı-şeması class="relative group">🗺️Tüm Bağlantı Şeması <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#t%c3%bcm-ba%c4%9flant%c4%b1-%c5%9femas%c4%b1 aria-label=Anchor>#</a></span></h3>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/tum-sema_hu65ccd66b72fc02ce343337f530cdb0c2_256883_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/tum-sema_hu65ccd66b72fc02ce343337f530cdb0c2_256883_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/tum-sema_hu65ccd66b72fc02ce343337f530cdb0c2_256883_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/tum-sema_hu65ccd66b72fc02ce343337f530cdb0c2_256883_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/tum-sema_hu65ccd66b72fc02ce343337f530cdb0c2_256883_660x0_resize_box_3.png alt="Tüm Bağlantı Şeması">
+<figcaption><em>Resim 7 · Tüm Bağlantı Şeması</em></figcaption>
+</figure>
 <p>Resim 7&rsquo;de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.</p>
 <blockquote>
 <p>Eğer adaptör kullanıcaksanız adaptörün <code>VCC</code>&lsquo;yi <code>3.3V</code> yerine <code>5V</code>&lsquo;a bağlayın.</p>
 </blockquote>
 <hr>
-<h2 id=ana-kodun-arduinoya-yüklenmesi>📤Ana Kodun Arduino&rsquo;ya Yüklenmesi <a class=heading-anchor href=#ana-kodun-arduinoya-y%c3%bcklenmesi aria-label=Anchor>#</a></h2>
+<h2 id=ana-kodun-arduinoya-yüklenmesi class="relative group">📤Ana Kodun Arduino&rsquo;ya Yüklenmesi <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#ana-kodun-arduinoya-y%c3%bcklenmesi aria-label=Anchor>#</a></span></h2>
 <p>İndirilen <code>Arduino-Walkie-Talkie-main.zip</code> dosyasının içindeki <code>main.ino</code> kodu iki Arduino&rsquo;ya <a href=#kodlar%C4%B1n-arduinoya-y%C3%BCklenmesi title="📤Kodların Arduino'ya Yüklenmesi">📤Kodların Arduino&rsquo;ya Yüklenmesi</a>nde anlatıldığı gibi yükleyin.</p>
 <p>Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.</p>
 <hr>
-<h2 id=lehim-ile-sabit-devre-kurulumu>📦Lehim ile Sabit Devre Kurulumu <a class=heading-anchor href=#lehim-ile-sabit-devre-kurulumu aria-label=Anchor>#</a></h2>
-<div class="!mb-9 text-xl text-neutral-500 dark:text-neutral-400">
-Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sırada lehim ile pertinaks üzerine sabit devreyi kurma aşamasına geldik.
-</div>
+<h2 id=lehim-ile-sabit-devre-kurulumu class="relative group">📦Lehim ile Sabit Devre Kurulumu <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#lehim-ile-sabit-devre-kurulumu aria-label=Anchor>#</a></span></h2>
+<p>Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sırada lehim ile pertinaks üzerine sabit devreyi kurma aşamasına geldik.</p>
 <blockquote>
 <p>Bu aşama zorunlu değildir. İsterseniz breadboard üzerinde kullanabilirsiniz ancak pertinaks üzerinde kablo karmaşası olmadan daha kullanışlı olduğu için bu aşamayı yaptım.
 Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha da azaldı. Sanırım jumper kablolar daha az, daha kısa olduğu için parazit azaldı.</p>
 </blockquote>
-<p><img src=perti-on.png alt="Devrenin Önden Görünümü (Resim 8)">
-<img src=perti-arka-antensiz.png alt="Devrenin Arkadan Antensiz Görünümü (Resim 9)">
-<img src=perti-arka-antenli.png alt="Devrenin Arkadan Antenli Görünümü (Resim 10)"></p>
-<div class="!mb-9 text-xl text-neutral-500 dark:text-neutral-400">
-Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.
-</div>
-<p><img src=perti-yan.jpeg alt="Devrenin Yandan Görünümü (Resim 11)"></p>
-<div class="!mb-9 text-xl text-neutral-500 dark:text-neutral-400">
-Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasına ve önüne patlatılan poşetlerden kesip sıcak silikonla yapıştırdım. Böylece devrelere temas etmemiş oluyoruz.
-</div>
-<p><img src=son-arka-tek.png alt="Devrenin Arkadan Paketli Görünümü (Resim 12)">
-<img src=son-on.jpeg alt="Telsizlerin Önden Görünümü (Resim 13)">
-<img src=son-arka.jpeg alt="Telsizlerin Arkadan Görünümü Görünümü (Resim 14)"></p>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/perti-on_hu6f614c376c98ee103feb2852d9c60acc_2055076_660x0_resize_box_3.png alt="Devrenin Önden Görünümü">
+<figcaption><em>Resim 8 · Devrenin Önden Görünümü</em></figcaption>
+</figure>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/perti-arka-antensiz_hu39dd43c0c96bcf38a88812200b8ee943_2366736_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/perti-arka-antensiz_hu39dd43c0c96bcf38a88812200b8ee943_2366736_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/perti-arka-antensiz_hu39dd43c0c96bcf38a88812200b8ee943_2366736_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/perti-arka-antensiz_hu39dd43c0c96bcf38a88812200b8ee943_2366736_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/perti-arka-antensiz_hu39dd43c0c96bcf38a88812200b8ee943_2366736_660x0_resize_box_3.png alt="Devrenin Arkadan Antensiz Görünümü">
+<figcaption><em>Resim 9 · Devrenin Arkadan Antensiz Görünümü</em></figcaption>
+</figure>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/perti-arka-antenli_hu2445015423dc273a62dbd718a08175c6_2150070_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/perti-arka-antenli_hu2445015423dc273a62dbd718a08175c6_2150070_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/perti-arka-antenli_hu2445015423dc273a62dbd718a08175c6_2150070_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/perti-arka-antenli_hu2445015423dc273a62dbd718a08175c6_2150070_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/perti-arka-antenli_hu2445015423dc273a62dbd718a08175c6_2150070_660x0_resize_box_3.png alt="Devrenin Arkadan Antenli Görünümü">
+<figcaption><em>Resim 10 · Devrenin Arkadan Antenli Görünümü</em></figcaption>
+</figure>
+<p>Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.</p>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/perti-yan_huf303149ffbc3adac980e1d515e3715f9_2366015_330x0_resize_q75_box.jpeg 330w,
+/blog/walkie-talkie/perti-yan_huf303149ffbc3adac980e1d515e3715f9_2366015_660x0_resize_q75_box.jpeg 660w,
+/blog/walkie-talkie/perti-yan_huf303149ffbc3adac980e1d515e3715f9_2366015_1024x0_resize_q75_box.jpeg 1024w,
+/blog/walkie-talkie/perti-yan_huf303149ffbc3adac980e1d515e3715f9_2366015_1320x0_resize_q75_box.jpeg 2x" src=/blog/walkie-talkie/perti-yan_huf303149ffbc3adac980e1d515e3715f9_2366015_660x0_resize_q75_box.jpeg alt="Devrenin Yandan Görünümü">
+<figcaption><em>Resim 11 · Devrenin Yandan Görünümü</em></figcaption>
+</figure>
+<p>Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasına ve önüne patlatılan poşetlerden kesip sıcak silikonla yapıştırdım. Böylece devrelere temas etmemiş oluyoruz.</p>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/son-arka-tek_huacf5d1dcb06eeb4cdc2865f84d15ff50_1339438_330x0_resize_box_3.png 330w,
+/blog/walkie-talkie/son-arka-tek_huacf5d1dcb06eeb4cdc2865f84d15ff50_1339438_660x0_resize_box_3.png 660w,
+/blog/walkie-talkie/son-arka-tek_huacf5d1dcb06eeb4cdc2865f84d15ff50_1339438_1024x0_resize_box_3.png 1024w,
+/blog/walkie-talkie/son-arka-tek_huacf5d1dcb06eeb4cdc2865f84d15ff50_1339438_1320x0_resize_box_3.png 2x" src=/blog/walkie-talkie/son-arka-tek_huacf5d1dcb06eeb4cdc2865f84d15ff50_1339438_660x0_resize_box_3.png alt="Devrenin Arkadan Paketli Görünümü">
+<figcaption><em>Resim 12 · Devrenin Arkadan Paketli Görünümü</em></figcaption>
+</figure>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/son-on_hub97bbf9966aa5a58c4c0e25489dacad5_2125975_330x0_resize_q75_box.jpeg 330w,
+/blog/walkie-talkie/son-on_hub97bbf9966aa5a58c4c0e25489dacad5_2125975_660x0_resize_q75_box.jpeg 660w,
+/blog/walkie-talkie/son-on_hub97bbf9966aa5a58c4c0e25489dacad5_2125975_1024x0_resize_q75_box.jpeg 1024w,
+/blog/walkie-talkie/son-on_hub97bbf9966aa5a58c4c0e25489dacad5_2125975_1320x0_resize_q75_box.jpeg 2x" src=/blog/walkie-talkie/son-on_hub97bbf9966aa5a58c4c0e25489dacad5_2125975_660x0_resize_q75_box.jpeg alt="Telsizlerin Önden Görünümü">
+<figcaption><em>Resim 13 · Telsizlerin Önden Görünümü</em></figcaption>
+</figure>
+<figure>
+<img class="my-0 rounded-md" srcset="/blog/walkie-talkie/son-arka_hu78e8550f1177a196dd572b02981ec741_2143033_330x0_resize_q75_box.jpeg 330w,
+/blog/walkie-talkie/son-arka_hu78e8550f1177a196dd572b02981ec741_2143033_660x0_resize_q75_box.jpeg 660w,
+/blog/walkie-talkie/son-arka_hu78e8550f1177a196dd572b02981ec741_2143033_1024x0_resize_q75_box.jpeg 1024w,
+/blog/walkie-talkie/son-arka_hu78e8550f1177a196dd572b02981ec741_2143033_1320x0_resize_q75_box.jpeg 2x" src=/blog/walkie-talkie/son-arka_hu78e8550f1177a196dd572b02981ec741_2143033_660x0_resize_q75_box.jpeg alt="Telsizlerin Arkadan Görünümü Görünümü">
+<figcaption><em>Resim 14 · Telsizlerin Arkadan Görünümü Görünümü</em></figcaption>
+</figure>
 <hr>
-<h2 id=yardım-aldığım-kaynaklar>🙏Yardım Aldığım Kaynaklar <a class=heading-anchor href=#yard%c4%b1m-ald%c4%b1%c4%9f%c4%b1m-kaynaklar aria-label=Anchor>#</a></h2>
+<h2 id=yardım-aldığım-kaynaklar class="relative group">🙏Yardım Aldığım Kaynaklar <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#yard%c4%b1m-ald%c4%b1%c4%9f%c4%b1m-kaynaklar aria-label=Anchor>#</a></span></h2>
 <ul>
 <li>nRF24L01 modülü ile ilgili
 <ul>
@@ -345,7 +483,7 @@ Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasın
 <li><a href=https://ugrdmr.wordpress.com/2018/07/22/arduino-telsiz-walkie-talkie/>nRF24L01 adaptörsüz kullanıp kondansatör lehimlemeyi içeriyor</a></li>
 </ul>
 <hr>
-<h2 id=sonuç-nasıl-oldu>🖋️Sonuç Nasıl Oldu? <a class=heading-anchor href=#sonu%c3%a7-nas%c4%b1l-oldu aria-label=Anchor>#</a></h2>
+<h2 id=sonuç-nasıl-oldu class="relative group">🖋️Sonuç Nasıl Oldu? <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#sonu%c3%a7-nas%c4%b1l-oldu aria-label=Anchor>#</a></span></h2>
 <p>Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.</p>
 <ul>
 <li>Pertinaks üzerine lehimlerken Arduino&rsquo;yu direk lehimledim. Bunu yapmak yerine <em><strong>dişi-erkek pin header</strong></em> lehimleyip Arduino&rsquo;yu bu headerlara takmak daha iyi olur. Böylece gerektiğinde Arduino&rsquo;yu kolayca çıkartılıp yenisi takılabilir veya başka şeylerde kullanılabilir.</li>
@@ -354,19 +492,22 @@ Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasın
 <li>Telsiz çalışırken iki taraf da butona basılı tutup konuşmaya çalışınca iki taraf da duymadığı gibi bug&rsquo;a girmesine neden oluyor. Böyle durumlarda Arduino üzerindeki reset butona basıp kodların tekrar çalıştırılmasını sağlayarak bug sorunu o anlık çözebiliyoruz. Bir taraf konuşurken diğer taraf da dinlemesini bilmeli yani 🙃</li>
 </ul>
 <hr>
-<h3 id=bu-repoya-yıldız-youtube-videoma-yorumunu-bırakıp-eksiklerimi-söyleyerek-bana-destek-olabilirsin>Bu Repoya ⭐Yıldız, Youtube Videoma 💬Yorumunu Bırakıp, Eksiklerimi Söyleyerek Bana Destek Olabilirsin <a class=heading-anchor href=#bu-repoya-y%c4%b1ld%c4%b1z-youtube-videoma-yorumunu-b%c4%b1rak%c4%b1p-eksiklerimi-s%c3%b6yleyerek-bana-destek-olabilirsin aria-label=Anchor>#</a></h3>
+<div class="!mb-9 text-xl lead">
+Bu repoya ⭐, Youtube videoma 💬 bırakıp, eksiklerimi söyleyerek bana destek olabilirsin&mldr;
+</div>
 <blockquote>
 <p>Telsizin testlerini ve yapım aşamasını aşağıdaki videodan izleyebilirsiniz.<br>
 <a href=https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ>❤️<strong>Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri</strong></a> (Video Henüz Yayınlanmadı)</p>
 </blockquote>
 <blockquote>
-<p><a href=https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie><strong><em>Yıldız Bırakmak için</em> Walkie Talkie GitHub Reposu</strong></a></p>
+<p><a href=https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie><em>Yıldız Bırakmak için</em> Walkie Talkie GitHub Reposu</a></p>
 </blockquote>
-<p><img src=github-repo-star.gif alt="Github Repo Star"></p>
+<img src=github-repo-star.gif>
+</div>
 </section>
-<footer class=pt-8>
+<footer class="pt-8 max-w-prose">
 <div class=flex>
-<img class="w-24 h-24 !mt-0 !mb-0 mr-4 rounded-full" width=96 height=96 alt=Author src=/img/author.jpeg>
+<img class="w-24 h-24 !mt-0 !mb-0 ltr:mr-4 rtl:ml-4 rounded-full" width=96 height=96 alt=Author src=/img/author_hu38cf59486f3768a52b005c94a9eca29b_939623_192x192_fill_q75_box_smart1.jpeg>
 <div class=place-self-center>
 <div class="text-[0.6rem] leading-3 text-neutral-500 dark:text-neutral-400 uppercase">
 Author
@@ -374,7 +515,7 @@ Author
 <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
 Zekeriya AY
 </div>
-<div class="text-sm text-neutral-700 dark:text-neutral-400">a computer engineering undergraduate student interested in cybersecurity</div>
+<div class="text-sm text-neutral-700 dark:text-neutral-400">a computer engineering undergraduate student interested in cybersecurity, blue team</div>
 <div class="text-2xl sm:text-lg">
 <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
 <a class="email px-1 hover:text-primary-700 dark:hover:text-primary-400" href=mailto:zekeriya@zekeriyaay.com target=_blank aria-label=Email rel="me noopener noreferrer">
@@ -429,22 +570,61 @@ Zekeriya AY
 </section>
 </footer>
 </article>
-</main><footer class=py-10>
+<div class="absolute top-[110vh] ltr:right-0 rtl:left-0 w-12 pointer-events-none bottom-[-5.5rem]">
+<a href=#the-top class="w-12 h-12 sticky pointer-events-auto top-[calc(100vh-5rem)] bg-neutral/50 dark:bg-neutral-800/50 backdrop-blur rounded-full text-xl flex items-center justify-center text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400" aria-label="Scroll to top" title="Scroll to top">
+&uarr;
+</a>
+</div>
+</main>
+<div id=search-wrapper class="fixed inset-0 z-50 flex flex-col p-4 sm:p-6 md:p-[10vh] lg:p-[12vh] w-screen h-screen cursor-default bg-neutral-500/50 backdrop-blur-sm dark:bg-neutral-900/50 invisible" data-url=https://zekeriyaay.com>
+<div id=search-modal class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg border-neutral-200 top-20 bg-neutral dark:bg-neutral-800 dark:border-neutral-700">
+<header class="relative z-10 flex items-center justify-between flex-none px-2">
+<form class="flex items-center flex-auto min-w-0">
+<div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+</div>
+<input type=search id=search-query class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-transparent focus:outline-2" placeholder=Search tabindex=0>
+</form>
+<button id=close-search-button class="flex items-center justify-center w-8 h-8 text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400" title="Close (Esc)">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentcolor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19.0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48.0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48.0L9.21 111.45c-12.28 12.28-12.28 32.19.0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19.0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48.0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48.0l22.24-22.24c12.28-12.28 12.28-32.19.0-44.48L242.72 256z"/></svg>
+</span>
+</button>
+</header>
+<section class="flex-auto px-2 overflow-auto">
+<ul id=search-results>
+</ul>
+</section>
+</div>
+</div>
+<footer class=py-10>
 <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
 <ul class="flex flex-col list-none sm:flex-row">
 <li class="mb-1 sm:mb-0 sm:mr-7 sm:last:mr-0">
-<a class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small" href=/releases/ title="Release Notes">Release Notes</a>
+<a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=/tags/ title=Tags>Tags</a>
 </li>
 </ul>
 </nav>
 <div class="flex justify-between">
 <div>
 <p class="text-sm text-neutral-500 dark:text-neutral-400">
-<em>The content on this site is licensed under a <strong><a class="hover:underline hover:underline-primary-300 hover:text-primary-400" href=https://creativecommons.org/licenses/by-sa/4.0/ target=_blank>CC-BY-SA 4.0 License</a></strong>. The <strong><a class="hover:underline hover:underline-primary-300 hover:text-primary-400" href=https://github.com/ZekeriyaAY/zekeriyaay.com target=_blank>source code for this site</a></strong> is licensed under a <strong><a class="hover:underline hover:underline-primary-300 hover:text-primary-400" href=https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE target=_blank>GPLv3</a></strong></em>.
+<p><em><p class="text-xs text-neutral-500 dark:text-neutral-400">The content on this site is licensed under a <strong><a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=https://creativecommons.org/licenses/by-sa/4.0/ target=_blank rel=external>CC-BY-SA 4.0 License</a></strong>. The <strong><a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=https://github.com/ZekeriyaAY/zekeriyaay.com target=_blank rel=external>source code for this site</a></strong> is licensed under a <strong><a class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2" href=https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE target=_blank rel=external>GPLv3</a></strong>.</p></em></p>
 </p>
-<p class="text-xs text-neutral-400 dark:text-neutral-600">
-Powered by <a class="hover:underline hover:underline-primary-400 hover:text-primary-500" href=https://gohugo.io/ target=_blank rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:underline-primary-400 hover:text-primary-500" href=https://git.io/hugo-congo target=_blank rel="noopener noreferrer">Congo</a>
+<p class="text-xs text-neutral-500 dark:text-neutral-400">
+Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href=https://gohugo.io/ target=_blank rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href=https://git.io/hugo-congo target=_blank rel="noopener noreferrer">Congo</a>
 </p>
+</div>
+<div class="text-sm cursor-pointer text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-14 rtl:ml-14">
+<button id=appearance-switcher class="w-12 h-12" type=button title="Switch to dark appearance">
+<span class="inline dark:hidden">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M283.211 512c78.962.0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954.0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156.0 00283.211.0c-141.309.0-256 114.511-256 256 0 141.309 114.511 256 256 256z"/></svg>
+</span>
+</span>
+<span class="hidden dark:inline">
+<span class="relative inline-block align-text-bottom icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun" class="svg-inline--fa fa-sun fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 160c-52.9.0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6.0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0s-49.9-131.1.0-181 131.1-49.9 181 0 49.9 131.1.0 181z"/></svg>
+</span>
+</span>
+</button>
 </div>
 </div>
 </footer>
