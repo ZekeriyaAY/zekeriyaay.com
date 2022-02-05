@@ -1,0 +1,4 @@
+<!-- Extend Badge -->
+{{ if and .Params.badge .Site.Params.article.showDraftLabel }}
+<div class="ltr:ml-2 rtl:mr-2">{{ partial "badge.html" (.Params.badge | emojify) }}</div>
+{{ end }}
