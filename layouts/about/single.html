@@ -1,7 +1,17 @@
 {{ define "main" }}
-<article class="max-w-prose">
-    <section class="prose dark:prose-light">
-        {{ .Content | emojify }}
-    </section>
+<article>
+  <header class="max-w-prose">
+    <h1
+      style="font-style: italic"
+      class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral"
+    >
+      {{ .Title | emojify }}
+    </h1>
+  </header>
+  <section
+    class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert"
+  >
+    <div class="min-w-0 min-h-0 max-w-prose">{{ .Content | emojify }}</div>
+  </section>
 </article>
 {{ end }}

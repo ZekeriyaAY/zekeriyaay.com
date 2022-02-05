@@ -2,35 +2,17 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-baseURL = "https://zekeriyaay.com/"
-languageCode = "en"
-defaultContentLanguage = "en"
 theme = "congo"
-
-title = "Zekeriya AY"
-copyright = "*The content on this site is licensed under a **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>CC-BY-SA 4.0 License</a>**. The **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://github.com/ZekeriyaAY/zekeriyaay.com' target='_blank'>source code for this site</a>** is licensed under a **<a class='hover:underline hover:underline-primary-300 hover:text-primary-400' href='https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE' target='_blank'>GPLv3</a>***."
+baseURL = "https://zekeriyaay.com"
+defaultContentLanguage = "en"
 
 googleAnalytics = "G-7LLJDJ25PQ"
 
 enableRobotsTXT = true
-enableGitInfo = true
-
+paginate = 5
 summaryLength = 0
 
-disableKinds = ['taxonomy', 'term']
+# disableKinds = ['taxonomy', 'term']
 
-[author]
-  name = "Zekeriya AY"
-  image = "img/author.jpeg"
-  bio = "a computer engineering undergraduate student interested in cybersecurity"
-  links = [
-    { email = "mailto:zekeriya@zekeriyaay.com" },    
-  #   { link = "https://link-to-some-website.com/" },
-  #   { discord = "https://discord.gg/invitecode" },
-    { github = "https://github.com/ZekeriyaAY" },
-  #   { instagram = "https://instagram.com/username" },
-    { linkedin = "https://linkedin.com/in/ZekeriyaAY" },
-  #   { medium = "https://medium.com/username" },
-    { twitter = "https://twitter.com/zekeriyaaycom" },
-    { youtube = "https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" },
-  ]
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

@@ -4,6 +4,10 @@ date: {{ .Date }}
 icon: "link"
 description: ""
 summary: ""
-group: "Group"
 externalurl: ""
+badge: "Tutorial"
+
+_build:
+    render: false
+    list: local
 ---
