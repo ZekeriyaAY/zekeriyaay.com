@@ -7,4 +7,8 @@ summary: "Discord bot"
 group: "Bot"
 externalUrl: "https://github.com/ZekeriyaAY/TrixBot"
 badge: "Archived"
+
+_build:
+    render: false
+    list: local
 ---

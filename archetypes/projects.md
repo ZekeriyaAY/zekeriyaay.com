@@ -7,4 +7,8 @@ summary: ""
 group: "Group"
 externalUrl: ""
 badge: "Under Development or Archived"
+
+_build:
+    render: false
+    list: local
 ---

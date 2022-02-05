@@ -11,6 +11,5 @@ cascade:
 ---
 
 {{< lead >}}
-<!-- Yaptığım, üzerinde çalıştığım projeler -->
 Projects I've done, worked on
 {{< /lead >}}
