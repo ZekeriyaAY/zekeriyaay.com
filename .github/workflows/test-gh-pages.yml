@@ -23,7 +23,7 @@ jobs:
           hugo-version: "latest"
 
       - name: Build
-        run: hugo --minify -b "https://test.zekeriyaay.com"
+        run: hugo --minify 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
