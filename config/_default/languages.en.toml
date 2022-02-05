@@ -1,0 +1,29 @@
+languageCode = "en"
+languageName = "English"
+displayName = ":flag-eu:"
+isoCode = "en"
+weight = 1
+rtl = false
+
+title = "Zekeriya AY"
+# logo = "img/logo.jpg"
+description = "Website of a computer engineering undergraduate student interested in cybersecurity, blue team."
+copyright = "*<p class='text-xs text-neutral-500 dark:text-neutral-400'>The content on this site is licensed under a **<a class='hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2' href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank' rel='external'>CC-BY-SA 4.0 License</a>**. The **<a class='hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2' href='https://github.com/ZekeriyaAY/zekeriyaay.com' target='_blank' rel='external'>source code for this site</a>** is licensed under a **<a class='hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2' href='https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE' target='_blank' rel='external'>GPLv3</a>**.</p>*"
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Zekeriya AY"
+  image = "img/author.jpeg"
+  # headline = "I'm only human"
+  bio = "a computer engineering undergraduate student interested in cybersecurity, blue team"
+  links = [
+    { email = "mailto:zekeriya@zekeriyaay.com" },
+  #   { link = "https://link-to-some-website.com/" },
+  #   { discord = "https://discord.gg/invitecode" },
+    { github = "https://github.com/ZekeriyaAY" },
+  #   { instagram = "https://instagram.com/username" },
+    { linkedin = "https://linkedin.com/in/ZekeriyaAY" },
+  #   { medium = "https://medium.com/username" },
+    { twitter = "https://twitter.com/zekeriyaaycom" },
+    { youtube = "https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" },
+  ]

@@ -6,12 +6,20 @@
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
 colorScheme = "custom"
-darkMode = "true"
-# darkToggle = false
-# logo = "img/logo.jpg"
-description = "Website of computer engineering undergraduate student interested in cybersecurity."
-mainSections = ["blog", "cheatsheets"]
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = true
+showAppearanceSwitcher = true
+
+enableSearch = true
+enableCodeCopy = true
+enableGitInfo = true
+
+mainSections = ["blog"]
 robots = "all"
+showScrollToTop = true
+
+[frontmatter]
+  lastmod = [':git']
 
 [homepage]
   layout = "profile" # valid options: page, profile, custom
@@ -19,10 +27,7 @@ robots = "all"
 
 [article]
   showDate = true
-  showDateUpdated = false   # Last Update ?
-  dateFormat = "2 January 2006"
-  showLastModDate = true    # Last Update ?
-  lastModDateFormat = "2 Jan 2006"    # Last Update ?
+  showDateUpdated = true
   showAuthor = true
   showBreadcrumbs = true
   showDraftLabel = true
@@ -31,27 +36,31 @@ robots = "all"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
+  invertPagination = false
   showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
   showWordCount = true
   sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
 
 [list]
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showSummary = true
+  showTableOfContents = true
   groupByYear = true
+
+[sitemap]
+  excludedKinds = ["home", "page", "section", "taxonomy", "term"]
 
 [taxonomy]
   showTermCount = true
-
-[sitemap]
-  excludedKinds = ["taxonomy", "term"]
 
 [fathomAnalytics]
   # site = "ABC12345"
   # domain = "llama.yoursite.com"
 
 [verification]
-  # google = ""
+  google = "h7gOILJJqj64agda5ngOubw8aBuvlSTETcEhziwZmIk"
   # bing = ""
   # pinterest = ""
   # yandex = ""
