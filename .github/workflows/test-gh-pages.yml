@@ -23,7 +23,7 @@ jobs:
           hugo-version: "latest"
 
       - name: Build
-        run: hugo --minify 
+        run: hugo --minify -b "https://test.zekeriyaay.com/"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -31,7 +31,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: ZekeriyaAY/test.zekeriyaay.com
-          publish_branch: main
+          publish_branch: gh-pages
           publish_dir: ./public
           cname: test.zekeriyaay.com
           
