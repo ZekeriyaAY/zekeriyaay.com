@@ -25,8 +25,8 @@ author:
   avatar: /assets/img/avatar.jpeg # change with your own avatar
 
 # URL settings
-url: "https://zekeriyaay.com/" #
-baseurl: ""
+url: "https://zekeriyaay.com" #
+baseurl: "/"
 permalink: /:title/
 google_analytics: G-7LLJDJ25PQ # leave it blank if not wish
 # fb_appid:
