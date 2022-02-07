@@ -8,7 +8,7 @@ comments: true
 ---
 
 > **Warning!** This post not yet translate to English!\
-> If you want to help with the translation, you can [**submit a pull request**]({{ site.repo }}/tree/main/{{ page.path }}). 🥰
+> If you want to help with the translation, you can [**submit a pull request**]({{ site.repo }}/{{ page.path }}). 🥰
 
 
 Bu proje walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı içerir.
