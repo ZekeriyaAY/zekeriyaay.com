@@ -21,5 +21,7 @@ In the future, I aim to work in _SOC_, _security analyst_ units on _defensive se
 **You can always reach me from the links below ✨**
 - [email](mailto:{{ site.author.email }})
 - [linkedin](https://linkedin.com/in/{{ site.author.linkedin }})
+- [github](https://github.com/{{ site.author.github }})
 - [twitter](https://twitter.com/{{ site.author.twitter }})
+- [youtube](https://youtube.com/{{ site.author.youtube }})
 
