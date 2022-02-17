@@ -5,6 +5,7 @@ on:
     branches:
       - mainCongo  # Set a branch to deploy
   pull_request:
+  workflow_dispatch: # Run workflow manually, through the Github Actions Workflow page directly
 
 jobs:
   deploy:
@@ -34,4 +35,3 @@ jobs:
           publish_branch: congo-gh-pages
           publish_dir: ./public
           cname: zekeriyaay.com
-          
