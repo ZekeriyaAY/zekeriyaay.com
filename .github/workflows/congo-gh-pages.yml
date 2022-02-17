@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - mainCongo  # Set a branch to deploy
-  pull_request:
   workflow_dispatch: # Run workflow manually, through the Github Actions Workflow page directly
 
 jobs:
