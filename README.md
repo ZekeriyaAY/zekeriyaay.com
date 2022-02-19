@@ -4,7 +4,7 @@
 [![GitHub](https://img.shields.io/github/license/ZekeriyaAY/zekeriyaay.com?logo=gnu)](https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE)
 [![CC BY-SA 4.0](https://img.shields.io/badge/license-CC%20BY--SA%204.0-lightgrey)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-## This repo has 8 branches for 3 different options for [zekeriyaay.com](https://zekeriyaay.com/) 😁
+## This repo has [8 branches](https://github.com/ZekeriyaAY/zekeriyaay.com/branches/all) for 3 different options for [zekeriyaay.com](https://zekeriyaay.com/) 😁
 
 > I am currently using the 1st theme option on [zekeriyaay.com](https://zekeriyaay.com/)
 
