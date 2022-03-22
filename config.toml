@@ -42,7 +42,7 @@ ignoreErrors = ["error-remote-getjson"]
     # ...
     # Note: result of the tree command
     userName = "z3k"
-    pcName = "z3kbuntu"
+    pcName = "3l3m3nt4ry"
     workDir = "secret"
     profile = "whois.txt"
 
