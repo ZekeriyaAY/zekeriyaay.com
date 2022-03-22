@@ -103,12 +103,8 @@ ignoreErrors = ["error-remote-getjson"]
         folderNameBlog = "blog"
         filesBlog = [
             [
-                "blog1",
-                "https://github.com/ZekeriyaAY",
-            ],
-            [
-                "blog2",
-                "https://linkedin.com/in/ZekeriyaAY",
+                "🛰️ Arduino Nano & nRF24L01 ile Walkie-Talkie",
+                "https://zekeriyaay.medium.com/arduino-walkie-talkie-10ae6113e58e",
             ],
         ]
 
