@@ -112,12 +112,8 @@ ignoreErrors = ["error-remote-getjson"]
         folderNameProject = "project"
         filesProject = [
             [
-                "pro1",
-                "https://github.com/ZekeriyaAY",
-            ],
-            [
-                "pro2",
-                "https://linkedin.com/in/ZekeriyaAY",
+                "📆Datetime of Workflow &bull; Show the workflow's datetime in the README",
+                "https://github.com/marketplace/actions/datetime-of-workflow",
             ],
         ]
 

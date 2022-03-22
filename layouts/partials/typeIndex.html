@@ -5,8 +5,8 @@
 <span id="std_out_03"></span> <br>
 <span id="ps1_05"></span> <span id="treeBlog"></span> <br>
 <span id="std_out_05"></span> <br>
-<!-- <span id="ps1_06"></span> <span id="treeProject"></span> <br>
-<span id="std_out_06"></span> <br> -->
+<span id="ps1_06"></span> <span id="treeProject"></span> <br>
+<span id="std_out_06"></span> <br>
 <span id="ps1_04"></span>   <span id="std_out_04"></span> 
 
 <script type="text/javascript">
@@ -66,8 +66,8 @@
         await typewriter("{{ .envWithDir }}", "ps1_05", ps1Delay); await typewriter("{{ .treeBlog }}", "treeBlog", commandDelay);
         await typewriter("{{ .leafBlog }}", "std_out_05", stdoutDelay);
 
-        // await typewriter("{{ .envWithDir }}", "ps1_06", ps1Delay); await typewriter("{{ .treeProject }}", "treeProject", commandDelay);
-        // await typewriter("{{ .leafProject }}", "std_out_06", stdoutDelay);
+        await typewriter("{{ .envWithDir }}", "ps1_06", ps1Delay); await typewriter("{{ .treeProject }}", "treeProject", commandDelay);
+        await typewriter("{{ .leafProject }}", "std_out_06", stdoutDelay);
         
         await typewriter("{{ .envWithDir }}", "ps1_04", ps1Delay);  await typewriter(" ", "std_out_04", 999999);
         return;
