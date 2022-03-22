@@ -10,6 +10,8 @@ googleAnalytics = "G-7LLJDJ25PQ"
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
 
+disableKinds = ['taxonomy', 'term']
+
 [Params]
     # Additions start here
     [Params.Navbar]
