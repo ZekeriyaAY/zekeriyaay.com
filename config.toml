@@ -29,7 +29,7 @@ disableKinds = ['taxonomy', 'term']
     # Note: You can choose between
     # Note: hugo-theme-shell original: ["shell-powershell", "shell-ubuntu", "shell-retro"]
     # Note: gogh theme: https://mayccoll.github.io/Gogh/
-    scheme = "Molokai"
+    scheme = "Aura"
     # Molokai, Brogrammer, Seti, Atom
     
     # Note: in terminal
