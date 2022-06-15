@@ -21,7 +21,7 @@ jobs:
         uses: ZekeriyaAY/workflow-date@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          date_format: '%d %b %Y  %H:%M:%S%Z'
+          date_format: '%d %b %Y  %H:%M:%S %Z'
           # timezone: 'UTC'
           tag: 'LAST-UPDATE'
           markdown_path: './config.toml'
