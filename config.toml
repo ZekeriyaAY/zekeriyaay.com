@@ -13,7 +13,8 @@ googleAnalytics = "G-7LLJDJ25PQ"  # add your tracking id
   logo = ""  # url or path to a logo to put in the header
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
-    <!-- LAST-UPDATE:END -->
+15 Jun 2022  18:31:27UTC
+<!-- LAST-UPDATE:END -->
     """  # change to "Last updated" to use the last updated date
   [params.footer]
     html = """
