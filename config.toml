@@ -11,6 +11,10 @@ googleAnalytics = "G-7LLJDJ25PQ"  # add your tracking id
   description = "A simple monospaced resume theme for Hugo."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   logo = ""  # url or path to a logo to put in the header
+  lastUpdate = """
+    <!-- LAST-UPDATE:START -->
+    <!-- LAST-UPDATE:END -->
+    """  # change to "Last updated" to use the last updated date
   [params.footer]
     html = """
     <small>
