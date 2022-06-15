@@ -4,7 +4,7 @@ title = "Zekeriya AY"
 
 ## About Me
 
-{{< figure class="avatar" src="/avatar.jpeg" alt="avatar">}}
+{{< figure class="avatar" src="/avatar.webp" alt="avatar">}}
 
 I'm Zekeriya AY, a computer engineering undergraduate student at [Bursa Uludag University](https://uludag.edu.tr/).
 
