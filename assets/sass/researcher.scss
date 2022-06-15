@@ -64,6 +64,16 @@ body {
 .nav-link {
     @extend %link-default;
 }
+.last-update {
+    font-size: small;
+}
+.last-update-title {  
+    @extend %link-dark;
+    font-weight: bold;
+}
+.last-update-date {
+}
+
 #content {
     a {
         @extend %link-default;
