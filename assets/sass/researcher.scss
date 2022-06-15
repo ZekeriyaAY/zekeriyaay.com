@@ -13,6 +13,7 @@ $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
 // Margins
 $y-small: 0.6rem;
 $y-medium: 1.0rem;
+$y-large: 1.5rem;
 
 // Placeholders
 %link-default {
@@ -73,7 +74,7 @@ body {
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
         font-weight: bold;
-        margin: $y-medium 0 $y-small 0;
+        margin: $y-large 0 $y-small 0;
     }
     @for $i from 1 through 4 {
         h#{$i} {
