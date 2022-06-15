@@ -15,7 +15,6 @@ I'm Zekeriya AY, a computer engineering undergraduate student at [Bursa Uludag U
 * Cryptography
 * Network Security
 * Blue Team, SOC analysis
-* Mobile App Development(Flutter, Swift)
 * Docker, Kubernetes
 * Virtualization, Cloud
 * GNU/Linux
@@ -34,9 +33,31 @@ I'm Zekeriya AY, a computer engineering undergraduate student at [Bursa Uludag U
 
 ## Work Experience
 
+> **Cyber Security Trainee @ [Turkish Airlines Technology Cyber Take-Off](https://www.cybertake-off.com/)**\
+> May 2022 - Present
+
+> **System Administrator @ [BUÜ Computer Engineering Department](https://www.uludag.edu.tr/bm)**\
+> January 2022 - Present
+>
+> I work in the installation and management of servers such as authorization, closing security vulnerabilities, virtualization, remote desktop connection.
+
 > **Cyber Threat Intelligence Intern @ [BGA Security](https://www.bgasecurity.com/)**\
 > March 2022 - April 2022
+> - Dark Web Monitoring
+> - Hacker Forums Monitoring
+> - Digital Footprinting
+> - Code Repository Monitoring
+> - Phishing Campaign Detection
+> - Passive Digital Asset Monitoring
+> - Social Media Monitoring
+> - VIP Monitoring
 
+> **Cyber Security Analyst Trainee @ [Akbank, SabancıDX<br> Cisco Networking Academy, Ağ Yöneticileri Derneği](https://www.cybertake-off.com/)**\
+> October 2021 - March 2022
+> - CCNA: Introduction to Networks
+> - CyberOps Associate
+> - Blue Team Approach
+> - Incident Response/Threat Detection
 
 ## Certificates
 1. [CyberOps Associate](https://www.credly.com/badges/27f2552f-0828-4b38-b530-14c21e0ad79f) - Feb 2022
