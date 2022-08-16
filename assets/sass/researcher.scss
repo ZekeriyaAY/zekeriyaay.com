@@ -14,6 +14,7 @@ $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
 $y-small: 0.6rem;
 $y-medium: 1.0rem;
 $y-large: 1.5rem;
+$y-xlarge: 2.0rem;
 
 // Placeholders
 %link-default {
@@ -84,7 +85,7 @@ body {
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
         font-weight: bold;
-        margin: $y-large 0 $y-small 0;
+        margin: $y-xlarge 0 $y-small 0;
     }
     @for $i from 1 through 4 {
         h#{$i} {
@@ -97,7 +98,7 @@ body {
         max-width: 100%;
     }
     .avatar > img {
-        border-radius: 20%;
+        border-radius: 25%;
         float: right;
         margin: -15px 5px 0 16px;
         height: $avatar-size;

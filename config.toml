@@ -8,7 +8,7 @@ googleAnalytics = "G-7LLJDJ25PQ"  # add your tracking id
 
 [params]
   author = "Zekeriya AY"
-  description = "A simple monospaced resume theme for Hugo."
+  description = "Cyber Security Specialist and System Administrator's portfolio website."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   logo = ""  # url or path to a logo to put in the header
   lastUpdate = """
@@ -26,7 +26,7 @@ googleAnalytics = "G-7LLJDJ25PQ"  # add your tracking id
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
     pageWidth = "750px"
-    avatarSize = "150px"
+    avatarSize = "250px"
     colorPrimary = "#EDECEE"
     colorSecondary = "#DC3545"
     colorThird = "#15141B"
