@@ -6,6 +6,8 @@ title = "Zekeriya AY"
 
 I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https://uludag.edu.tr/" target="_blank">Bursa Uludag University</a>.
 
+Interested in Cyber Security, Servers, Network Security Devices, Cloud...
+
 
 ## Research Interest
 
@@ -16,7 +18,7 @@ I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https:
 * Network Security
 * Blue Team, SOC analysis
 * Docker, Kubernetes
-* Virtualization, Cloud
+* Virtualization, Cloud, Proxmox
 * GNU/Linux
 * Python, C, Bash Script
 
@@ -31,7 +33,7 @@ I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https:
 * <a href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" target="_blank">Youtube</a><!-- [^1] -->
 
 
-## Work Experience
+## Experiences
 
 > **Cyber Security Trainee @ <a href="https://www.cybertake-off.com" target="_blank">Turkish Airlines Technology Cyber Take-Off 2022</a>**\
 > May 2022 - Present
@@ -54,7 +56,7 @@ I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https:
 > - Web Security
 > - Python
 > - Regulation(KVKK, GDPR, PCI-DSS)
-> - <a href="/certificate/ZekeriyaAY_CyberTakeOff2022.png" target="_blank">Certifications</a>
+> - <a href="/certificate/ZekeriyaAY_CyberTakeOff2022.webp" target="_blank">Certifications</a>
 
 > **System Administrator @ <a href="https://www.uludag.edu.tr/bm" target="_blank">BUÜ Computer Engineering Department</a>**\
 > January 2022 - Present
