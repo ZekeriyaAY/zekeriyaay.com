@@ -4,12 +4,12 @@ title = "Zekeriya AY"
 
 ## About Me
 
-{{< figure class="avatar" src="/avatar.webp" alt="avatar">}}
-
 I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https://uludag.edu.tr/" target="_blank">Bursa Uludag University</a>.
 
 
 ## Research Interest
+
+{{< figure class="avatar" src="/thyzek.webp" alt="avatar">}}
 
 * Server, Firewall, IPS/IDS
 * Cryptography
