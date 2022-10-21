@@ -35,8 +35,11 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 
 ## Experiences
 
+> **Cyber Security Specialist @ <a href="https://www.linkedin.com/company/thyteknoloji/mycompany/" target="_blank">Turkish Airlines Technology</a>**\
+> Sep 2022 - Present
+
 > **Cyber Security Trainee @ <a href="https://www.cybertake-off.com" target="_blank">Turkish Airlines Technology Cyber Take-Off 2022</a>**\
-> May 2022 - Present
+> May 2022 - July 2022 
 >
 > **Istanbul 7/24 Camp**
 > - Active Directory
