@@ -28,7 +28,7 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 * Email: <a href="mailto:zekeriya@zekeriyaay.com" target="_blank">zekeriya@zekeriyaay.com</a>
 * GitHub: <a href="https://github.com/ZekeriyaAY" target="_blank">github.com/ZekeriyaAY</a>
 * LinkedIn: <a href="https://linkedin.com/in/ZekeriyaAY" target="_blank">linkedin.com/in/ZekeriyaAY</a>
-* Medium: <a href="https://zekeriyaay.medium.com" target="_blank">zekeriyaay.medium.com</a>
+* Blog: <a href="https://blog.zekeriyaay.com" target="_blank">blog.zekeriyaay.com</a>
 * Twitter: <a href="https://twitter.com/zekeriyaaycom" target="_blank">twitter.com/zekeriyaaycom</a>
 * <a href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" target="_blank">Youtube</a><!-- [^1] -->
 
@@ -104,11 +104,11 @@ More and details at <a href="/certificate">/certificate &#10132;</a>
 
 ## Blog
 
-\[<a href="https://zekeriyaay.medium.com" target="_blank">Medium</a>\]
+\[<a href="https://blog.zekeriyaay.com" target="_blank">Blog</a>\]
 
 1. **Arduino Nano & nRF24L01 ile Walkie-Talkie** [TR]\
 Making walkie-talkie, push-to-talk radio with Arduino, nRF24L01\
-<a href="https://zekeriyaay.medium.com/arduino-walkie-talkie-10ae6113e58e" target="_blank">post</a>
+<a href="https://blog.zekeriyaay.com/arduino-walkie-talkie" target="_blank">post</a>
 
 
 ## Education
