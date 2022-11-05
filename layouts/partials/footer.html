@@ -11,8 +11,10 @@
         <div class="container text-center">
         {{ with .html }}
             {{ . | safeHTML }}
-        {{ else }}
-            <a href="{{ .url | absURL }}" target="_blank"><small>{{ .text }}</small></a>
+        {{ end }}
+        <br>
+        {{ with .privacy }}
+            {{ . | safeHTML }}
         {{ end }}
         </div>
     {{ end }}

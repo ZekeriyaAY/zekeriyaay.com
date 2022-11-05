@@ -27,18 +27,18 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 
 * Email: <a href="mailto:zekeriya@zekeriyaay.com" target="_blank">zekeriya@zekeriyaay.com</a>
 * GitHub: <a href="https://github.com/ZekeriyaAY" target="_blank">github.com/ZekeriyaAY</a>
-* LinkedIn: <a href="https://linkedin.com/in/ZekeriyaAY" target="_blank">linkedin.com/in/ZekeriyaAY</a>
+* Linked<span class="fab fa-linkedin fa-sm"></span>: <a href="https://linkedin.com/in/ZekeriyaAY" target="_blank">linkedin.com/in/ZekeriyaAY</a>
 * Blog: <a href="https://blog.zekeriyaay.com" target="_blank">blog.zekeriyaay.com</a>
 * Twitter: <a href="https://twitter.com/zekeriyaaycom" target="_blank">twitter.com/zekeriyaaycom</a>
-* <a href="https://youtube.com/@ZekeriyaAY" target="_blank">Youtube</a><!-- [^1] -->
+* Youtube: <a href="https://youtube.com/@ZekeriyaAY" target="_blank">youtube.com/@ZekeriyaAY</a><!-- [^1] -->
 
 
 ## Experiences
 
-> **Cyber Security Specialist @ <a href="https://www.linkedin.com/company/thyteknoloji/mycompany/" target="_blank">Turkish Airlines Technology</a>**\
+> **Cyber Security Specialist <span class="fas fa-plane fa-sm"></span> <a href="https://www.linkedin.com/company/thyteknoloji/mycompany/" target="_blank">Turkish Airlines Technology</a>**\
 > Sep 2022 - Present
 
-> **Cyber Security Trainee @ <a href="https://www.cybertake-off.com" target="_blank">Turkish Airlines Technology Cyber Take-Off 2022</a>**\
+> **Cyber Security Trainee <span class="fas fa-plane fa-sm"></span> <a href="https://www.cybertake-off.com" target="_blank">Turkish Airlines Technology Cyber Take-Off 2022</a>**\
 > May 2022 - July 2022 
 >
 > **Istanbul 7/24 Camp**
@@ -61,7 +61,7 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 > - Regulation(KVKK, GDPR, PCI-DSS)
 > - <a href="/certificate/ZekeriyaAY_CyberTakeOff2022.webp" target="_blank">Certificates</a>
 
-> **System Administrator @ <a href="https://www.uludag.edu.tr/bm" target="_blank">BUÜ Computer Engineering Department</a>**\
+> **System Administrator <span class="fas fa-server fa-sm"></span> <a href="https://www.uludag.edu.tr/bm" target="_blank">BUÜ Computer Engineering Department</a>**\
 > January 2022 - Present
 >
 > I work in the installation and management of servers such as authorization, virtualization(Proxmox), remote desktop connection.
