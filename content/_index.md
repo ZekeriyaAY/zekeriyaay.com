@@ -30,7 +30,7 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 * LinkedIn: <a href="https://linkedin.com/in/ZekeriyaAY" target="_blank">linkedin.com/in/ZekeriyaAY</a>
 * Blog: <a href="https://blog.zekeriyaay.com" target="_blank">blog.zekeriyaay.com</a>
 * Twitter: <a href="https://twitter.com/zekeriyaaycom" target="_blank">twitter.com/zekeriyaaycom</a>
-* <a href="https://youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ?sub_confirmation=1" target="_blank">Youtube</a><!-- [^1] -->
+* <a href="https://youtube.com/@ZekeriyaAY" target="_blank">Youtube</a><!-- [^1] -->
 
 
 ## Experiences
@@ -59,12 +59,12 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 > - Web Security
 > - Python
 > - Regulation(KVKK, GDPR, PCI-DSS)
-> - <a href="/certificate/ZekeriyaAY_CyberTakeOff2022.webp" target="_blank">Certifications</a>
+> - <a href="/certificate/ZekeriyaAY_CyberTakeOff2022.webp" target="_blank">Certificates</a>
 
 > **System Administrator @ <a href="https://www.uludag.edu.tr/bm" target="_blank">BUÜ Computer Engineering Department</a>**\
 > January 2022 - Present
 >
-> I work in the installation and management of servers such as authorization, closing security vulnerabilities, virtualization, remote desktop connection.
+> I work in the installation and management of servers such as authorization, virtualization(Proxmox), remote desktop connection.
 
 > **Cyber Threat Intelligence Intern @ <a href="https://www.bgasecurity.com/" target="_blank">BGA Security</a>**\
 > March 2022 - April 2022
@@ -100,6 +100,8 @@ More and details at <a href="/certificate">/certificate &#10132;</a>
 
 1. <a href="https://github.com/marketplace/actions/datetime-of-workflow" target="_blank">Datetime of Workflow</a>: Show the workflow's datetime in your GitHub profile or in the README of your project repository
 1. <a href="https://github.com/ZekeriyaAY/sniffles" target="_blank">Sniffles</a>: Signature-based IDS/IPS for home networks
+
+See my other projects on <a href="https://github.com/ZekeriyaAY" target="_blank">GitHub &#10132;</a>
 
 
 ## Blog
