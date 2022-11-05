@@ -4,13 +4,14 @@ theme = "researcher"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = false          # enable KaTeX (https://katex.org/) globally
-googleAnalytics = ""  # add your tracking id
+googleAnalytics = "G-6SPGBLEQN0"  # add your tracking id
 
 [params]
   author = "Zekeriya AY"
   description = "Cyber Security Specialist and System Administrator's portfolio website."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   logo = ""  # url or path to a logo to put in the header
+  googleTagManager = ""  # GTM-*******
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
     <!-- LAST-UPDATE:END -->
