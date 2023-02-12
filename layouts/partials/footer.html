@@ -3,7 +3,7 @@
     {{ if .Site.Params.socialIcons }}
     <div class="container text-center">
         {{ range $item := .Site.Params.socialIcons }}
-            <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" target="_blank"></a>
+            <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}" target="_blank"></a>
         {{ end }}
     </div>
     {{ end }}

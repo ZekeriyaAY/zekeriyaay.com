@@ -9,12 +9,13 @@ $third: {{ .Param "style.colorThird" | default "#15141B" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
+$font-size: {{ .Param "style.fontSize" | default "14pt" }};
 
 // Margins
 $y-small: 0.6rem;
 $y-medium: 1.0rem;
 $y-large: 1.5rem;
-$y-xlarge: 2.0rem;
+$y-xlarge: 3.0rem;
 
 // Placeholders
 %link-default {
@@ -53,6 +54,7 @@ body {
 * {
     color: $primary;
     font-family: $font-family;
+    font-size: $font-size;
     line-height: 1.2;
 }
 .container {
@@ -70,6 +72,7 @@ body {
 }
 .last-update-title {  
     @extend %link-dark;
+    font-size: small;
     font-weight: bold;
 }
 .last-update-date {
