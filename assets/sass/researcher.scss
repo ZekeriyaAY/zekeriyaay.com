@@ -9,6 +9,7 @@ $third: {{ .Param "style.colorThird" | default "#15141B" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
+$font-size: {{ .Param "style.fontSize" | default "14pt" }};
 
 // Margins
 $y-small: 0.6rem;
@@ -53,6 +54,7 @@ body {
 * {
     color: $primary;
     font-family: $font-family;
+    font-size: $font-size;
     line-height: 1.2;
 }
 .container {
@@ -70,6 +72,7 @@ body {
 }
 .last-update-title {  
     @extend %link-dark;
+    font-size: small;
     font-weight: bold;
 }
 .last-update-date {
