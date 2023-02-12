@@ -15,7 +15,7 @@ $font-size: {{ .Param "style.fontSize" | default "14pt" }};
 $y-small: 0.6rem;
 $y-medium: 1.0rem;
 $y-large: 1.5rem;
-$y-xlarge: 2.0rem;
+$y-xlarge: 3.0rem;
 
 // Placeholders
 %link-default {

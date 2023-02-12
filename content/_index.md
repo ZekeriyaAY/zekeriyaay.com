@@ -4,7 +4,7 @@ title = "Zekeriya AY"
 
 ## About Me
 
-I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https://uludag.edu.tr/" target="_blank">Bursa Uludag University</a>.
+I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https://uludag.edu.tr/" target="_blank">Bursa Uludag University</a> and I am working as a Cyber Security Specialist at <a href="https://turkishtechnology.com" target="_blank">Turkish Airlines Technology</a>.
 
 Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 
@@ -16,7 +16,6 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 * Server, Firewall, IPS/IDS
 * Cryptography
 * Network Security
-* Blue Team, SOC analysis
 * Docker, Kubernetes
 * Virtualization, Cloud, Proxmox
 * GNU/Linux
@@ -27,18 +26,23 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 
 * Email: <a href="mailto:zekeriya@zekeriyaay.com" target="_blank">zekeriya@zekeriyaay.com</a>
 * GitHub: <a href="https://github.com/ZekeriyaAY" target="_blank">github.com/ZekeriyaAY</a>
-* Linked<span class="fab fa-linkedin fa-sm"></span>: <a href="https://linkedin.com/in/ZekeriyaAY" target="_blank">linkedin.com/in/ZekeriyaAY</a>
+* Linked<span class="fab fa-linkedin fa-sm"></span> <a href="https://linkedin.com/in/ZekeriyaAY" target="_blank">linkedin.com/in/ZekeriyaAY</a>
 * Blog: <a href="https://blog.zekeriyaay.com" target="_blank">blog.zekeriyaay.com</a>
-* Twitter: <a href="https://twitter.com/zekeriyaaycom" target="_blank">twitter.com/zekeriyaaycom</a>
+* Twitter<span class="fas fa-hashtag fa-sm"></span> <a href="https://twitter.com/zekeriyaaycom" target="_blank">twitter.com/zekeriyaaycom</a>
 * Youtube: <a href="https://youtube.com/@ZekeriyaAY" target="_blank">youtube.com/@ZekeriyaAY</a><!-- [^1] -->
 
 
 ## Experiences
 
-> **Cyber Security Specialist <span class="fas fa-plane fa-sm"></span> <a href="https://www.linkedin.com/company/thyteknoloji/mycompany/" target="_blank">Turkish Airlines Technology</a>**\
+> **Cyber Security Specialist <span class="fas fa-plane fa-sm"></span> <a href="https://turkishtechnology.com" target="_blank">Turkish Airlines Technology</a>**\
 > Sep 2022 - Present
+>
+> Vulnerability Management
+> - Vulnerability Scanning
+> - Vulnerability Reporting
 
-> **Cyber Security Trainee <span class="fas fa-plane fa-sm"></span> <a href="https://www.cybertake-off.com" target="_blank">Turkish Airlines Technology Cyber Take-Off 2022</a>**\
+
+> **Cyber Security Trainee <span class="fas fa-plane-departure fa-sm"></span> <a href="https://www.cybertake-off.com" target="_blank">Turkish Airlines Technology Cyber Take-Off 2022</a>**\
 > May 2022 - July 2022 
 >
 > **Istanbul 7/24 Camp**
@@ -61,10 +65,14 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 > - Regulation(KVKK, GDPR, PCI-DSS)
 > - <a href="/certificate/ZekeriyaAY_CyberTakeOff2022.webp" target="_blank">Certificates</a>
 
-> **System Administrator <span class="fas fa-server fa-sm"></span> <a href="https://www.uludag.edu.tr/bm" target="_blank">BUÜ Computer Engineering Department</a>**\
+> **System Administrator <span class="fas fa-server fa-sm"></span> <a href="https://www.uludag.edu.tr/bm/duyuru/view?id=28458&title=span-stylefont-weight-boldbolumumuz-sunucu-odasinda-gorev-almak-isteyen-ogrencilerimizin-dikkatinespan" target="_blank">BUÜ Computer Engineering Department</a>**\
 > January 2022 - Present
 >
 > I work in the installation and management of servers such as authorization, virtualization(Proxmox), remote desktop connection.
+> - Proxmox VE
+> - GNU/Linux
+> - Authorization
+
 
 > **Cyber Threat Intelligence Intern @ <a href="https://www.bgasecurity.com/" target="_blank">BGA Security</a>**\
 > March 2022 - April 2022
@@ -117,7 +125,7 @@ Making walkie-talkie, push-to-talk radio with Arduino, nRF24L01\
 
 > **Computer Engineering @ <a href="https://uludag.edu.tr" target="_blank">Bursa Uludag University(BUÜ)</a>**\
 > 2019 - Present, Bachelor Degree
-
+> - GPA: 3.11/4.00
 
 
 <!-- [^1]: This is the first footnote. 
