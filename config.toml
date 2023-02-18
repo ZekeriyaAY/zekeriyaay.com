@@ -14,7 +14,7 @@ googleAnalytics = "G-6SPGBLEQN0"  # add your tracking id
   googleTagManager = ""  # GTM-*******
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
-12 Feb 2023  21:25:38 UTC
+18 Feb 2023  18:27:54 UTC
 <!-- LAST-UPDATE:END -->
     """  # change to "Last updated" to use the last updated date
   [params.footer]
