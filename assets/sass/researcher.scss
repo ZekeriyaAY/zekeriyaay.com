@@ -147,9 +147,9 @@ body {
             @extend %table-cell;
         }
         & tr:nth-child(2n) {
-            background-color: $primary;
+            // background-color: $primary;
             & td {
-                color: $secondary;
+                // color: $third;
             }
         }
     }
@@ -177,6 +177,9 @@ body {
     }
 }
 #footer {
+    * {
+        font-size: 13px;
+    }
     a {
         @extend %link-dark;
     }
@@ -184,6 +187,6 @@ body {
         color: $secondary;
     }
     a:hover::before {
-        text-decoration: underline $third;
+        text-decoration: underline $primary;
     }
 }
