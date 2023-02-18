@@ -1,7 +1,5 @@
 <head>
-    <!-- {{ if not .Site.IsServer }}
-        {{ template "shortcodes/google_tag_manager_head.html" . }}
-    {{ end }} -->
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,9 +24,7 @@
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    <!-- {{ if not .Site.IsServer }}
-        {{ template "_internal/google_analytics.html" . }}
-    {{ end }} -->
+
 
     {{ if .Params.noindex }}
         <meta name="robots" content="noindex">
