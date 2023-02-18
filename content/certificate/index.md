@@ -4,7 +4,7 @@ title = "All Certificates"
 
 ## All Certificates & Details
 
-1. Cloud-Delivered Security Services &bullet; <a href="/certificate/ZekeriyaAY_PAN_Certificate_of_Completion.pdf" target="_blank">Cert</a> &bullet; Jul 2022
+<!-- 1. Cloud-Delivered Security Services &bullet; <a href="/certificate/ZekeriyaAY_PAN_Certificate_of_Completion.pdf" target="_blank">Cert</a> &bullet; Jul 2022
 
 1. Threat Hunting Workshop 4.0 &bullet; <a href="/certificate/ZekeriyaAY_ThreatHuntingWorkshop.pdf" target="_blank">Cert</a> &bullet; Jun 2022
 
@@ -20,7 +20,21 @@ title = "All Certificates"
 
 1. Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty &bullet; <a href="https://ude.my/UC-5393cacd-8216-401c-ac28-82a168144020" target="_blank">Badge</a> &bullet; <a href="/certificate/ZekeriyaAY_BugBounty.pdf" target="_blank">Cert</a> &bullet; Dec 2020
 
-1. Mobility Fundamentals &bullet; <a href="/certificate/ZekeriyaAY_MobilityFundamentals.pdf" target="_blank">Cert</a> &bullet; Jun 2020
+1. Mobility Fundamentals &bullet; <a href="/certificate/ZekeriyaAY_MobilityFundamentals.pdf" target="_blank">Cert</a> &bullet; Jun 2020 -->
+
+
+Year | Title | Links
+-----|-------|------
+Jul 2022 | Cloud-Delivered Security Services  | <a href="/certificate/ZekeriyaAY_PAN_Certificate_of_Completion.pdf" target="_blank">Cert</a>
+Jun 2022 | Threat Hunting Workshop 4.0 | <a href="/certificate/ZekeriyaAY_ThreatHuntingWorkshop.pdf" target="_blank">Cert</a>
+May 2022 | Turkish Airlines Technology Cyber Take-Off 2022 | <a href="/certificate/ZekeriyaAY_CyberTakeOff2022.webp" target="_blank">Cert</a>
+Feb 2022 | CyberOps Associate | <a href="/certificate/ZekeriyaAY_CyberOps_Associate.pdf" target="_blank">Cert</a> &bullet; <a href="https://www.credly.com/badges/27f2552f-0828-4b38-b530-14c21e0ad79f" target="_blank">Badge</a>
+Jan 2022 | CCNA: Introduction to Networks | <a href="/certificate/ZekeriyaAY_CCNA1_IntroductionToNetworks.pdf" target="_blank">Cert</a> &bullet; <a href="https://credly.com/badges/c37ea143-d98d-4c5b-a9ef-2af2423a4b1d" target="_blank">Badge</a>
+Nov 2021 | NDG Linux Unhatched | <a href="/certificate/ZekeriyaAY_NDGLinuxUnhatched.pdf" target="_blank">Cert</a>
+Sep 2021 | Etik Hacker Olma | <a href="/certificate/ZekeriyaAY_EtikHackerOlma.pdf" target="_blank">Cert</a> &bullet; <a href="https://ude.my/UC-106ed706-5d6c-49b0-93cc-d295aff57e50" target="_blank">Badge</a>
+Apr 2021 | Introduction to Cybersecurity | <a href="/certificate/ZekeriyaAY_IntroductionToCybersecurity.pdf" target="_blank">Cert</a> &bullet; <a href="https://credly.com/badges/cdc52430-9c06-413e-b8d4-90745da4c678" target="_blank">Badge</a>
+Dec 2020 | Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty | <a href="/certificate/ZekeriyaAY_BugBounty.pdf" target="_blank">Cert</a> &bullet; <a href="https://ude.my/UC-5393cacd-8216-401c-ac28-82a168144020" target="_blank">Badge</a>
+Jun 2020 | Mobility Fundamentals | <a href="/certificate/ZekeriyaAY_MobilityFundamentals.pdf" target="_blank">Cert</a>
 
 
 <!-- [^1]: This is the first footnote. 
