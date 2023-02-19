@@ -15,7 +15,7 @@ math = false          # enable KaTeX (https://katex.org/) globally
   hotjarTrackingCode = 3373639
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
-18 Feb 2023  22:17:32 UTC
+19 Feb 2023  10:32:06 UTC
 <!-- LAST-UPDATE:END -->
     """  # change to "Last updated" to use the last updated date
   [params.footer]
