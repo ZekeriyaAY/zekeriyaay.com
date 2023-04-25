@@ -1,0 +1,54 @@
+title = "Zekeriya AY"
+baseURL = "https://zekeriyaay.com"
+theme = "hugo-minimalist"
+languageCode = 'en-us'
+
+[params]
+  author = "Zekeriya AY"
+  description = "A minimalist personal theme for Hugo."
+  favicon = "favicon.ico"
+  logo = "/img/logo.jpeg"
+
+#   [params.footer]
+#     text = "By Aniol Martí"
+#     url = "https://github.com/aniolm9/hugo-minimalist"
+
+#   [[params.sidebar]]
+#     name = "Google Scholar"
+#     icon = "ai ai-google-scholar"
+#     link = "https://scholar.google.com/"
+
+  [[params.sidebar]]
+    name = "GitHub"
+    icon = "fa-brands fa-github"
+    link = "https://github.com/ZekeriyaAY"
+
+  [[params.sidebar]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    link = "https://twitter.com/0x23k"
+
+  [[params.sidebar]]
+    name = "Email"
+    icon = "fa fa-mail-bulk"
+    link = "mailto:zekeriya@zekeriyaay.com"
+
+  [[params.sidebar]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    link = "https://linkedin.com/in/ZekeriyaAY"
+
+  [[params.sidebar]]
+    name = "Youtube"
+    icon = "fab fa-youtube"
+    link = "https://youtube.com/@ZekeriyaAY"
+    
+  [[params.sidebar]]
+    name = "Blog"
+    icon = "fa fa-blog"
+    link = "https://blog.zekeriyaay.com/"
+
+  [[params.sidebar]]
+    name = "GPG"
+    icon = "fa fa-key"
+    link = "#"
