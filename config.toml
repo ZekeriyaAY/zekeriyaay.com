@@ -6,7 +6,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   author = "Zekeriya AY"
-  description = "A minimalist personal theme for Hugo."
+  description = "cyber security specialist <3 system administrator"
   favicon = "favicon.ico"
   logo = "/img/logo.webp"
 
@@ -15,16 +15,6 @@ disableKinds = ["taxonomy", "term"]
 25 Apr 2023  18:41:26 UTC
 <!-- LAST-UPDATE:END -->"""
     url = "https://github.com/marketplace/actions/datetime-of-workflow"
-
-  [[params.sidebar]]
-    name = "GitHub"
-    icon = "fa-brands fa-github"
-    link = "https://github.com/ZekeriyaAY"
-
-  [[params.sidebar]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    link = "https://twitter.com/0x23k"
 
   [[params.sidebar]]
     name = "Email"
@@ -37,6 +27,16 @@ disableKinds = ["taxonomy", "term"]
     link = "https://linkedin.com/in/ZekeriyaAY"
 
   [[params.sidebar]]
+    name = "GitHub"
+    icon = "fa-brands fa-github"
+    link = "https://github.com/ZekeriyaAY"
+
+  [[params.sidebar]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    link = "https://twitter.com/0x23k"
+
+  [[params.sidebar]]
     name = "Youtube"
     icon = "fab fa-youtube"
     link = "https://youtube.com/@ZekeriyaAY"
@@ -47,12 +47,13 @@ disableKinds = ["taxonomy", "term"]
     link = "https://blog.zekeriyaay.com/"
 
   [[params.sidebar]]
-    name = "GPG"
+    name = "GPG Key"
     icon = "fa fa-key"
-    link = "https://keys.openpgp.org/search?q=0xC1998F1D1206E9C8"
+    # link = "https://keys.openpgp.org/search?q=0xC1998F1D1206E9C8"
+    link = "/gpg-key.md"
 
   [[params.menu]]
-    name = "About Me"
+    name = "About"
     # icon = "fa fa-home"
     link = "/"
 
@@ -80,3 +81,8 @@ disableKinds = ["taxonomy", "term"]
     name = "Certificates"
     # icon = "fa fa-file"
     link = "/certificates"
+
+  [[params.menu]]
+    name = "Blog"
+    # icon = "fa fa-file"
+    link = "/blog"
