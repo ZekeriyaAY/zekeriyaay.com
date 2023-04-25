@@ -6,7 +6,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   author = "Zekeriya AY"
-  description = "A minimalist personal theme for Hugo."
+  description = "cyber security specialist <3 system administrator"
   favicon = "favicon.ico"
   logo = "/img/logo.webp"
 
@@ -47,10 +47,11 @@ disableKinds = ["taxonomy", "term"]
   [[params.sidebar]]
     name = "GPG Key"
     icon = "fa fa-key"
-    link = "https://keys.openpgp.org/search?q=0xC1998F1D1206E9C8"
+    # link = "https://keys.openpgp.org/search?q=0xC1998F1D1206E9C8"
+    link = "/gpg-key.md"
 
   [[params.menu]]
-    name = "About Me"
+    name = "About"
     # icon = "fa fa-home"
     link = "/"
 
