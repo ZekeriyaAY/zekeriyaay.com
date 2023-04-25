@@ -1,118 +1,36 @@
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+---
+title: "About Me"
+---
 
-[Link to another page](another-page).
+hi
 
-There should be whitespace between paragraphs.
+https://keys.openpgp.org/search?q=0xC1998F1D1206E9C8
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+**Fingerprint:** 54CF C27F 9B4B E1E1 D70F  0235 **C199 8F1D 1206 E9C8**
 
-# Header 1
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## About Me
 
-## Header 2
+I'm Zekeriya AY, a computer engineering undergraduate student at <a href="https://uludag.edu.tr/" target="_blank">Bursa Uludag University</a> and I am working as a Cyber Security Specialist at <a href="https://turkishtechnology.com" target="_blank">Turkish Airlines Technology</a>.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 
-### Header 3
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+## Research Interest
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+* Server, Firewall, IPS/IDS
+* Cryptography
+* Network Security
+* Docker, Kubernetes
+* Virtualization, Cloud, Proxmox
+* GNU/Linux
+* Python, C, Bash Script
 
-#### Header 4
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+## Blog
 
-##### Header 5
+\[<a href="https://blog.zekeriyaay.com" target="_blank">Blog</a>\]
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Octocats](https://github.githubassets.com/images/modules/site/about/octocats.webp)
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+1. **Arduino Nano & nRF24L01 ile Walkie-Talkie** [TR]\
+Making walkie-talkie, push-to-talk radio with Arduino, nRF24L01\
+<a href="https://blog.zekeriyaay.com/arduino-walkie-talkie" target="_blank">post</a>
