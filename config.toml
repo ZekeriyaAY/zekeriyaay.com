@@ -10,7 +10,7 @@ languageCode = 'en-us'
   logo = "/img/logo.webp"
 
   [params.footer] 
-    text = "<!-- LAST-UPDATE:START --><!-- LAST-UPDATE:END -->"  
+    text = """<!-- LAST-UPDATE:START --><!-- LAST-UPDATE:END -->"""
     url = "https://github.com/marketplace/actions/datetime-of-workflow"
 
   [[params.sidebar]]
