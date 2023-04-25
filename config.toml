@@ -15,16 +15,6 @@ disableKinds = ["taxonomy", "term"]
     url = "https://github.com/marketplace/actions/datetime-of-workflow"
 
   [[params.sidebar]]
-    name = "GitHub"
-    icon = "fa-brands fa-github"
-    link = "https://github.com/ZekeriyaAY"
-
-  [[params.sidebar]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    link = "https://twitter.com/0x23k"
-
-  [[params.sidebar]]
     name = "Email"
     icon = "fa fa-mail-bulk"
     link = "mailto:zekeriya@zekeriyaay.com"
@@ -33,6 +23,16 @@ disableKinds = ["taxonomy", "term"]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     link = "https://linkedin.com/in/ZekeriyaAY"
+
+  [[params.sidebar]]
+    name = "GitHub"
+    icon = "fa-brands fa-github"
+    link = "https://github.com/ZekeriyaAY"
+
+  [[params.sidebar]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    link = "https://twitter.com/0x23k"
 
   [[params.sidebar]]
     name = "Youtube"
@@ -45,7 +45,7 @@ disableKinds = ["taxonomy", "term"]
     link = "https://blog.zekeriyaay.com/"
 
   [[params.sidebar]]
-    name = "GPG"
+    name = "GPG Key"
     icon = "fa fa-key"
     link = "https://keys.openpgp.org/search?q=0xC1998F1D1206E9C8"
 
@@ -78,3 +78,8 @@ disableKinds = ["taxonomy", "term"]
     name = "Certificates"
     # icon = "fa fa-file"
     link = "/certificates"
+
+  [[params.menu]]
+    name = "Blog"
+    # icon = "fa fa-file"
+    link = "/blog"

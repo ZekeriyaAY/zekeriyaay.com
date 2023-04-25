@@ -26,11 +26,3 @@ Interested in Cyber Security, Servers, Network Security Devices, Cloud...
 * GNU/Linux
 * Python, C, Bash Script
 
-
-## Blog
-
-\[<a href="https://blog.zekeriyaay.com" target="_blank">Blog</a>\]
-
-1. **Arduino Nano & nRF24L01 ile Walkie-Talkie** [TR]\
-Making walkie-talkie, push-to-talk radio with Arduino, nRF24L01\
-<a href="https://blog.zekeriyaay.com/arduino-walkie-talkie" target="_blank">post</a>
