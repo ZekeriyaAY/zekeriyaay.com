@@ -2,7 +2,6 @@ title = "Zekeriya AY"
 baseURL = "https://zekeriyaay.com"
 theme = "hugo-minimalist"
 languageCode = 'en-us'
-disableKinds = ["taxonomy", "term"]
 
 [params]
   author = "Zekeriya AY"
