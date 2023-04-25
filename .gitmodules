@@ -1,0 +1,3 @@
+[submodule "themes/hugo-minimalist"]
+	path = themes/hugo-minimalist
+	url = https://github.com/ZekeriyaAY/hugo-minimalist.git
