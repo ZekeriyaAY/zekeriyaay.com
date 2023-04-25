@@ -4,6 +4,8 @@ title: "Projects"
 
 ## Projects
 
+---
+
 All my projects can be found on my awesome [GitHub](https://github.com/ZekeriyaAY?tab=repositories).
 
 - [c-honeypot](https://github.com/selmankon/c-honeypot): Open the vulnerable port with c-honeypot's and monitor the activities of the attackers using the [c-honeypot-adminpanel](https://github.com/selmankon/c-honeypot-adminpanel)
