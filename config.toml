@@ -9,6 +9,7 @@ disableKinds = ["taxonomy", "term"]
   description = "cyber security specialist <3 system administrator"
   favicon = "favicon.ico"
   logo = "/img/logo.webp"
+  color = "dark"
 
   [params.footer] 
     text = """<!-- LAST-UPDATE:START --><!-- LAST-UPDATE:END -->"""
