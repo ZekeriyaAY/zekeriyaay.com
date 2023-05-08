@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
 
   [params.footer] 
     text = """<!-- LAST-UPDATE:START -->
-30 Apr 2023  14:12:37 UTC
+08 May 2023  17:55:34 UTC
 <!-- LAST-UPDATE:END -->"""
     url = "https://github.com/marketplace/actions/datetime-of-workflow"
 
