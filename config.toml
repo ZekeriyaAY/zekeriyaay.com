@@ -51,37 +51,12 @@ disableKinds = ["taxonomy", "term"]
     # link = "https://keys.openpgp.org/search?q=0xC1998F1D1206E9C8"
     link = "/gpg-key.md"
 
-  [[params.menu]]
-    name = "About"
-    # icon = "fa fa-home"
-    link = "/"
+  # [[params.menu]]
+  #   name = "About"
+  #   # icon = "fa fa-home"
+  #   link = "/"
 
-  [[params.menu]]
-    name = "Uses"
-    # icon = "fa fa-file"
-    link = "/uses"
-
-  [[params.menu]]
-    name = "Projects"
-    # icon = "fa fa-file"
-    link = "/projects"
-
-  [[params.menu]]
-    name = "Experiences"
-    # icon = "fa fa-file"
-    link = "/experiences"
-
-  [[params.menu]]
-    name = "Education"
-    # icon = "fa fa-file"
-    link = "/education"
-
-  [[params.menu]]
-    name = "Certificates"
-    # icon = "fa fa-file"
-    link = "/certificates"
-
-  [[params.menu]]
-    name = "Blog"
-    # icon = "fa fa-file"
-    link = "/blog"
+  # [[params.menu]]
+  #   name = "Certificates"
+  #   # icon = "fa fa-file"
+  #   link = "/certificates"
