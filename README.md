@@ -6,9 +6,12 @@
 
 ![Metrics](/github-metrics.svg)
 
-### This repo has [12+ branches](https://github.com/ZekeriyaAY/zekeriyaay.com/branches/all) for 4+ different options for [zekeriyaay.com](https://zekeriyaay.com/) 😁
+### This repo has [16+ branches](https://github.com/ZekeriyaAY/zekeriyaay.com/branches/all) for 6+ different options for [zekeriyaay.com](https://zekeriyaay.com/) 😁
 
 > I am currently using the 1st theme option on [zekeriyaay.com](https://zekeriyaay.com/)
+
+1. [devAlageek](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/devAlageek) and [mainAlageek](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/mainAlageek) branches are *source codes* of my **Hugo blog** site using my customized [Alageek](https://github.com/ZekeriyaAY/hugo-alageek-theme/) theme.\
+[gh-pages-alageek](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/gh-pages-alageek) branch is *GitHub Pages codes* of my **Hugo blog** site.
 
 1. [devMinimalist](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/devMinimalist) and [mainMinimalist](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/mainMinimalist) branches are *source codes* of my **Hugo portfolio** site using my customized [Minimalist](https://github.com/ZekeriyaAY/hugo-minimalist/) theme.\
 [minimalist-gh-pages](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/minimalist-gh-pages) branch is *GitHub Pages codes* of my **Hugo portfolio** site.
