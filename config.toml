@@ -1,0 +1,89 @@
+baseURL = 'https://zekeriyaay.com'
+languageCode = 'en'
+title = 'Zekeriya AY'
+author = "Zekeriya AY"
+
+canonifyurls = true
+paginate = 20
+theme = "alageek"
+
+buildDrafts = true
+enableEmoji = true
+enableRobotsTXT = true
+enableGitInfo = true
+
+[permalinks]
+blog = "/blog/:year/:month/:slug/"
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark.renderer]
+unsafe = true
+xhtml = true
+
+[params]
+description = "I’m a software developer. Proud father of two boys. Infrequent blogger."
+faviconfile = ""
+logofile = ""
+
+posts_navigation = true
+progressively = true
+linkedin = ""           # just username
+twitter = ""            # just username
+mastodon_url = ""       # full url for your profile
+email = ""              # email address
+
+enableRSS = true
+copyright = "© 2022 by Rinat Sabitov"
+copyrightUrl = "https://false.org.ru"
+
+latestpostcount = 10
+
+highlightjs = true
+highlightjslanguages = [
+    "bash",
+    "csharp",
+    "css",
+    "diff",
+    "django",
+    "dockerfile",
+    "golang",
+    "javascript",
+    "lisp",
+    "nginx",
+    "powershell",
+    "python",
+    "rust",
+    "yaml",
+]
+
+[[menu.primary]]
+identifier = "code"
+name = "Code"
+url = "//github.com/histrio"
+weight = 10
+
+[[menu.primary]]
+identifier = "posts"
+name = "Posts"
+url = "/blog"
+weight = 20
+
+[[menu.secondary]]
+identifier = "cv"
+name = "CV"
+url = "/cv"
+weight = 30
+
+[[menu.secondary]]
+identifier = "bmc"
+name = "Buy me a coffee"
+url = "https://www.buymeacoffee.com/histrio"
+weight = 120
+
+[[menu.footer]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 50
