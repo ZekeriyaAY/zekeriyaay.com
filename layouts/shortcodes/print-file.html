@@ -1,0 +1,2 @@
+{{ $file := .Get "filename" }}
+{{ $file | readFile | safeHTML }}
