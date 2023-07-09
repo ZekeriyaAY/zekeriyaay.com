@@ -7,7 +7,6 @@ canonifyurls = true
 paginate = 20
 theme = "alageek"
 
-buildDrafts = true
 enableEmoji = true
 enableRobotsTXT = true
 enableGitInfo = true
@@ -23,20 +22,20 @@ unsafe = true
 xhtml = true
 
 [params]
-description = "I’m a software developer. Proud father of two boys. Infrequent blogger."
-faviconfile = ""
-logofile = ""
+description = "I’m a cyber security specialist. Welcome to my diary."
+faviconfile = "favicon/favicon.ico"
+logofile = "logo.webp"
+# logofile404 = "404-memoji.png"
 
 posts_navigation = true
 progressively = true
-linkedin = ""           # just username
-twitter = ""            # just username
-mastodon_url = ""       # full url for your profile
-email = ""              # email address
+linkedin = "ZekeriyaAY"           # just username
+github = "ZekeriyaAY"             # full url for your profile
+email = "mail@zekeriyaay.com" # email address
 
 enableRSS = true
-copyright = "© 2022 by Rinat Sabitov"
-copyrightUrl = "https://false.org.ru"
+copyright = "© 2023 by Zekeriya AY"
+copyrightUrl = "/privacy"
 
 latestpostcount = 10
 
@@ -59,28 +58,22 @@ highlightjslanguages = [
 ]
 
 [[menu.primary]]
-identifier = "code"
-name = "Code"
-url = "//github.com/histrio"
-weight = 10
-
-[[menu.primary]]
 identifier = "posts"
 name = "Posts"
 url = "/blog"
+weight = 10
+
+[[menu.primary]]
+identifier = "contact"
+name = "Contact"
+url = "/contact"
 weight = 20
 
 [[menu.secondary]]
-identifier = "cv"
-name = "CV"
-url = "/cv"
+identifier = "gpg"
+name = "GPG"
+url = "/gpg"
 weight = 30
-
-[[menu.secondary]]
-identifier = "bmc"
-name = "Buy me a coffee"
-url = "https://www.buymeacoffee.com/histrio"
-weight = 120
 
 [[menu.footer]]
 identifier = "tags"
