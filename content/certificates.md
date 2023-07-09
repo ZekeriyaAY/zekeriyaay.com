@@ -5,7 +5,6 @@ draft: false
 tags: ["certificates"]
 ---
 
-
 Year | Title | Links
 -----|-------|------
 Jul 2022 | Cloud-Delivered Security Services  | [Cert](/img/certificate/ZekeriyaAY_PAN_Certificate_of_Completion.pdf)
