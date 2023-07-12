@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: ZekeriyaAY/zekeriyaay.com
+  name: git-gateway
   branch: devAlageek
 
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
