@@ -14,16 +14,16 @@
 [gh-pages-alageek](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/gh-pages-alageek) branch is *GitHub Pages codes* of my **Hugo blog** site.
 
 1. [devMinimalist](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/devMinimalist) and [mainMinimalist](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/mainMinimalist) branches are *source codes* of my **Hugo portfolio** site using my customized [Minimalist](https://github.com/ZekeriyaAY/hugo-minimalist/) theme.\
-[minimalist-gh-pages](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/minimalist-gh-pages) branch is *GitHub Pages codes* of my **Hugo portfolio** site.
+[gh-pages-minimalist](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/gh-pages-minimalist) branch is *GitHub Pages codes* of my **Hugo portfolio** site.
 
 1. [devResearcher](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/devResearcher) and [mainResearcher](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/mainResearcher) branches are *source codes* of my **Hugo portfolio** site using [Researcher](https://github.com/ojroques/hugo-researcher/) theme.\
-[researcher-gh-pages](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/researcher-gh-pages) branch is *GitHub Pages codes* of my **Hugo portfolio** site.
+[gh-pages-researcher](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/gh-pages-researcher) branch is *GitHub Pages codes* of my **Hugo portfolio** site.
 
 1. [devShell](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/devShell) and [mainShell](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/mainShell) branches are *source codes* of my **Hugo portfolio** site using [Shell](https://github.com/Yukuro/hugo-theme-shell) theme.\
-[shell-gh-pages](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/shell-gh-pages) branch is *GitHub Pages codes* of my **Hugo portfolio** site.
+[gh-pages-shell](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/gh-pages-shell) branch is *GitHub Pages codes* of my **Hugo portfolio** site.
 
 1. [devCongo](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/devCongo) and [mainCongo](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/mainCongo) branches are *source codes* of my **Hugo blog** site using [Congo](https://github.com/jpanther/congo) theme.\
-[congo-gh-pages](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/congo-gh-pages) branch is *GitHub Pages codes* of my **Hugo blog** site.
+[gh-pages-congo](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/gh-pages-congo) branch is *GitHub Pages codes* of my **Hugo blog** site.
 
 1. [jekyll](https://github.com/ZekeriyaAY/zekeriyaay.com/tree/jekyll) branch is *source codes* and *GitHub Pages codes* of my **Jekyll blog** site using [Klisé](https://github.com/piharpi/jekyll-klise) theme.
 
