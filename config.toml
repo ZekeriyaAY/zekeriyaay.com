@@ -22,6 +22,7 @@ googleAnalytics = ""  # add your tracking id
     # url = "https://github.com/ojroques/hugo-researcher"
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
+    fontFamilyHeader = "'Ubuntu Mono', monospace"
     fontSize = "14pt"
     pageWidth = "750px"
     avatarSize = "200px"
