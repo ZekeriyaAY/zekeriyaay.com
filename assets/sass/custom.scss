@@ -1,0 +1,63 @@
+// Sizes
+$avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
+
+// Colors
+$black: {{ .Param "style.colorBlack" | default "#222222" }};
+$red: {{ .Param "style.colorRed" | default "#dc3545" }};
+$background: {{ .Param "style.colorBackground" | default "#0F0F0F" }};
+
+// Font
+$font-size: {{ .Param "style.fontSize" | default "14pt" }};
+
+// Placeholders
+%link-default {
+    color: $red;
+    text-decoration: none;
+    & * {
+        color: $red;
+    }
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+%table-cell {
+    border: 1px solid #cccccc;
+    padding: 6px 12px;
+    text-align: left;
+}
+
+// Style
+body {
+    background-color: $background;    
+}
+#content {
+    .avatar > img {
+        border-radius: 25%;
+        float: right;
+        margin: -8px 0 0 16px;
+        height: $avatar-size;
+        width: $avatar-size;
+    }
+    table {
+        & td {
+            @extend %table-cell;
+            font-size: medium;
+        }
+        & tr:nth-child(2n) {
+            background-color: transparent;
+        }
+    }
+    hr {
+        border-top: 1px solid rgba($black, .1)
+    }
+}
+#footer {
+    .last-update {
+        font-size: 11pt;
+
+        & > a {
+            @extend %link-default;
+        }
+    }
+}
