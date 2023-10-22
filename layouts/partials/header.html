@@ -1,7 +1,6 @@
-
 <div class="container mt-5">
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
-        <a class="navbar-brand mx-0 mr-sm-auto" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+        <a class="navbar-brand mx-0 mx-sm-auto" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
           {{ with .Site.Params.logo }}
             <img src="{{ . | absURL }}" alt="logo">
           {{ end }}
@@ -19,17 +18,6 @@
                     {{ end }}
                 {{ end }}
             {{ end }}
-        </div>
-        <div class="text-center last-update">
-            <a class="last-update-title" href="https://github.com/marketplace/actions/datetime-of-workflow" target="_blank">
-                Last Update
-            </a>
-            <div class="last-update-date">
-                {{ with .Site.Params.lastUpdate }}
-                    {{ . | safeHTML }}
-                {{ else }}
-                    <span>NaN</span>
-                {{ end }}
         </div>
     </nav>
 </div>
