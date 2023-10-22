@@ -7,6 +7,7 @@ $red: {{ .Param "style.colorRed" | default "#dc3545" }};
 $background: {{ .Param "style.colorBackground" | default "#0F0F0F" }};
 
 // Font
+$font-family-header: {{ .Param "style.fontFamilyHeader" | default "Ubuntu Mono" }};
 $font-size: {{ .Param "style.fontSize" | default "14pt" }};
 
 // Placeholders
@@ -21,6 +22,17 @@ $font-size: {{ .Param "style.fontSize" | default "14pt" }};
         text-decoration: underline;
     }
 }
+%link-dark {
+    color: $black;
+    text-decoration: none;
+    & * {
+        color: $black;
+    }
+    &:hover {
+        color: $black;
+        text-decoration: underline;
+    }
+}
 %table-cell {
     border: 1px solid #cccccc;
     padding: 6px 12px;
@@ -30,6 +42,11 @@ $font-size: {{ .Param "style.fontSize" | default "14pt" }};
 // Style
 body {
     background-color: $background;    
+}
+.navbar-brand {
+    @extend %link-dark;
+    font-family: $font-family-header;
+    font-size: 2rem;
 }
 #content {
     .avatar > img {
