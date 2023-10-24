@@ -1,4 +1,4 @@
-title = "ZEKERIYA AY"
+title = "Zekeriya AY"
 baseURL = "https://zekeriyaay.com"
 languageCode = 'en-us'
 theme = "researcher"
@@ -22,8 +22,8 @@ googleAnalytics = ""  # add your tracking id
     # text = "By Olivier Roques"
     # url = "https://github.com/ojroques/hugo-researcher"
   [params.style]  # appearance options (can be omitted)
-    fontFamily = "Inconsolata"
-    fontFamilyHeader = "'Ubuntu Mono', monospace"
+    fontFamily = "'Ubuntu Mono', monospace"
+    fontFamilyHeader = "Dancing Script"
     fontSize = "14pt"
     pageWidth = "750px"
     avatarSize = "200px"
