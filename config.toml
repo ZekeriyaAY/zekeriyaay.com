@@ -4,7 +4,8 @@ languageCode = 'en-us'
 theme = "researcher"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 enableEmoji = true
-enableGitInfo = true
+enableGitInfo = false
+enableRobotsTXT = true
 math = false          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = ""  # add your tracking id
 
