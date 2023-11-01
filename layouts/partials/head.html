@@ -2,7 +2,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{{ .Title }}</title>
+    {{ if .IsHome -}}
+        <title>{{ .Site.Title | emojify }}</title>
+        <meta name="title" content="{{ .Site.Title | emojify }}" />
+    {{- else -}}
+        <title>{{ .Title | emojify }} | {{ .Site.Title | emojify }}</title>
+        <meta name="title" content="{{ .Title | emojify }} | {{ .Site.Title | emojify }}" />
+    {{- end }}
+
     <meta name="description" content="{{ .Site.Params.description }}">
     <meta name="author" content='{{ .Site.Params.author }}'>
 
