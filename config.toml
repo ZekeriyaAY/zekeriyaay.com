@@ -14,6 +14,7 @@ googleAnalytics = ""  # add your tracking id
   description = "Cyber Security and System Administration enthusiast's personal website."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   # logo = ""  # url or path to a logo to put in the header
+  lang = "en"
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
 01 Nov 2023  19:01:21 UTC
