@@ -17,7 +17,7 @@ googleAnalytics = ""  # add your tracking id
   lang = "en"
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
-01 Nov 2023  19:01:21 UTC
+01 Nov 2023  19:17:43 UTC
 <!-- LAST-UPDATE:END -->
     """  # change to "Last updated" to use the last updated date
   [params.footer]
