@@ -12,6 +12,14 @@ Cyber Security & System Administration enthusiast
 
 <hr>
 
+## 𝕏 Project: Home Server
+
+<div style="width:75%;">
+{{< youtubeplaylist id="PLqBfq9bu8VRuFwMILaqUrIZaMQLHCU1IA" title="Home Server Projesi" >}}
+</div>
+
+<hr>
+
 ## Interests
 
 * GNU/Linux
