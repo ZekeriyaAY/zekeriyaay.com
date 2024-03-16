@@ -18,7 +18,7 @@ googleAnalytics = ""  # add your tracking id
   umamiAnalytics = "26bf50d7-a2e0-467f-ba73-255295ab0ac7"   # add your tracking id
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
-23 Jan 2024  20:18:11 UTC
+16 Mar 2024  21:09:53 UTC
 <!-- LAST-UPDATE:END -->
     """  # change to "Last updated" to use the last updated date
   [params.footer]
