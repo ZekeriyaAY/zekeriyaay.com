@@ -15,6 +15,7 @@ googleAnalytics = ""  # add your tracking id
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   # logo = ""  # url or path to a logo to put in the header
   lang = "en"
+  umamiAnalytics = "26bf50d7-a2e0-467f-ba73-255295ab0ac7"   # add your tracking id
   lastUpdate = """
     <!-- LAST-UPDATE:START -->
     <!-- LAST-UPDATE:END -->
