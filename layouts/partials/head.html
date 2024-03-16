@@ -3,18 +3,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {{ if .IsHome -}}
-        <title>{{ .Site.Title | emojify }}</title>
-        <meta name="title" content="{{ .Site.Title | emojify }}" />
+    <title>{{ .Site.Title | emojify }}</title>
+    <meta name="title" content="{{ .Site.Title | emojify }}" />
     {{- else -}}
-        <title>{{ .Title | emojify }} | {{ .Site.Title | emojify }}</title>
-        <meta name="title" content="{{ .Title | emojify }} | {{ .Site.Title | emojify }}" />
+    <title>{{ .Title | emojify }} | {{ .Site.Title | emojify }}</title>
+    <meta name="title" content="{{ .Title | emojify }} | {{ .Site.Title | emojify }}" />
     {{- end }}
 
     <meta name="description" content="{{ .Site.Params.description }}">
     <meta name="author" content='{{ .Site.Params.author }}'>
 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
         integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,6 +42,10 @@
 
     {{- if not .Site.IsServer -}}
     {{- partial "googleanalytics.html" . -}}
+    
+    {{- if .Site.Params.UmamiAnalytics -}}
+    <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="{{ .Site.Params.UmamiAnalytics }}"></script>
+    {{- end -}}
     {{- end -}}
 
     {{ if .Params.noindex -}}
