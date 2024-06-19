@@ -78,3 +78,20 @@ body {
         }
     }
 }
+
+.form-control {
+    background-color: transparent !important;
+    border: 1px solid rgba($black, .25);
+    color: $black !important;
+    &:focus {
+        border-color: $red;
+        box-shadow: 0 0 0 0.2rem rgba($red, .25);
+    }
+}
+
+.btn-dark {
+    &:hover {
+        background-color: darken($red, 10%);
+        border-color: darken($red, 10%);
+    }
+}
