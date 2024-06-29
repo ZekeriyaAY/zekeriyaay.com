@@ -1,6 +1,8 @@
-{{- $key := .Get "key" | default (.Get 0) -}}
+{{- $ninjakey := .Get "ninjakey" | default (.Get 0) -}}
+{{- $captcha := .Get "captcha" | default (.Get 1) -}}
+
 <div class="container form-container">
-    <form method="POST" action="https://staticninja.com/api/form-submit/{{ $key }}">
+    <form method="POST" action="https://staticninja.com/api/form-submit/{{ $ninjakey }}">
         <div class="form-group">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
@@ -9,6 +11,9 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
         </div>
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <div class="g-recaptcha" data-sitekey="{{ $captcha }}"></div>
+        <div>
+            <button type="submit" class="btn btn-dark mt-2">Submit</button>
+        </div>
     </form>
 </div>

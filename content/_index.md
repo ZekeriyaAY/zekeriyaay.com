@@ -34,5 +34,5 @@ Cyber Security & System Administration enthusiast
 ## 📨 Contact with me
 
 <div style="width:75%;">
-{{< staticninjaform key="G2byAC2zKASk" >}}
+{{< staticninjaform ninjakey="G2byAC2zKASk" captcha="6LdnTgQqAAAAAIqu5XQNbGbXqnRF5mxN3vwH52Ge" >}}
 </div>
