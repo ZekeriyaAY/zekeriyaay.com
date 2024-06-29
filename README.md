@@ -30,5 +30,5 @@
 
 
 # License
-*[**These codes**](https://github.com/ZekeriyaAY/zekeriyaay.com/#this-repo-has-8-branches-for-3-different-options-for-zekeriyaaycom) are licensed under a [**GPLv3**](https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE).*\
+*[**These codes**](#this-repo-has-16-branches-for-6-different-options-for-zekeriyaaycom-) are licensed under a [**GPLv3**](https://github.com/ZekeriyaAY/zekeriyaay.com/blob/main/LICENSE).*\
 *The content on this sites are licensed under a [**Creative Commons Attribution-ShareAlike 4.0 International License**](https://creativecommons.org/licenses/by-sa/4.0/).*
