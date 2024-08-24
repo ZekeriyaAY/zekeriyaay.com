@@ -40,12 +40,10 @@
     <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    {{- if not .Site.IsServer -}}
     {{- partial "googleanalytics.html" . -}}
     
     {{- if .Site.Params.UmamiAnalytics -}}
     <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.UmamiAnalytics }}"></script>
-    {{- end -}}
     {{- end -}}
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
