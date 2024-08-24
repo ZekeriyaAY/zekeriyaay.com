@@ -1,10 +1,10 @@
 
-Cyber Security Specialist @ [Turkish Technology](https://turkishtechnology.com)\
+Cyber Security Test Engineer @ [Turkish Technology](https://turkishtechnology.com)\
 Cyber Security & System Administration enthusiast
 
 {{< figure class="avatar" src="/avatar.webp" alt="avatar">}}
 
-[Email](#) &nbsp;&nbsp;&nbsp;&nbsp; *<small>mail [at] zekeriyaay.com</small>*\
+[Email](#) &nbsp;&nbsp;&nbsp;&nbsp; *<small>zekeriya [at] zekeriyaay.com</small>*\
 [GitHub](https://github.com/ZekeriyaAY) &nbsp;&nbsp;&nbsp; *<small>All the projects I've developed</small>*\
 [LinkedIn](https://linkedin.com/in/ZekeriyaAY) &nbsp; *<small>Work experiences, certificates, university education, bootcamps I've attended, and more</small>*\
 [GPG Key](https://raw.githubusercontent.com/ZekeriyaAY/ZekeriyaAY/main/Zekeriya%20AY%20(1206E9C8)%20–%20Public.asc) &nbsp;&nbsp; *<small>54CF C27F 9B4B E1E1 D70F 0235 C199 8F1D 1206 E9C8</small>*\
