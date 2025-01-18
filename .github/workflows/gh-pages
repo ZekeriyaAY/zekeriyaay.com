@@ -1,4 +1,4 @@
-name: Hugo Researcher Theme
+name: Hugo Deploy to Github Pages
 
 on:
   push:
