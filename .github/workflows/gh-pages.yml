@@ -3,7 +3,7 @@ name: Hugo Deploy to Github Pages
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
+      - temp  # Set a branch to deploy
   workflow_dispatch: # Run workflow manually, through the Github Actions Workflow page directly
 
 jobs:
