@@ -18,7 +18,6 @@ Cyber Security & System Administration enthusiast
 * Network & System Security
 * Intelligence/CTI
 * Vulnerability Management
-* Scuba Diving
 
 <hr>
 
@@ -26,13 +25,4 @@ Cyber Security & System Administration enthusiast
 
 <div style="width:75%;">
 {{< youtubeplaylist id="PLqBfq9bu8VRuFwMILaqUrIZaMQLHCU1IA" title="Home Server Projesi" >}}
-</div>
-
-<br>
-<hr>
-
-## 📨 Contact with me
-
-<div style="width:75%;">
-{{< staticninjaform ninjakey="G2byAC2zKASk" captcha="6LdnTgQqAAAAAIqu5XQNbGbXqnRF5mxN3vwH52Ge" >}}
 </div>
