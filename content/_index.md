@@ -4,12 +4,15 @@ Cyber Security & System Administration enthusiast
 
 {{< figure class="avatar" src="/avatar.webp" alt="avatar">}}
 
+[TA2ZAX](https://qrz.com/db/TA2ZAX) &nbsp;&nbsp;&nbsp; *<small>Ham Radio Callsign</small>*\
 [Email](#) &nbsp;&nbsp;&nbsp;&nbsp; *<small>zekeriya [at] zekeriyaay.com</small>*\
 [GitHub](https://github.com/ZekeriyaAY) &nbsp;&nbsp;&nbsp; *<small>All the projects I've developed</small>*\
 [LinkedIn](https://linkedin.com/in/ZekeriyaAY) &nbsp; *<small>Work experiences, certificates, university education, bootcamps I've attended, and more</small>*\
 [Blog](https://zekeriyaay.medium.com) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *<small>My blog where I share my experiences and knowledge</small>*
 
 ☁️ [AWS Certified Cloud Practitioner](https://www.credly.com/badges/4193578d-8014-455c-9704-05a7b5259642)
+
+<hr>
 
 ## Interests
 
