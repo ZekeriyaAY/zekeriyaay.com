@@ -95,3 +95,94 @@ body {
         border-color: darken($red, 10%);
     }
 }
+
+// Medium Card
+#content .medium-card {
+    margin: 1.5em 0;
+    max-width: 680px;
+
+    a, a:hover {
+        text-decoration: none !important;
+        color: inherit !important;
+        display: block;
+    }
+
+    a:hover .medium-card-inner {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        border-color: lighten($background, 25%) !important;
+    }
+
+    .medium-card-inner {
+        border: 1px solid lighten($background, 15%);
+        border-radius: 4px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background: lighten($background, 5%);
+        transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .medium-card-image {
+        flex-shrink: 0;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        background: lighten($background, 3%);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+        }
+    }
+
+    .medium-card-content {
+        padding: 1em 1.25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 0;
+    }
+
+    .medium-card-title {
+        font-weight: 700;
+        font-size: 1.1em;
+        line-height: 1.3;
+        margin-bottom: 0.5em;
+        color: $black !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .medium-card-description {
+        font-size: 0.9em;
+        color: darken($black, 10%) !important;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 0.75em;
+    }
+
+    .medium-card-footer {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-size: 0.8em;
+        color: darken($black, 25%) !important;
+
+        span {
+            color: darken($black, 25%) !important;
+        }
+
+        svg {
+            fill: darken($black, 25%);
+        }
+    }
+}
