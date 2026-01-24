@@ -11,4 +11,24 @@ hugo.linux
 # Temporary lock file while building
 .hugo_build.lock
 
+### OS ###
 .DS_Store
+Thumbs.db
+
+### IDE ###
+.idea/
+.vscode/
+*.swp
+*.swo
+
+### Environment & Secrets ###
+.env
+.env.*
+*.local
+
+### Claude Code ###
+.claude*
+
+### Logs ###
+*.log
+npm-debug.log*
