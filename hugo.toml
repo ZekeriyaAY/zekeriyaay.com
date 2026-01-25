@@ -1,0 +1,19 @@
+baseURL = "https://zekeriyaay.com"
+title = "Zekeriya AY"
+languageCode = "en-us"
+
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+enableEmoji = true
+enableRobotsTXT = true
+
+[params]
+author = "Zekeriya AY"
+description = "Cyber Security and System Administration enthusiast's personal website."
+favicon = "favicon.ico"
+umamiAnalytics = "26bf50d7-a2e0-467f-ba73-255295ab0ac7"
+
+[build.buildStats]
+enable = true
+
+[markup.goldmark.renderer]
+unsafe = true

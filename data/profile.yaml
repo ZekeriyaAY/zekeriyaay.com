@@ -1,0 +1,14 @@
+# Profile information
+tagline: "Cyber Security & System Administration enthusiast"
+
+# Current position
+job:
+  title: "Cyber Security Test Engineer"
+  company: "Turkish Technology"
+  url: "https://turkishtechnology.com"
+
+# Certifications
+certifications:
+  - name: "AWS Certified Cloud Practitioner"
+    url: "https://www.credly.com/badges/4193578d-8014-455c-9704-05a7b5259642"
+    icon: "☁️"

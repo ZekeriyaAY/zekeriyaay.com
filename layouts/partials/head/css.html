@@ -1,0 +1,17 @@
+{{- $options := dict "inlineImports" true -}}
+
+{{- /* Check if we're in production */}}
+{{- $isProd := eq hugo.Environment "production" -}}
+
+{{- /* Get Tailwind CSS */}}
+{{- $css := resources.Get "css/main.css" -}}
+
+{{- /* Process with PostCSS (Tailwind) */}}
+{{- $css = $css | css.PostCSS $options -}}
+
+{{- /* Minify in production */}}
+{{- if $isProd -}}
+  {{- $css = $css | minify | fingerprint "sha256" -}}
+{{- end -}}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}"{{ if $isProd }} integrity="{{ $css.Data.Integrity }}"{{ end }}>

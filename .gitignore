@@ -29,6 +29,12 @@ Thumbs.db
 ### Claude Code ###
 .claude*
 
+### Node ###
+**/node_modules/
+
+### Hugo Stats ###
+hugo_stats.json
+
 ### Logs ###
 *.log
 npm-debug.log*

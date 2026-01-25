@@ -1,19 +1,14 @@
 {{- $id := .Get "id" | default (.Get 0) -}}
-{{- $title := .Get "title" | default "YouTube Playlist" -}}
+{{- $title := .Get "title" | default "YouTube Video" -}}
 {{- $description := .Get "description" | default "" -}}
-{{- $videoId := .Get "videoId" | default "" -}}
-{{- $thumbnail := .Get "thumbnail" | default (cond (ne $videoId "") (printf "https://i.ytimg.com/vi/%s/maxresdefault.jpg" $videoId) "") -}}
+{{- $thumbnail := .Get "thumbnail" | default (printf "https://i.ytimg.com/vi/%s/maxresdefault.jpg" $id) -}}
 
 {{ if $id }}
 <div class="content-card">
-  <a href="https://www.youtube.com/playlist?list={{ $id }}" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.youtube.com/watch?v={{ $id }}" target="_blank" rel="noopener noreferrer">
     <div class="content-card-inner">
       <div class="content-card-image content-card-video">
-        {{- if $thumbnail }}
         <img src="{{ $thumbnail }}" alt="{{ $title }}" loading="lazy">
-        {{- else }}
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#dc3545 0%,#8b1a25 100%)"></div>
-        {{- end }}
         <div class="content-card-play">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M8 5v14l11-7z"/>
@@ -36,5 +31,5 @@
   </a>
 </div>
 {{ else }}
-<p class="text-accent">YouTube shortcode error: playlist ID is required</p>
+<p class="text-accent">YouTube shortcode error: video ID is required</p>
 {{ end }}

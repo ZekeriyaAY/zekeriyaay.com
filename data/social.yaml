@@ -1,0 +1,20 @@
+# Social links
+- name: TA2ZAX
+  url: https://qrz.com/db/TA2ZAX
+  icon: radio
+
+- name: Email
+  url: "mailto:zekeriya@zekeriyaay.com"
+  icon: mail
+
+- name: GitHub
+  url: https://github.com/ZekeriyaAY
+  icon: github
+
+- name: LinkedIn
+  url: https://linkedin.com/in/ZekeriyaAY
+  icon: linkedin
+
+- name: Blog
+  url: https://zekeriyaay.medium.com
+  icon: medium

@@ -1,0 +1,14 @@
+{{- /* Social links with icons - uses lucide.html partial */ -}}
+<nav class="w-full flex justify-center px-4">
+  <ul class="inline-flex flex-wrap items-center justify-center gap-x-5 gap-y-1 list-none p-0 m-0">
+    {{- range .Site.Data.social }}
+    <li>
+      <a href="{{ .url }}" {{ if ne .url "#" }}target="_blank" rel="noopener noreferrer"{{ end }}
+         class="social-icon-link">
+        {{- partial "icons/lucide.html" (dict "icon" .icon "class" "w-4 h-4") }}
+        <span>{{ .name }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</nav>

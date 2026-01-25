@@ -1,26 +1,9 @@
-<div id="footer" class="mb-5">
-    <hr>
-    {{ if .Site.Params.socialIcons }}
-    <div class="container text-center">
-        {{ range $item := .Site.Params.socialIcons }}
-        <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
-        {{ end }}
+<footer class="w-full mt-auto">
+  <div class="max-w-content mx-auto px-4 py-6">
+    <div class="text-center text-sm text-gray-500">
+      <span>© {{ now.Year }} {{ .Site.Params.author }}</span>
+      <span class="mx-2">·</span>
+      <span class="text-gray-600">{{ now.Format "02 Jan 2006 15:04 MST" }}</span>
     </div>
-    {{ end }}
-    {{ with .Site.Params.footer }}
-    <div class="container text-center">
-        <a href="{{ .url | absURL }}" title="{{ .text }}" {{ if .blank }}target="_blank" {{ end }}><small>{{ .text
-                }}</small></a>
-        {{ with .html }}
-        {{ . | safeHTML }}
-        {{ end }}
-    </div>
-    {{ end }}
-    {{ with .Site.Params.lastUpdate }}
-    <div class="container text-center last-update">
-        <a class="last-update" href="https://github.com/marketplace/actions/datetime-of-workflow" target="_blank">
-            Last Update</a>
-        {{ . | safeHTML }}
-    </div>
-    {{ end }}
-</div>
+  </div>
+</footer>

@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-mono text-base antialiased;
+  }
+
+  a {
+    @apply text-accent hover:text-accent-hover transition-colors duration-200;
+  }
+
+  hr {
+    @apply border-gray-800 my-4;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono font-semibold;
+  }
+
+  h2 {
+    @apply text-xl mb-4;
+  }
+
+  ::selection {
+    @apply bg-accent text-white;
+  }
+}
+
+/* Component styles */
+@layer components {
+  /* Hero title */
+  .hero-title {
+    @apply font-bold text-text-primary tracking-tight mb-2;
+    font-size: 2.5rem;
+  }
+
+  /* Social icon link */
+  .social-icon-link {
+    @apply text-gray-400 hover:text-accent transition-colors text-sm whitespace-nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+
+  .social-icon-link svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+  }
+
+  /* Skill badge */
+  .skill-badge {
+    @apply inline-block px-3 py-1 bg-gray-800 rounded-md text-sm;
+  }
+
+  /* Content card (shared by Medium, YouTube, etc.) */
+  .content-card {
+    @apply max-w-2xl;
+  }
+
+  .content-card a {
+    @apply block no-underline;
+  }
+
+  .content-card-inner {
+    @apply flex flex-col sm:flex-row gap-4 p-4 rounded-lg border border-gray-700
+           bg-gray-900/50 hover:border-accent hover:shadow-lg hover:shadow-accent/10
+           transition-all duration-300;
+  }
+
+  .content-card-image {
+    @apply flex-shrink-0 overflow-hidden rounded-md relative;
+    width: 100%;
+    height: 160px;
+  }
+
+  @media (min-width: 640px) {
+    .content-card-image {
+      width: 180px;
+      height: 110px;
+    }
+  }
+
+  .content-card-image img {
+    @apply w-full h-full object-cover;
+  }
+
+  .content-card-video .content-card-play {
+    @apply absolute inset-0 flex items-center justify-center bg-black/40 opacity-80 hover:opacity-100 transition-opacity;
+  }
+
+  .content-card-play svg {
+    @apply w-12 h-12 text-white drop-shadow-lg;
+  }
+
+  .content-card-content {
+    @apply flex flex-col justify-center flex-1 min-w-0;
+  }
+
+  .content-card-header {
+    @apply flex items-start justify-between gap-2 mb-2;
+  }
+
+  .content-card-title {
+    @apply text-text-primary font-semibold text-base;
+  }
+
+  .content-card-description {
+    @apply text-gray-400 text-sm leading-relaxed;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .content-card-badge {
+    @apply flex items-center gap-1 text-xs flex-shrink-0;
+    color: #6b7280 !important;
+  }
+
+  .content-card-badge svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Interest card */
+  .interest-item {
+    @apply flex items-start gap-3 py-1;
+  }
+
+  .interest-icon {
+    @apply text-xl flex-shrink-0;
+  }
+
+  .interest-content {
+    @apply flex flex-col;
+  }
+
+  .interest-title {
+    @apply font-semibold text-text-primary;
+  }
+
+  .interest-description {
+    @apply text-gray-400 text-sm;
+  }
+
+  /* Contact info */
+  .contact-item {
+    @apply flex items-center gap-3;
+  }
+
+  .contact-label {
+    @apply text-accent font-medium min-w-[80px];
+  }
+
+  .contact-value {
+    @apply text-gray-400 text-sm;
+  }
+}
+
+/* Utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

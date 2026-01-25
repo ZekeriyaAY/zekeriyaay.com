@@ -1,0 +1,11 @@
+<div class="space-y-3">
+  {{- range .Site.Data.skills }}
+  <div class="interest-item">
+    <span class="interest-icon">{{ .emoji }}</span>
+    <div class="interest-content">
+      <span class="interest-title">{{ .title }}</span>
+      <span class="interest-description">{{ .description }}</span>
+    </div>
+  </div>
+  {{- end }}
+</div>

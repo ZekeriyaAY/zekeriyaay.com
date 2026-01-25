@@ -1,0 +1,51 @@
+{{ define "main" }}
+<article class="space-y-6 pt-8 sm:pt-12">
+  {{- $profile := .Site.Data.profile -}}
+
+  <!-- Hero Section -->
+  <section class="text-center space-y-3">
+    <h1 class="hero-title">{{ .Site.Title }}</h1>
+    <div class="space-y-1 text-sm">
+      {{- with $profile.job }}
+      <p class="text-gray-400">
+        {{ .title }} @ <a href="{{ .url }}" target="_blank" rel="noopener">{{ .company }}</a>
+      </p>
+      {{- end }}
+      {{- with $profile.tagline }}
+      <p class="text-gray-500">{{ . }}</p>
+      {{- end }}
+    </div>
+  </section>
+
+  <!-- Contact Links -->
+  <section class="text-center">
+    {{- partial "components/social-links.html" . }}
+  </section>
+
+  <!-- Certifications -->
+  {{- with $profile.certifications }}
+  <section class="text-center">
+    {{- range . }}
+    <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+       class="inline-flex items-center gap-2 text-accent hover:text-accent-hover">
+      {{ .icon }} {{ .name }}
+    </a>
+    {{- end }}
+  </section>
+  {{- end }}
+
+  <!-- Interests Section -->
+  {{- with .Site.Data.skills }}
+  <section class="space-y-3">
+    <h2 class="text-xl font-semibold !mb-2">Interests</h2>
+    {{- partial "components/skill-badges.html" $ }}
+  </section>
+  {{- end }}
+
+  <!-- Content from _index.md -->
+  <div class="space-y-6">
+    {{ .Content }}
+  </div>
+
+</article>
+{{ end }}
