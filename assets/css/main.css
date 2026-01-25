@@ -89,11 +89,19 @@
   }
 
   .content-card-image img {
-    @apply w-full h-full object-cover;
+    @apply w-full h-full object-cover transition-transform duration-300;
+  }
+
+  .content-card-inner:hover .content-card-image img {
+    @apply scale-105;
   }
 
   .content-card-video .content-card-play {
-    @apply absolute inset-0 flex items-center justify-center bg-black/40 opacity-80 hover:opacity-100 transition-opacity;
+    @apply absolute inset-0 flex items-center justify-center bg-black/40 opacity-80 transition-opacity;
+  }
+
+  .content-card-inner:hover .content-card-play {
+    @apply opacity-100;
   }
 
   .content-card-play svg {
