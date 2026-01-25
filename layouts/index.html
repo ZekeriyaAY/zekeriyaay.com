@@ -18,7 +18,7 @@
       <p>
         {{- range . }}
         <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
-           class="inline-flex items-center gap-2 text-gray-500 hover:text-accent transition-colors">
+           class="inline-flex items-center gap-2 text-gray-400 hover:text-accent transition-colors">
           {{- partial "icons/lucide.html" (dict "icon" .icon "class" "w-5 h-5") -}} {{ .name }}
         </a>
         {{- end }}

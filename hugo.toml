@@ -8,7 +8,7 @@ enableRobotsTXT = true
 
 [params]
 author = "Zekeriya AY"
-description = "Cyber Security and System Administration enthusiast's personal website."
+description = "Zekeriya AY - Cyber Security Engineer, homelab enthusiast, and maker. Vulnerability management, self-hosted services, 3D printing, and more."
 favicon = "favicon.ico"
 umamiAnalytics = "26bf50d7-a2e0-467f-ba73-255295ab0ac7"
 
