@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         'mono': ['JetBrains Mono', 'Ubuntu Mono', 'monospace'],
         'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'handwriting': ['Caveat', 'cursive'],
       },
       fontSize: {
         'base': '14px',

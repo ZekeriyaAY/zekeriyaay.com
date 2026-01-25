@@ -37,8 +37,8 @@
 @layer components {
   /* Hero title */
   .hero-title {
-    @apply font-bold text-text-primary tracking-tight mb-2;
-    font-size: 2.5rem;
+    @apply font-handwriting font-bold text-text-primary tracking-tight mb-2;
+    font-size: 3rem;
   }
 
   /* Social icon link */
