@@ -1,29 +1,32 @@
-# Hobbies - personal interests (left column)
-hobbies:
-  - emoji: "🐧"
-    title: Tux at the Core
-    description: GNU/Linux rituals & sysadmin sorcery
+# Interests & Expertise - 4 categories in 2-column layout
+# Left column: Security, Homelab
+# Right column: DIY & Maker, Outdoor
 
-  - emoji: "🏠"
-    title: Dominate the Domain
-    description: Homelab ops, smart homes, & IoT mischief
-
-  - emoji: "🧠"
-    title: Keyboard Alchemy
-    description: Handwired builds crafted with brainpower
-
-# Skills - professional expertise (right column)
-skills:
+left_column:
   - category: Security
     items:
-      - Penetration Testing
-      - Vulnerability Assessment
-      - Security Operations
+      - Vulnerability Management & Scanning
+      - CTI & Vulnerability Intelligence
 
-  - category: DevOps
+  - category: Maker & DIY
     items:
-      - Docker & Containers
-      - Kubernetes
-      - Infrastructure as Code
-      - CI/CD Pipelines
-      - Cloud Platforms
+      - 3D Printing
+      - Custom Keyboards
+      - ESP & Arduino Projects
+      - Drone Building 
+      - Flight Simulation
+
+
+right_column:
+  - category: Homelab
+    items:
+      - Virtualization & Containerization
+      - Self-Hosted Services
+      - Smart Home & IoT
+      - GNU/Linux
+
+  - category: Outdoor
+    items:
+      - Ham Radio - TA2ZAX
+      - Camping
+      - Scuba Diving - CMAS 1* Diver

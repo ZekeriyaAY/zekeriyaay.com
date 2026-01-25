@@ -1,34 +1,29 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-  <!-- Hobbies Column -->
-  <div class="space-y-4">
-    <h3 class="text-lg font-semibold text-text-primary">Hobbies</h3>
+  <!-- Left Column: Security + Homelab -->
+  <div class="space-y-6">
+    {{- range .Site.Data.skills.left_column }}
     <div class="space-y-3">
-      {{- range .Site.Data.skills.hobbies }}
-      <div class="interest-item">
-        <span class="interest-icon">{{ .emoji }}</span>
-        <div class="interest-content">
-          <span class="interest-title">{{ .title }}</span>
-          <span class="interest-description">{{ .description }}</span>
-        </div>
-      </div>
-      {{- end }}
+      <h3 class="text-lg font-semibold text-text-primary">{{ .category }}</h3>
+      <ul class="skill-list">
+        {{- range .items }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
     </div>
+    {{- end }}
   </div>
 
-  <!-- Skills Column -->
-  <div class="space-y-4">
-    <h3 class="text-lg font-semibold text-text-primary">Skills</h3>
+  <!-- Right Column: DIY & Maker + Outdoor -->
+  <div class="space-y-6">
+    {{- range .Site.Data.skills.right_column }}
     <div class="space-y-3">
-      {{- range .Site.Data.skills.skills }}
-      <div class="interest-content">
-        <span class="interest-title">{{ .category }}</span>
-        <ul class="skill-list">
-          {{- range .items }}
-          <li>{{ . }}</li>
-          {{- end }}
-        </ul>
-      </div>
-      {{- end }}
+      <h3 class="text-lg font-semibold text-text-primary">{{ .category }}</h3>
+      <ul class="skill-list">
+        {{- range .items }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
     </div>
+    {{- end }}
   </div>
 </div>
