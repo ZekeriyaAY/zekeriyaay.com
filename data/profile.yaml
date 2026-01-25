@@ -9,6 +9,6 @@ job:
 
 # Certifications
 certifications:
-  - name: "AWS Certified Cloud Practitioner"
+  - name: "AWS Cloud Practitioner"
     url: "https://www.credly.com/badges/4193578d-8014-455c-9704-05a7b5259642"
-    icon: "☁️"
+    icon: "aws"
