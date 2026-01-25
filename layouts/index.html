@@ -32,10 +32,9 @@
     {{- partial "components/social-links.html" . }}
   </section>
 
-  <!-- Interests Section -->
+  <!-- Hobbies & Skills Section -->
   {{- with .Site.Data.skills }}
-  <section class="space-y-3">
-    <h2 class="text-xl font-semibold !mb-2">Interests</h2>
+  <section>
     {{- partial "components/skill-badges.html" $ }}
   </section>
   {{- end }}

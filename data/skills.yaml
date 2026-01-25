@@ -1,20 +1,29 @@
-# Interests and skills configuration
-- emoji: "🐧"
-  title: Tux at the Core
-  description: GNU/Linux rituals & sysadmin sorcery
+# Hobbies - personal interests (left column)
+hobbies:
+  - emoji: "🐧"
+    title: Tux at the Core
+    description: GNU/Linux rituals & sysadmin sorcery
 
-- emoji: "🏠"
-  title: Dominate the Domain
-  description: Homelab ops, smart homes, & IoT mischief
+  - emoji: "🏠"
+    title: Dominate the Domain
+    description: Homelab ops, smart homes, & IoT mischief
 
-- emoji: "🧠"
-  title: Keyboard Alchemy
-  description: Handwired builds crafted with brainpower
+  - emoji: "🧠"
+    title: Keyboard Alchemy
+    description: Handwired builds crafted with brainpower
 
-- emoji: "☁️"
-  title: Cloud Juggling
-  description: Infra orchestration, containers, and virtual realms
+# Skills - professional expertise (right column)
+skills:
+  - category: Security
+    items:
+      - Penetration Testing
+      - Vulnerability Assessment
+      - Security Operations
 
-- emoji: "👾"
-  title: Hunt, Patch, Repeat
-  description: Security ops & vulnerability vanquishing
+  - category: DevOps
+    items:
+      - Docker & Containers
+      - Kubernetes
+      - Infrastructure as Code
+      - CI/CD Pipelines
+      - Cloud Platforms

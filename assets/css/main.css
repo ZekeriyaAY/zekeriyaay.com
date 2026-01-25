@@ -164,6 +164,11 @@
     @apply text-gray-400 text-sm;
   }
 
+  /* Skill list */
+  .skill-list {
+    @apply text-gray-400 text-sm list-disc pl-4 m-0;
+  }
+
   /* Contact info */
   .contact-item {
     @apply flex items-center gap-3;
