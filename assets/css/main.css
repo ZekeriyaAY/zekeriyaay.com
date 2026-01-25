@@ -60,11 +60,6 @@
     flex-shrink: 0;
   }
 
-  /* Skill badge */
-  .skill-badge {
-    @apply inline-block px-3 py-1 bg-gray-800 rounded-md text-sm;
-  }
-
   /* Content card (shared by Medium, YouTube, etc.) */
   .content-card {
     @apply w-full;
@@ -143,43 +138,9 @@
     height: 14px;
   }
 
-  /* Interest card */
-  .interest-item {
-    @apply flex items-start gap-3 py-1;
-  }
-
-  .interest-icon {
-    @apply text-xl flex-shrink-0;
-  }
-
-  .interest-content {
-    @apply flex flex-col;
-  }
-
-  .interest-title {
-    @apply font-semibold text-text-primary;
-  }
-
-  .interest-description {
-    @apply text-gray-400 text-sm;
-  }
-
   /* Skill list */
   .skill-list {
     @apply text-gray-400 text-sm list-disc pl-4 m-0;
-  }
-
-  /* Contact info */
-  .contact-item {
-    @apply flex items-center gap-3;
-  }
-
-  .contact-label {
-    @apply text-accent font-medium min-w-[80px];
-  }
-
-  .contact-value {
-    @apply text-gray-400 text-sm;
   }
 }
 
