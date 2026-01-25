@@ -62,7 +62,7 @@
 
   /* Content card (shared by Medium, YouTube, etc.) */
   .content-card {
-    @apply max-w-2xl;
+    @apply w-full;
   }
 
   .content-card a {
