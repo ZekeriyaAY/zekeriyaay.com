@@ -41,9 +41,14 @@
     font-size: 3rem;
   }
 
-  /* Social icon link */
+  /* Social icon link badge */
   .social-icon-link {
-    @apply text-gray-400 hover:text-accent transition-colors text-sm whitespace-nowrap;
+    @apply text-gray-400 text-sm whitespace-nowrap
+           px-3 py-1.5 rounded-md
+           bg-gray-900/50 border border-gray-700
+           hover:border-accent hover:text-white hover:font-semibold
+           hover:shadow-lg hover:shadow-accent/20
+           transition-all duration-200;
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
@@ -71,7 +76,7 @@
 
   .content-card-inner {
     @apply flex flex-col sm:flex-row gap-4 p-4 rounded-lg border border-gray-700
-           bg-gray-900/50 hover:border-accent hover:shadow-lg hover:shadow-accent/10
+           bg-gray-900/50 hover:border-accent hover:shadow-lg hover:shadow-accent/20
            transition-all duration-300;
   }
 
