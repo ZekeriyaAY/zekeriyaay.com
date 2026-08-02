@@ -1,7 +1,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
   <!-- Left Column: Security + Homelab -->
   <div class="space-y-6">
-    {{- range .Site.Data.skills.left_column }}
+    {{- range hugo.Data.skills.left_column }}
     <div class="space-y-3">
       <h3 class="text-lg font-semibold text-text-primary">{{ .category }}</h3>
       <ul class="skill-list">
@@ -15,7 +15,7 @@
 
   <!-- Right Column: DIY & Maker + Outdoor -->
   <div class="space-y-6">
-    {{- range .Site.Data.skills.right_column }}
+    {{- range hugo.Data.skills.right_column }}
     <div class="space-y-3">
       <h3 class="text-lg font-semibold text-text-primary">{{ .category }}</h3>
       <ul class="skill-list">

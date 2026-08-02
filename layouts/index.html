@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="space-y-6 pt-4 sm:pt-6">
-  {{- $profile := .Site.Data.profile -}}
+  {{- $profile := hugo.Data.profile -}}
 
   <!-- Hero Section -->
   <section class="text-center space-y-3">
@@ -33,7 +33,7 @@
   </section>
 
   <!-- Hobbies & Skills Section -->
-  {{- with .Site.Data.skills }}
+  {{- with hugo.Data.skills }}
   <section>
     {{- partial "components/skill-badges.html" $ }}
   </section>
