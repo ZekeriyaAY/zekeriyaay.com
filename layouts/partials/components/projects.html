@@ -1,0 +1,27 @@
+{{- range hugo.Data.projects }}
+{{- $p := . }}
+<div class="content-card">
+  <a href="{{ $p.url }}" target="_blank" rel="noopener noreferrer">
+    <div class="content-card-inner">
+      {{- with $p.image }}
+      <div class="content-card-icon">
+        <img src="{{ . }}" alt="{{ $p.name }}" loading="lazy">
+      </div>
+      {{- end }}
+      <div class="content-card-content">
+        <div class="content-card-header">
+          <div class="content-card-title">{{ $p.name }}</div>
+          <div class="content-card-badge">
+            {{- partial "icons/lucide.html" (dict "icon" "external-link" "class" "w-4 h-4") }}
+            <span>{{ $p.badge | default "Live" }}</span>
+          </div>
+        </div>
+        <div class="content-card-description content-card-description--full">{{ $p.description }}</div>
+        {{- with $p.tech }}
+        <p class="text-gray-500 text-xs mt-2">{{ . }}</p>
+        {{- end }}
+      </div>
+    </div>
+  </a>
+</div>
+{{- end }}

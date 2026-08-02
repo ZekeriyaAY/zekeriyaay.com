@@ -39,6 +39,16 @@
   </section>
   {{- end }}
 
+  <!-- Projects Section -->
+  {{- with hugo.Data.projects }}
+  <section>
+    <h2>Projects</h2>
+    <div class="space-y-4">
+      {{- partial "components/projects.html" $ }}
+    </div>
+  </section>
+  {{- end }}
+
   <!-- Content from _index.md -->
   <div class="space-y-6">
     {{ .Content }}

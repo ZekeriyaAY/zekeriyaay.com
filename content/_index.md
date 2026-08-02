@@ -2,6 +2,8 @@
 title: "Zekeriya AY"
 ---
 
+## Writing & Videos
+
 {{< medium
     url="https://zekeriyaay.medium.com/kendi-mekanik-klavyemi-yapt%C4%B1m-handwired-lily58-1023ae6b2867"
     title="Kendi Mekanik Klavyemi Yaptım - Handwired Lily58"

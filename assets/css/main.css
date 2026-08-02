@@ -96,6 +96,21 @@
     @apply scale-105;
   }
 
+  /* Small square icon variant (used for project logo tiles) */
+  .content-card-icon {
+    @apply flex-shrink-0 overflow-hidden rounded-md relative;
+    width: 48px;
+    height: 48px;
+  }
+
+  .content-card-icon img {
+    @apply w-full h-full object-cover transition-transform duration-300;
+  }
+
+  .content-card-inner:hover .content-card-icon img {
+    @apply scale-105;
+  }
+
   .content-card-video .content-card-play {
     @apply absolute inset-0 flex items-center justify-center bg-black/40 opacity-80 transition-opacity;
   }
@@ -126,6 +141,12 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  /* Unclamped variant — used where the description is the full info, not a teaser (e.g. projects) */
+  .content-card-description--full {
+    display: block;
+    overflow: visible;
   }
 
   .content-card-badge {

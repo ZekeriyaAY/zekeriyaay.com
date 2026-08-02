@@ -1,0 +1,14 @@
+# Personal projects
+- name: Vezne
+  description: "Personal finance tracker — import bank statements or add transactions yourself, auto-categorize with rules, and see exactly where your money goes. No bank connection, ever."
+  url: https://vezne.app
+  image: /images/projects/vezne.png
+  tech: "FastAPI · React · PostgreSQL"
+  badge: vezne.app
+
+- name: Hevy Analyzer
+  description: "The analytics Hevy doesn't give you. See period trends, muscle-group balance, and exercise frequency from your own training history — then go head-to-head, comparing any two Hevy profiles side by side."
+  url: https://hevyanalyzer.app
+  image: /images/projects/hevy-analyzer.png
+  tech: "Node.js · React · D3"
+  badge: hevyanalyzer.app
